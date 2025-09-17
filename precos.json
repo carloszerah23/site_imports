@@ -1,0 +1,1754 @@
+{
+    "Classe A": {
+        "Cabeçote": {
+        "cabeçote": {
+            "TakaShing": 2600.1701,
+            "OEM": 3120.39312,
+            "ProRacing S1": 5460.21546,
+            "ProRacing S2": 7800.510301,
+            "Edelbrock E-Street": 11701.0017,
+            "Edelbrock Victor": 15601.0206,
+            "TrickFlow PowerPort": 20281.13778,
+            "TrickFlow GenX": 26001.701,
+            "ProRacing S3": 34842.18484,
+            "ProRacing S4": 43682.66868,
+            "Edelbrock Masterflow": 50573.14307
+        },
+        "coletor de admissão": {
+            "TakaShing Polido": 1820.07182,
+            "TakaShing Plenum": 2638.915139,
+            "FolegoTurbo Individual": 3822.056322,
+            "FolegoTurbo Variável": 6461.443961,
+            "ProRacing Variável": 7972.027972,
+            "Mann-Hummel": 10374.22037,
+            "TrickFlow StreetBurner": 12467.39747,
+            "TrickFlow TrackHeat": 16380.64638,
+            "Edelbrock Perfomer": 23260.72576,
+            "Edelbrock Flathead": 29084.76658
+        },
+        "coletor de escape": {
+            "TakaShing Polido": 1494.991495,
+            "Bellows Manel": 3333.963334,
+            "Bellows Hastelloy": 5531.563032,
+            "BBK Titanium": 7459.83746,
+            "ProRacing Cerâmico": 8042.903043,
+            "ProRacing h-Cerâmico": 8969.94897,
+            "ProRacing y-Variável": 11660.83916,
+            "FMIC Vanos": 15129.46513,
+            "FMIC R6": 21528.06653
+        },
+        "comandos": {
+            "OEM": 1950.00945,
+            "260": 2924.777925,
+            "264": 3900.0189,
+            "268": 4875.259875,
+            "272": 5850.02835,
+            "280": 6824.796825,
+            "288": 7800.0378,
+            "292": 8775.278775,
+            "304": 9750.04725,
+            "312": 10724.81572,
+            "320": 11700.0567
+        },
+        "juntas": {
+            "TakaShing Aluminium": 406.3504064,
+            "SPA Aço": 499.9054999,
+            "BBK Aço": 690.7956908,
+            "ProRacing Carbon": 808.4483084,
+            "Edelbrock Racing Series": 1117.463617,
+            "Edelbrock Carbon": 1422.226422
+        },
+        "molas": {
+            "TakaShing SPR1": 714.8932149,
+            "OEM Aço": 1229.446229,
+            "Edelbrock Magnum": 1587.129087,
+            "ProRacing Carbon": 2180.589681,
+            "ProRacing M1": 2988.092988
+        },
+        "tuchos": {
+            "HIDRÁULICO": 0,
+            "TakaShing TPT1": 991.3059913,
+            "OEM Aço": 1536.571537,
+            "Edelbrock Flat": 1952.844453,
+            "Edelbrock Performer": 2498.109998,
+            "Crower 350T": 3152.523153,
+            "MECÂNICO": 0,
+            "Edelbrock M-Tec": 3172.368172,
+            "ProRacing OBB": 3935.456435,
+            "ProRacing OBB+": 5095.445095
+        },
+        "válvulas": {
+            "TakaShing Aço": 2762.710263,
+            "Bosch Aço": 5249.007749,
+            "Eaton Aço": 7873.747874,
+            "Continental Aço": 10470.61047,
+            "ProRacing Carbon": 14310.62181,
+            "ProRacing Tungstênio": 18786.61879
+        },
+        "corpo da borboleta": {
+            "TBI": 0,
+            "TakaShing 50mm": 1828.104328,
+            "TakaShing 52mm": 2961.632962,
+            "FolegoTurbo 53mm": 4917.784918,
+            "FolegoTurbo 54mm": 7093.177093,
+            "MaxPower 55mm": 8537.138537,
+            "ThorRacing 58mm": 10804.1958,
+            "ProRacing 60mm": 13198.8282,
+            "ITB": 0,
+            "TakaShing 40mm": 9561.047061,
+            "JapaParts 41mm": 10950.19845,
+            "FolegoTurbn 42mm": 13015.97052,
+            "ProRacing 43mm": 15045.36005,
+            "JapaParts 44mm": 17458.41996,
+            "RDS 46mm": 20054.33755
+        }
+    },
+    "ECU": {
+        "chip": {
+            "Remapeamento ECU": 2437.629938,
+            "Chip TakaShing": 7800.510301,
+            "Chip NascarParts": 9677.282177,
+            "Chip MNS GT2": 12529.29503,
+            "Chip FolegoTurbo": 15966.26347,
+            "Chip ProRacing GT-R": 17502.3625,
+            "Chip ProRacing GT-S": 21402.3814,
+            "Chip Farftech Shiftpower": 24620.10962
+        },
+        "módulo de injeção": {
+            "ProCrane 3": 7312.417312,
+            "ProCrane +": 10968.62597,
+            "ProRacing Ftech+": 21937.25194,
+            "ProRacing Ftech+ V2": 36562.08656,
+            "ProRacing Ftech+ V300": 58499.3385,
+            "ProRacing Ftech+ V450": 73124.17312,
+            "ProRacing Ftech+ V600": 98717.63372,
+            "ProRacing Ftech R700": 113342.4683
+        }
+    },
+    "Escapamento": {
+        "projetos especiais": {
+            "Escape Direto em Ferro": 4842.657343,
+            "Escape Direto em Inox": 5811.283311,
+            "Escape Silencioso Difusor": 9685.314685,
+            "Escape Esportivo Difusor": 12106.40711
+        }
+    },
+    "Injetores": {
+        "água": {
+            "TakaShing 30 PSI": 1868.739369,
+            "AEM 35 PSI": 5979.96598,
+            "PernaPerformance 50 PSI": 8951.048951,
+            "AEM 60 PSI": 11249.76375,
+            "ProRacing 70 PSI": 13081.17558,
+            "ProRacing 80 PSI": 14576.16708,
+            "PernaPerformance 100 PSI": 15884.52088,
+            "SnowPerformance 125 PSI": 17192.40219,
+            "UltimatePerformance 150 PSI": 21116.99112,
+            "ProRacing Performance 200 PSI": 25041.10754
+        },
+        "água/metanol": {
+            "TakaShing 30 PSI": 3542.336042,
+            "AEM 35 PSI": 11335.28634,
+            "PernaPerformance 50 PSI": 16967.96447,
+            "AEM 60 PSI": 21324.89132,
+            "ProRacing 70 PSI": 24796.3523,
+            "ProRacing 80 PSI": 27630.41013,
+            "PernaPerformance 100 PSI": 30109.62011,
+            "SnowPerformance 125 PSI": 32589.30259,
+            "UltimatePerformance 150 PSI": 40028.35003,
+            "ProRacing Performance 200 PSI": 47467.39747
+        }
+    },
+    "Motor": {
+        "bielas": {
+            "OEM": 3412.398412,
+            "TakaShing Forjado": 6449.63145,
+            "OEM Forjado": 9486.391986,
+            "ProRacing Steel+": 12011.43451,
+            "ProRacing Carbon+": 13990.73899
+        },
+        "bloco": {
+            "OEM": 11374.97637,
+            "ProRacing Aluminium": 25025.04253,
+            "TAPerformance V3800": 43224.81572,
+            "TAPerformance V4550": 51187.39369,
+            "Edelbrock 350 SBC": 68249.85825,
+            "Brodix BS Aluminium": 92250.99225
+        },
+        "bomba de óleo": {
+            "OEM": 1039.97354,
+            "TakaShing P1": 2287.847288,
+            "Melling M295": 3951.993952,
+            "Melling M295HV": 4263.844264,
+            "Edelbrock Performer": 5407.767908
+        },
+        "bronzinas": {
+            "OEM": 1462.388962,
+            "TakaShing": 3217.255717,
+            "Mahie": 5557.078057,
+            "Takao": 6142.033642,
+            "King Aluminium": 6726.989227,
+            "King Cobre": 7457.947458,
+            "King pMaxKote": 8481.855982
+        },
+        "cárter": {
+            "húmido": 0,
+            "TakaShing": 1283.783784,
+            "OEM Aço": 1989.69949,
+            "Edelbrock Aluminium": 2528.822529,
+            "ProRacing Carbon": 3235.210735,
+            "seco": 0,
+            "Edelbrock DOPS": 4107.919108,
+            "ProRacing Dry+": 5096.390096
+        },
+        "correias": {
+            "correia dentada": 0,
+            "TakaShing": 249.95275,
+            "OEM": 314.6853147,
+            "Optibel Alpha": 656.3031563,
+            "Optibel Alpha V": 1013.986014,
+            "ProRacing B1": 1263.938764,
+            "seco": 0,
+            "ProRacing Confort": 400.2079002
+        },
+        "pistões": {
+            "OEM": 6013.041013,
+            "TakaShing Forjado": 8719.051219,
+            "OEM Forjado": 13709.60121,
+            "ProRacing Steel+": 18760.63126,
+            "ProRacing Titanium": 31448.21395,
+            "OmegaPistons 308": 44797.2973,
+            "Diamond Pistons Racer": 59108.39161,
+            "IASA Tunner Titanium": 76546.02155
+        },
+        "rolamentos": {
+            "OEM": 1219.051219,
+            "SKF Roll+": 1633.434133,
+            "SKF Conne": 2657.342657,
+            "Jtekt TRD": 3803.628804,
+            "Thomson Multirac": 6375.448875,
+            "Thomson XR": 8131.260631
+        },
+        "tensionadores": {
+            "OEM": 203.1752032,
+            "TakaShing": 294.8402948
+        },
+        "virabrequim": {
+            "OEM": 5362.880363,
+            "TakaShing Forjado": 7776.412776,
+            "OEM Forjado": 12227.36723,
+            "ProRacing Steel+": 16732.18673,
+            "ProRacing Titanium": 28048.10055,
+            "OmegaPistons 308": 39953.69495,
+            "Diamond Pistons Racer": 52716.87772,
+            "IASA Tunner Titanium": 68269.70327
+        }
+    },
+    "Óxido Nitroso": {
+        "bico injetor": {
+            "TakaShing 0.3mm": 1868.739369,
+            "TakaShing 0.5mm": 1868.739369,
+            "NX 0.5mm": 1868.739369,
+            "NX 0.6mm": 1868.739369,
+            "NX 0.7mm": 1868.739369,
+            "NX 0.8mm": 1868.739369,
+            "NOS 2.0mm EC": 22366.28237
+        },
+        "garrafas": {
+            "TakaShing 10 Lbs": 3087.790588,
+            "TakaShing 20 Lbs": 4631.449631,
+            "NX 20 Lbs": 5249.480249,
+            "NX Dual 40 Lbs": 6175.581176,
+            "NOS 20 Lbs": 11085.33359,
+            "NOS 30 Lbs": 15408.24041,
+            "NOS Dual 40 Lbs": 17909.18541,
+            "NOS Dual 60 LBs": 20070.87507
+        },
+        "kit instalação": {
+            "Kit Nitro": 3412.870913
+        },
+        "refil": {
+            "Refil de Óxido Nitroso": 1544.131544
+        }
+    },
+    "Redução de Peso": {
+        "reduções": {
+            "ProReduction Light Pack": 6500.661501,
+            "ProReduction Super Pack": 13001.323,
+            "ProReduction Ultra Pack": 19501.9845,
+            "ProReduction Extreme Pack": 29252.97675,
+            "ProReduction Nismo Pack": 39003.969,
+            "ProReduction Apex Pack": 48754.96125
+        }
+    },
+    "SuperCharger": {
+        "compressor": {
+            "TakaShing Blower": 6370.723871,
+            "Vortech Blower": 14015.78152,
+            "Edelbrock Blower": 23571.63107,
+            "Vartech CCSq V-30": 22170.19467,
+            "Vartecj Sc 2200x": 36313.07881,
+            "ProRacing Sc Kompressor": 43002.268,
+            "ProRacing SC Kompressor HP": 46060.29106,
+            "Edelbrock Supercompressor HAF": 62242.01474
+        },
+        "intercooler": {
+            "TakaShing": 5395.482895,
+            "ProRacing I-Flow": 8632.583633,
+            "HKS S-Type": 12139.95464,
+            "HKS R-Type": 20610.94311,
+            "Garret F80": 26923.54942,
+            "Mashimoto TMIC": 32480.62748,
+            "Mashimoto R-Line": 39009.16651,
+            "ProRacing Competition": 45537.70554
+        },
+        "kit instalação": {
+            "Kit Supercharger": 2843.980344
+        },
+        "remover tudo": {
+            "Remover Supercharger": 711.1132111
+        },
+        "polias": {
+            "TakaShing 3.9": 5687.960688,
+            "Magnuson 3.6": 8531.941032,
+            "Magnuson 3.2": 12513.70251,
+            "Edelbrock 3.0": 15926.10093,
+            "Edelbrock 2.6": 18770.08127,
+            "ProRacing 2.2": 22751.84275,
+            "ProRacing 2.1": 27302.0223,
+            "ProRacing 2.0": 30146.00265,
+            "ATI Performance 1.9": 38677.94368,
+            "ATI Performance 1.8": 44934.79493,
+            "ATI Performance 1.7": 53466.73597
+        }
+    },
+    "Suspensão": {
+        "amortecedores": {
+            "Ferro-Velho": 253.2602533,
+            "TakaShing": 633.6231336,
+            "OEM": 886.8833869,
+            "ProRacing SForce": 1267.246267,
+            "ProRacing SForce+": 1583.821584
+        },
+        "kit suspenAir": {
+            "Kit SuspenAir": 309.015309
+        },
+        "bolsas de ar": {
+            "TakaShing 1/8": 650.1606502,
+            "TakaShing 1/4": 747.4957475,
+            "TakaShing 1/2": 812.7008127,
+            "Culkin Originals 1/4": 780.0982801,
+            "Culkin Original 3/8": 975.2409752,
+            "Culkin Pro 1/4": 975.2409752,
+            "Culkin Pro 3/8": 1170.38367,
+            "Culkin Pro 1/2": 1365.526366,
+            "Betão C1 3/8": 1300.3213,
+            "Betão C2 1/2": 1625.401625
+        },
+        "compressor": {
+            "TakaShing 200 PSI": 828.7658288,
+            "Culkin 200 PSI": 1035.721036,
+            "Culkin 300 PSI": 1491.683992,
+            "Betão 200 PSI": 1408.996409,
+            "Betão 300 PSI": 1740.21924
+        },
+        "molas": {
+            "Ferro-Velho": 143.1676432,
+            "TakaShing": 357.6828577,
+            "OEM": 500.8505009,
+            "ProRacing SForce": 715.3657154,
+            "ProRacing SForce+": 893.970894
+        }
+    },
+    "Transmissão": {
+        "caixa de marchas": {
+            "Z-Pro One": 4875.259875,
+            "Z-Pro Carbon": 6094.311094,
+            "Z-Pro GTronic": 6094.311094,
+            "Z-Pro Gtronic I/C": 8531.468531,
+            "Z-Pro Paddle Master": 8531.468531
+        },
+        "diferencial": {
+            "RWD": 19501.9845,
+            "FWD": 19501.9845,
+            "AWD": 32503.3075,
+            "Blocagem do Diferencial": 26002.646
+        },
+        "embreagem": {
+            "TakaShing": 3250.33075,
+            "OEM": 4063.031563,
+            "GGClutch Light": 6663.201663,
+            "GGClutch Tracj": 8531.941032,
+            "GGClutch Heavy": 11538.46154,
+            "Edyxe Sport": 15438.95294,
+            "Edyxe Super Sport": 18689.28369,
+            "ProClutch Ultra": 27221.22472,
+            "Edyxe Racing": 31690.60669,
+            "ProClutch Extreme": 36972.21697
+        }
+    },
+    "Turbo": {
+        "intercooler": {
+            "TakaShing": 5395.482895,
+            "ProRacing I-Flow": 8632.583633,
+            "HKS S-Type": 12139.95464,
+            "HKS R-Type": 20610.94311,
+            "Garret F80": 26923.54942,
+            "Mashimoto TMIC": 32480.62748,
+            "Mashimoto R-Line": 39009.16651,
+            "ProRacing Competition": 45537.70554
+        },
+        "Turbinas": {
+            "padrão": 0,
+            "TakaShing .36": 10270.74277,
+            "SPA .42": 14789.73729,
+            "SPA .48": 21773.76677,
+            "Garret .58": 33174.73067,
+            "Garret .63": 42931.86543,
+            "HKS .70": 52585.99509,
+            "HKS .82": 63678.41618,
+            "roletadas": 0,
+            "MasterPower .70": 74462.76696,
+            "MasterPower .82": 84322.90682,
+            "MasterPower .84": 95415.32792
+        },
+        "válvula de alívio": {
+            "TakaShing": 1544.131544,
+            "Beep Turbo USC": 2316.197316,
+            "SPA MCSI": 3088.263088,
+            "HKS ControFlow": 3860.32886,
+            "HKS GT II": 6331.033831,
+            "ProRacing WGV": 8801.738802
+        },
+        "válvula de prioridade": {
+            "TakaShing": 1868.739369,
+            "Beep Turbo USC": 2802.872803,
+            "SPA MCSI": 3737.478737,
+            "HKS ControFlow": 4672.084672,
+            "HKS GT II": 7661.595162,
+            "ProRacing BOV": 10652.05065
+        },
+        "kit instalação": {
+            "Kit Turbo": 3542.808543,
+            "Kit Manta Térmica": 1771.404271
+        },
+        "remover tudo": {
+            "Remover Turbo": 885.4658855
+        }
+    }
+    },
+    "Classe B": {
+    "Cabeçote": {
+            "cabeçote": {
+                "TakaShing": 8143.134714,
+                "OEM": 9772.35356133,
+                "ProRacing S1": 17100.1389710025,
+                "ProRacing S2": 24429.4041451318,
+                "Edelbrock E-Street": 36644.8460936625,
+                "Edelbrock Victor": 48858.808284,
+                "TrickFlow PowerPort": 63515.85886467,
+                "TrickFlow GenX": 81431.34714,
+                "ProRacing S3": 109117.709215335,
+                "ProRacing S4": 136804.07129067,
+                "Edelbrock Masterflow": 158383.4522708363
+            },
+            "coletor de admissão": {
+                "TakaShing Polido": 5700.0463236675,
+                "TakaShing Plenum": 8264.4752647879,
+                "FolegoTurbo Individual": 11969.8013274368,
+                "FolegoTurbo Variável": 20235.7563535496,
+                "ProRacing Variável": 24966.5580416344,
+                "Mann-Hummel": 32489.6721278477,
+                "TrickFlow StreetBurner": 39045.0213742527,
+                "TrickFlow TrackHeat": 51300.4169130075,
+                "Edelbrock Perfomer": 72847.2431127064,
+                "Edelbrock Flathead": 91086.7994313853
+            },
+            "coletor de escape": {
+                "TakaShing Polido": 4681.9695142519,
+                "Bellows Manel": 10441.2063504224,
+                "Bellows Hastelloy": 17323.5831565628,
+                "BBK Titanium": 23362.4951618833,
+                "ProRacing Cerâmico": 25188.5224627379,
+                "ProRacing h-Cerâmico": 28091.8170855113,
+                "ProRacing y-Variável": 36519.0662557679,
+                "FMIC Vanos": 47382.0050097321,
+                "FMIC R6": 67420.9529160206
+            },
+            "comandos": {
+                "OEM": 6106.9810951688,
+                "260": 9159.7317620906,
+                "264": 12213.9621903375,
+                "268": 15268.1926185844,
+                "272": 18320.9432855063,
+                "280": 21373.6939524281,
+                "288": 24427.924380675,
+                "292": 27482.1548089219,
+                "304": 30534.9054758438,
+                "312": 33587.6561271068,
+                "320": 36641.8865710125
+            },
+            "juntas": {
+                "TakaShing Aluminium": 1272.5960122393,
+                "SPA Aço": 1565.589047407,
+                "BBK Aço": 2163.4132205563,
+                "ProRacing Carbon": 2531.8741587739,
+                "Edelbrock Racing Series": 3499.639031779,
+                "Edelbrock Carbon": 4454.0860415848
+            },
+            "molas": {
+                "TakaShing SPR1": 2238.8811236062,
+                "OEM Aço": 3850.3428165589,
+                "Edelbrock Magnum": 4970.523260747,
+                "ProRacing Carbon": 6829.1053452008,
+                "ProRacing M1": 9358.0199769403
+            },
+            "tuchos": {
+                "HIDRÁULICO": 0,
+                "TakaShing TPT1": 3104.5423643442,
+                "OEM Aço": 4812.188642385,
+                "Edelbrock Flat": 6115.859672514,
+                "Edelbrock Performer": 7823.5059483625,
+                "Crower 350T": 9872.9774347775,
+                "MECÂNICO": 0,
+                "Edelbrock M-Tec": 9935.1274699305,
+                "ProRacing OBB": 12324.9443993234,
+                "ProRacing OBB+": 15957.7620850173
+            },
+            "válvulas": {
+                "TakaShing Aço": 8652.1731202737,
+                "Bosch Aço": 16438.6849979303,
+                "Eaton Aço": 24658.7673791238,
+                "Continental Aço": 32791.5437513218,
+                "ProRacing Carbon": 44817.5760654799,
+                "ProRacing Tungstênio": 58835.369127402
+            },
+            "corpo da borboleta": {
+                "TBI": 0,
+                "TakaShing 50mm": 5725.2022912464,
+                "TakaShing 52mm": 9275.153261315,
+                "FolegoTurbo 53mm": 15401.3712724992,
+                "FolegoTurbo 54mm": 22214.1992243346,
+                "MaxPower 55mm": 26736.3543557677,
+                "ThorRacing 58mm": 33836.2562802461,
+                "ProRacing 60mm": 41335.6941915231,
+                "ITB": 0,
+                "TakaShing 40mm": 29943.0003539448,
+                "JapaParts 41mm": 34293.5029994322,
+                "FolegoTurbn 42mm": 40763.025995035,
+                "ProRacing 43mm": 47118.607243343,
+                "JapaParts 44mm": 54675.7558776122,
+                "RDS 46mm": 62805.5727083696
+            }
+        },
+        "ECU": {
+            "chip": {
+                "Remapeamento ECU": 7634.0963108581,
+                "Chip TakaShing": 24429.4041451318,
+                "Chip NascarParts": 30307.0220031767,
+                "Chip MNS GT2": 39238.8702957321,
+                "Chip FolegoTurbo": 50002.6649469691,
+                "Chip ProRacing GT-R": 54813.3738061067,
+                "Chip ProRacing GT-S": 67027.3359964442,
+                "Chip Farftech Shiftpower": 77104.5207038983
+            },
+            "módulo de injeção": {
+                "ProCrane 3": 22900.8091649857,
+                "ProCrane +": 34351.2137537421,
+                "ProRacing Ftech+": 68702.4275074842,
+                "ProRacing Ftech+ V2": 114504.0458249285,
+                "ProRacing Ftech+ V300": 183206.4733324126,
+                "ProRacing Ftech+ V450": 229008.0916498569,
+                "ProRacing Ftech+ V600": 309160.923752361,
+                "ProRacing Ftech R700": 354962.5419445345
+            }
+        },
+        "Escapamento": {
+            "projetos especiais": {
+                "Escape Direto em Ferro": 15166.0889869437,
+                "Escape Direto em Inox": 18199.6027347184,
+                "Escape Silencioso Difusor": 30332.1779707556,
+                "Escape Esportivo Difusor": 37914.4825945262
+            }
+        },
+        "Injetores": {
+            "água": {
+                "TakaShing 30 PSI": 5852.4618935978,
+                "AEM 35 PSI": 18727.8780570075,
+                "PernaPerformance 50 PSI": 28032.6265730082,
+                "AEM 60 PSI": 35231.6726190044,
+                "ProRacing 70 PSI": 40967.2332457892,
+                "ProRacing 80 PSI": 45649.2027756999,
+                "PernaPerformance 100 PSI": 49746.6659558872,
+                "SnowPerformance 125 PSI": 53842.6494060672,
+                "UltimatePerformance 150 PSI": 66133.5592792571,
+                "ProRacing Performance 200 PSI": 78422.9893598042
+            },
+            "água/metanol": {
+                "TakaShing 30 PSI": 11093.7817461494,
+                "AEM 35 PSI": 35499.5097006861,
+                "PernaPerformance 50 PSI": 53139.7620877094,
+                "AEM 60 PSI": 66784.6548886049,
+                "ProRacing 70 PSI": 77656.4722418367,
+                "ProRacing 80 PSI": 86532.0895320119,
+                "PernaPerformance 100 PSI": 94296.4049710031,
+                "SnowPerformance 125 PSI": 102062.2001713192,
+                "UltimatePerformance 150 PSI": 125359.5857722677,
+                "ProRacing Performance 200 PSI": 148656.9713732162
+            }
+        },
+        "Motor": {
+            "bielas": {
+                "OEM": 10686.8469746482,
+                "TakaShing Forjado": 20198.7622859755,
+                "OEM Forjado": 29709.1978297143,
+                "ProRacing Steel+": 37617.050255027,
+                "ProRacing Carbon+": 43815.776646298
+            },
+            "bloco": {
+                "OEM": 35623.809745938,
+                "ProRacing Aluminium": 78372.677443437,
+                "TAPerformance V3800": 135370.1811261444,
+                "TAPerformance V4550": 160307.1439350155,
+                "Edelbrock 350 SBC": 213742.8585695814,
+                "Brodix BS Aluminium": 288908.8899960506
+            },
+            "bomba de óleo": {
+                "OEM": 3256.957933335,
+                "TakaShing P1": 7165.011501072,
+                "Melling M295": 12376.736098938,
+                "Melling M295HV": 13353.379550541,
+                "Edelbrock Performer": 16935.885301077
+            },
+            "bronzinas": {
+                "OEM": 4579.8658794794,
+                "TakaShing": 10075.7049367338,
+                "Mahie": 17403.4903464063,
+                "Takao": 19235.4366988245,
+                "King Aluminium": 21067.3830512426,
+                "King Cobre": 23356.5761103198,
+                "King pMaxKote": 26563.222108497
+            },
+            "cárter": {
+                "húmido": 0,
+                "TakaShing": 4020.5155411797,
+                "OEM Aço": 6231.2811717384,
+                "Edelbrock Aluminium": 7919.6905315714,
+                "ProRacing Carbon": 10131.9359234551,
+                "seco": 0,
+                "Edelbrock DOPS": 12865.0578247395,
+                "ProRacing Dry+": 15960.721610799
+            },
+            "correias": {
+                "correia dentada": 0,
+                "TakaShing": 782.7945238601,
+                "OEM": 985.5220280087,
+                "Optibel Alpha": 2055.3905357862,
+                "Optibel Alpha V": 3175.5709790348,
+                "ProRacing B1": 3958.3655028949,
+                "seco": 0,
+                "ProRacing Confort": 1253.3590955975
+            },
+            "pistões": {
+                "OEM": 18831.4614531049,
+                "TakaShing Forjado": 27306.0630358694,
+                "OEM Forjado": 42935.3177810357,
+                "ProRacing Steel+": 58753.9821605746,
+                "ProRacing Titanium": 98488.5730012602,
+                "OmegaPistons 308": 140294.8317638944,
+                "Diamond Pistons Racer": 185113.8875906993,
+                "IASA Tunner Titanium": 239724.5339073767
+            },
+            "rolamentos": {
+                "OEM": 3817.7880360915,
+                "SKF Roll+": 5115.540014657,
+                "SKF Conne": 8322.1860128342,
+                "Jtekt TRD": 11912.0905793904,
+                "Thomson Multirac": 19966.43952307,
+                "Thomson XR": 25465.2381061061
+            },
+            "tensionadores": {
+                "OEM": 636.2980061196,
+                "TakaShing": 923.3719900371
+            },
+            "virabrequim": {
+                "OEM": 16795.3078342737,
+                "TakaShing Forjado": 24353.9362392632,
+                "OEM Forjado": 38293.301869535,
+                "ProRacing Steel+": 52401.3604349166,
+                "ProRacing Titanium": 87840.1998586429,
+                "OmegaPistons 308": 125125.7832323783,
+                "Diamond Pistons Racer": 165097.1361356033,
+                "IASA Tunner Titanium": 213805.0086078662
+            }
+        },
+        "Óxido Nitroso": {
+            "bico injetor": {
+                "TakaShing 0.3mm": 5852.4618935978,
+                "TakaShing 0.5mm": 5852.4618935978,
+                "NX 0.5mm": 5852.4618935978,
+                "NX 0.6mm": 5852.4618935978,
+                "NX 0.7mm": 5852.4618935978,
+                "NX 0.8mm": 5852.4618935978,
+                "NOS 2.0mm EC": 70046.0521372326
+            },
+            "garrafas": {
+                "TakaShing 10 Lbs": 9670.2499296893,
+                "TakaShing 20 Lbs": 14504.6350107397,
+                "NX 20 Lbs": 16440.1647592553,
+                "NX Dual 40 Lbs": 19340.4998593786,
+                "NOS 20 Lbs": 34716.715176826,
+                "NOS 30 Lbs": 48255.0650683694,
+                "NOS Dual 40 Lbs": 56087.4495909453,
+                "NOS Dual 60 LBs": 62857.3644173795
+            },
+            "kit instalação": {
+                "Kit Nitro": 10688.3267391049
+            },
+            "refil": {
+                "Refil de Óxido Nitroso": 4835.8648455072
+            }
+        },
+        "Redução de Peso": {
+            "reduções": {
+                "ProReduction Light Pack": 20358.5766687943,
+                "ProReduction Super Pack": 40717.153331325,
+                "ProReduction Ultra Pack": 61075.7299969875,
+                "ProReduction Extreme Pack": 91613.5949954812,
+                "ProReduction Nismo Pack": 122151.459993975,
+                "ProReduction Apex Pack": 152689.3249924687
+            }
+        },
+        "SuperCharger": {
+            "compressor": {
+                "TakaShing Blower": 19951.641897293,
+                "Vortech Blower": 43894.2040904753,
+                "Edelbrock Blower": 73820.9270353959,
+                "Vartech CCSq V-30": 69431.9505610094,
+                "Vartecj Sc 2200x": 113724.2108237183,
+                "ProRacing Sc Kompressor": 134673.2128530866,
+                "ProRacing SC Kompressor HP": 144250.2377316122,
+                "Edelbrock Supercompressor HAF": 194927.6745004466
+            },
+            "intercooler": {
+                "TakaShing": 16897.4114659144,
+                "ProRacing I-Flow": 27035.2664440648,
+                "HKS S-Type": 38019.5457425533,
+                "HKS R-Type": 64548.7333029943,
+                "Garret F80": 84318.3643662761,
+                "Mashimoto TMIC": 101721.8547220777,
+                "Mashimoto R-Line": 122167.7373998675,
+                "ProRacing Competition": 142613.6200776573
+            },
+            "kit instalação": {
+                "Kit Supercharger": 8906.6923218447
+            },
+            "remover tudo": {
+                "Remover Supercharger": 2227.0430211056
+            },
+            "polias": {
+                "TakaShing 3.9": 17813.3846436893,
+                "Magnuson 3.6": 26720.076965534,
+                "Magnuson 3.2": 39190.0381093721,
+                "Edelbrock 3.0": 49876.8851090745,
+                "Edelbrock 2.6": 58783.5774183921,
+                "ProRacing 2.2": 71253.5385684937,
+                "ProRacing 2.1": 85503.6543776625,
+                "ProRacing 2.0": 94410.3467182978,
+                "ATI Performance 1.9": 121130.4236775682,
+                "ATI Performance 1.8": 140725.4427165954,
+                "ATI Performance 1.7": 167445.5197071836
+            }
+        },
+        "Suspensão": {
+            "amortecedores": {
+                "Ferro-Velho": 793.1528634698,
+                "TakaShing": 1984.3619210957,
+                "OEM": 2777.5147845655,
+                "ProRacing SForce": 3968.7238415651,
+                "ProRacing SForce+": 4960.1649220768
+            },
+            "kit suspenAir": {
+                "Kit SuspenAir": 967.7648742578
+            },
+            "bolsas de ar": {
+                "TakaShing 1/8": 2036.1536194576,
+                "TakaShing 1/4": 2340.9847571259,
+                "TakaShing 1/2": 2545.1920241654,
+                "Culkin Originals 1/4": 2443.0883906457,
+                "Culkin Original 3/8": 3054.2304288732,
+                "Culkin Pro 1/4": 3054.2304288732,
+                "Culkin Pro 3/8": 3665.3724661612,
+                "Culkin Pro 1/2": 4276.5145072074,
+                "Betão C1 3/8": 4072.3072376625,
+                "Betão C2 1/2": 5090.3840470781
+            },
+            "compressor": {
+                "TakaShing 200 PSI": 2595.5039596364,
+                "Culkin 200 PSI": 3243.640068883,
+                "Culkin 300 PSI": 4671.6111755817,
+                "Betão 200 PSI": 4412.6526837722,
+                "Betão 300 PSI": 5449.9664092033
+            },
+            "molas": {
+                "Ferro-Velho": 448.3681299402,
+                "TakaShing": 1120.1804432485,
+                "OEM": 1568.5485731888,
+                "ProRacing SForce": 2240.3608864971,
+                "ProRacing SForce+": 2799.7112266759
+            }
+        },
+        "Transmissão": {
+            "caixa de marchas": {
+                "Z-Pro One": 15268.1926185844,
+                "Z-Pro Carbon": 19085.9806546759,
+                "Z-Pro GTronic": 19085.9806546759,
+                "Z-Pro Gtronic I/C": 26718.5972010772,
+                "Z-Pro Paddle Master": 26718.5972010772
+            },
+            "diferencial": {
+                "RWD": 61075.7299969875,
+                "FWD": 61075.7299969875,
+                "AWD": 101792.8833283125,
+                "Blocagem do Diferencial": 81434.30666265
+            },
+            "embreagem": {
+                "TakaShing": 10179.2883328312,
+                "OEM": 12724.4803579362,
+                "GGClutch Light": 20867.6150719362,
+                "GGClutch Tracj": 26720.076965534,
+                "GGClutch Heavy": 36135.8076967841,
+                "Edyxe Sport": 48351.2496484466,
+                "Edyxe Super Sport": 58530.5379812778,
+                "ProClutch Ultra": 85250.6149405483,
+                "Edyxe Racing": 99247.6913126028,
+                "ProClutch Extreme": 115788.479939042
+            }
+        },
+        "Turbo": {
+            "intercooler": {
+                "TakaShing": 16897.4114659144,
+                "ProRacing I-Flow": 27035.2664440648,
+                "HKS S-Type": 38019.5457425533,
+                "HKS R-Type": 64548.7333029943,
+                "Garret F80": 84318.3643662761,
+                "Mashimoto TMIC": 101721.8547220777,
+                "Mashimoto R-Line": 122167.7373998675,
+                "ProRacing Competition": 142613.6200776573
+            },
+            "Turbinas": {
+                "padrão": 0,
+                "TakaShing .36": 32165.6040844987,
+                "SPA .42": 46318.0555522653,
+                "SPA .48": 68190.4295566381,
+                "Garret .58": 103895.6262694035,
+                "Garret .63": 134452.7281964397,
+                "HKS .70": 164687.241841452,
+                "HKS .82": 199426.1534381529,
+                "roletadas": 0,
+                "MasterPower .70": 233200.2596801141,
+                "MasterPower .82": 264079.9498891743,
+                "MasterPower .84": 298818.8615171928
+            },
+            "válvula de alívio": {
+                "TakaShing": 4835.8648455072,
+                "Beep Turbo USC": 7253.7972682607,
+                "SPA MCSI": 9671.7296910143,
+                "HKS ControFlow": 12089.6621137679,
+                "HKS GT II": 19827.3418207234,
+                "ProRacing WGV": 27565.0215276789
+            },
+            "válvula de prioridade": {
+                "TakaShing": 5852.4618935978,
+                "Beep Turbo USC": 8777.9529581683,
+                "SPA MCSI": 11704.9237840638,
+                "HKS ControFlow": 14631.8946130911,
+                "HKS GT II": 23994.3538802699,
+                "ProRacing BOV": 33359.7726638351
+            },
+            "kit instalação": {
+                "Kit Turbo": 11095.2615106062,
+                "Kit Manta Térmica": 5547.6307537372
+            },
+            "remover tudo": {
+                "Remover Turbo": 2773.0754962061
+            }
+        }
+        },
+        "Classe C": {
+        "Cabeçote": {
+                "cabeçote": {
+                    "TakaShing": 13312.1050311076,
+                    "OEM": 15975.4936616592,
+                    "ProRacing S1": 27954.6948470785,
+                    "ProRacing S2": 39936.3150984426,
+                    "Edelbrock E-Street": 59905.6821703968,
+                    "Edelbrock Victor": 79872.6301866458,
+                    "TrickFlow PowerPort": 103833.4516183095,
+                    "TrickFlow GenX": 133121.0503110763,
+                    "ProRacing S3": 178381.7236046772,
+                    "ProRacing S4": 223642.3968982782,
+                    "Edelbrock Masterflow": 258919.5961837547
+                },
+                "coletor de admissão": {
+                    "TakaShing Polido": 9318.2316156928,
+                    "TakaShing Plenum": 13510.4682184247,
+                    "FolegoTurbo Individual": 19567.80258079,
+                    "FolegoTurbo Variável": 33080.6898600395,
+                    "ProRacing Variável": 40814.4350533806,
+                    "Mann-Hummel": 53112.9525646404,
+                    "TrickFlow StreetBurner": 63829.4027706901,
+                    "TrickFlow TrackHeat": 83864.0845412356,
+                    "Edelbrock Perfomer": 119088.0644373655,
+                    "Edelbrock Flathead": 148905.4379627737
+                },
+                "coletor de escape": {
+                    "TakaShing Polido": 7653.9161042013,
+                    "Bellows Manel": 17068.9102501677,
+                    "Bellows Hastelloy": 28319.9734002695,
+                    "BBK Titanium": 38192.1704978114,
+                    "ProRacing Cerâmico": 41177.2945406268,
+                    "ProRacing h-Cerâmico": 45923.4966252076,
+                    "ProRacing y-Variável": 59700.0617954852,
+                    "FMIC Vanos": 77458.4050770527,
+                    "FMIC R6": 110217.3595350677
+                },
+                "comandos": {
+                    "OEM": 9983.4740081246,
+                    "260": 14974.0014817742,
+                    "264": 19966.9480162489,
+                    "268": 24959.8945507237,
+                    "272": 29950.4220243735,
+                    "280": 34940.9494980231,
+                    "288": 39933.8960324979,
+                    "292": 44926.8425669727,
+                    "304": 49917.3700406224,
+                    "312": 54907.8974886736,
+                    "320": 59900.8440487468
+                },
+                "juntas": {
+                    "TakaShing Aluminium": 2080.3943901324,
+                    "SPA Aço": 2559.3689121712,
+                    "BBK Aço": 3536.6704628156,
+                    "ProRacing Carbon": 4139.0172103133,
+                    "Edelbrock Racing Series": 5721.0845697924,
+                    "Edelbrock Carbon": 7281.3803634156
+                },
+                "molas": {
+                    "TakaShing SPR1": 3660.0426882745,
+                    "OEM Aço": 6294.40255872,
+                    "Edelbrock Magnum": 8125.6334360856,
+                    "ProRacing Carbon": 11163.9768733674,
+                    "ProRacing M1": 15298.1559548632
+                },
+                "tuchos": {
+                    "HIDRÁULICO": 0,
+                    "TakaShing TPT1": 5075.1946859752,
+                    "OEM Aço": 7866.7936718273,
+                    "Edelbrock Flat": 9997.9883884335,
+                    "Edelbrock Performer": 12789.5873707017,
+                    "Crower 350T": 16139.9899667083,
+                    "MECÂNICO": 0,
+                    "Edelbrock M-Tec": 16241.5906186318,
+                    "ProRacing OBB": 20148.3777573122,
+                    "ProRacing OBB+": 26087.1780215004
+                },
+                "válvulas": {
+                    "TakaShing Aço": 14144.2627894133,
+                    "Bosch Aço": 26873.3735780539,
+                    "Eaton Aço": 40311.2699000532,
+                    "Continental Aço": 53606.4414849071,
+                    "ProRacing Carbon": 73266.1684692011,
+                    "ProRacing Tungstênio": 96181.9546005318
+                },
+                "corpo da borboleta": {
+                    "TBI": 0,
+                    "TakaShing 50mm": 9359.3556906751,
+                    "TakaShing 52mm": 15162.6884155518,
+                    "FolegoTurbo 53mm": 25177.6102451193,
+                    "FolegoTurbo 54mm": 36314.9774186938,
+                    "MaxPower 55mm": 43707.6346926921,
+                    "ThorRacing 58mm": 55314.300116847,
+                    "ProRacing 60mm": 67574.1126651464,
+                    "ITB": 0,
+                    "TakaShing 40mm": 48949.7447430054,
+                    "JapaParts 41mm": 56061.790679722,
+                    "FolegoTurbn 42mm": 66637.9352043317,
+                    "ProRacing 43mm": 77027.8118406296,
+                    "JapaParts 44mm": 89381.9678123004,
+                    "RDS 46mm": 102672.3012447861
+                }
+            },
+            "ECU": {
+                "chip": {
+                    "Remapeamento ECU": 12479.9472779217,
+                    "Chip TakaShing": 39936.3150984426,
+                    "Chip NascarParts": 49544.8342998367,
+                    "Chip MNS GT2": 64146.3000459451,
+                    "Chip FolegoTurbo": 81742.5660986476,
+                    "Chip ProRacing GT-R": 89606.9406738119,
+                    "Chip ProRacing GT-S": 109573.8886900608,
+                    "Chip Farftech Shiftpower": 126047.7093936367
+                },
+                "módulo de injeção": {
+                    "ProCrane 3": 37437.4227627007,
+                    "ProCrane +": 56156.1341542905,
+                    "ProRacing Ftech+": 112312.268308581,
+                    "ProRacing Ftech+ V2": 187187.1138135035,
+                    "ProRacing Ftech+ V300": 299499.3821220843,
+                    "ProRacing Ftech+ V450": 374374.2276270068,
+                    "ProRacing Ftech+ V600": 505405.2073374169,
+                    "ProRacing Ftech R700": 580280.0526375513
+                }
+            },
+            "Escapamento": {
+                "projetos especiais": {
+                    "Escape Direto em Ferro": 24792.9791899694,
+                    "Escape Direto em Inox": 29752.0588370565,
+                    "Escape Silencioso Difusor": 49585.958374819,
+                    "Escape Esportivo Difusor": 61981.2384573102
+                }
+            },
+            "Injetores": {
+                "água": {
+                    "TakaShing 30 PSI": 9567.3951315315,
+                    "AEM 35 PSI": 30615.664416805,
+                    "PernaPerformance 50 PSI": 45826.7340949339,
+                    "AEM 60 PSI": 57595.4767786721,
+                    "ProRacing 70 PSI": 66971.7659053614,
+                    "ProRacing 80 PSI": 74625.6820351612,
+                    "PernaPerformance 100 PSI": 81324.0681151522,
+                    "SnowPerformance 125 PSI": 88020.0351855153,
+                    "UltimatePerformance 150 PSI": 108112.7745182545,
+                    "ProRacing Performance 200 PSI": 128203.0947389715
+                },
+                "água/metanol": {
+                    "TakaShing 30 PSI": 18135.7171388833,
+                    "AEM 35 PSI": 58033.3272487671,
+                    "PernaPerformance 50 PSI": 86870.9801673138,
+                    "AEM 60 PSI": 109177.1623051874,
+                    "ProRacing 70 PSI": 126950.0200029018,
+                    "ProRacing 80 PSI": 141459.5613199076,
+                    "PernaPerformance 100 PSI": 154152.3861654554,
+                    "SnowPerformance 125 PSI": 166847.6300718279,
+                    "UltimatePerformance 150 PSI": 204933.361790946,
+                    "ProRacing Performance 200 PSI": 243019.093510064
+                }
+            },
+            "Motor": {
+                "bielas": {
+                    "OEM": 17470.4747464518,
+                    "TakaShing Forjado": 33020.2132830983,
+                    "OEM Forjado": 48567.5327486805,
+                    "ProRacing Steel+": 61495.0067195184,
+                    "ProRacing Carbon+": 71628.4626523829
+                },
+                "bloco": {
+                    "OEM": 58236.5285116567,
+                    "ProRacing Aluminium": 128120.8466197251,
+                    "TAPerformance V3800": 221298.3246038066,
+                    "TAPerformance V4550": 262064.3784304481,
+                    "Edelbrock 350 SBC": 349419.1712235317,
+                    "Brodix BS Aluminium": 472297.9077622252
+                },
+                "bomba de óleo": {
+                    "OEM": 5324.3582002781,
+                    "TakaShing P1": 11713.1042284467,
+                    "Melling M295": 20233.0449732216,
+                    "Melling M295HV": 21829.6267150575,
+                    "Edelbrock Performer": 27686.1788292809
+                },
+                "bronzinas": {
+                    "OEM": 7487.0007383272,
+                    "TakaShing": 16471.4016273918,
+                    "Mahie": 28450.6028128111,
+                    "Takao": 31445.4031091661,
+                    "King Aluminium": 34440.2034055209,
+                    "King Cobre": 38182.494244272,
+                    "King pMaxKote": 43424.6042945855
+                },
+                "cárter": {
+                    "húmido": 0,
+                    "TakaShing": 6572.5948351767,
+                    "OEM Aço": 10186.6753222112,
+                    "Edelbrock Aluminium": 12946.8264830363,
+                    "ProRacing Carbon": 16563.3260308957,
+                    "seco": 0,
+                    "Edelbrock DOPS": 21031.3358441396,
+                    "ProRacing Dry+": 26092.01614827
+                },
+                "correias": {
+                    "correia dentada": 0,
+                    "TakaShing": 1279.6844563416,
+                    "OEM": 1611.096120609,
+                    "Optibel Alpha": 3360.078845962,
+                    "Optibel Alpha V": 5191.3097217918,
+                    "ProRacing B1": 6470.9941781334,
+                    "seco": 0,
+                    "ProRacing Confort": 2048.9465676655
+                },
+                "pistões": {
+                    "OEM": 30784.998843504,
+                    "TakaShing Forjado": 44638.9740420963,
+                    "OEM Forjado": 70189.1200280013,
+                    "ProRacing Steel+": 96048.9061015666,
+                    "ProRacing Titanium": 161005.5923430333,
+                    "OmegaPistons 308": 229348.9671184798,
+                    "Diamond Pistons Racer": 302617.5546485059,
+                    "IASA Tunner Titanium": 391893.083682113
+                },
+                "rolamentos": {
+                    "OEM": 6241.1831693733,
+                    "SKF Roll+": 8362.7016324401,
+                    "SKF Conne": 13604.8116827536,
+                    "Jtekt TRD": 19473.4591164609,
+                    "Thomson Multirac": 32640.4203495984,
+                    "Thomson XR": 41629.6593654325
+                },
+                "tensionadores": {
+                    "OEM": 1040.1971950661,
+                    "TakaShing": 1509.4954640777
+                },
+                "virabrequim": {
+                    "OEM": 27456.3678205209,
+                    "TakaShing Forjado": 39812.9428683758,
+                    "OEM Forjado": 62600.5186428702,
+                    "ProRacing Steel+": 85663.8675869188,
+                    "ProRacing Titanium": 143598.0132394676,
+                    "OmegaPistons 308": 204551.1497710224,
+                    "Diamond Pistons Racer": 269894.8861540627,
+                    "IASA Tunner Titanium": 349520.7718805751
+                }
+            },
+            "Óxido Nitroso": {
+                "bico injetor": {
+                    "TakaShing 0.3mm": 9567.3951315315,
+                    "TakaShing 0.5mm": 9567.3951315315,
+                    "NX 0.5mm": 9567.3951315315,
+                    "NX 0.6mm": 9567.3951315315,
+                    "NX 0.7mm": 9567.3951315315,
+                    "NX 0.8mm": 9567.3951315315,
+                    "NOS 2.0mm EC": 114508.7777391376
+                },
+                "garrafas": {
+                    "TakaShing 10 Lbs": 15808.5783009048,
+                    "TakaShing 20 Lbs": 23711.657915825,
+                    "NX 20 Lbs": 26875.7926388789,
+                    "NX Dual 40 Lbs": 31617.1566018096,
+                    "NOS 20 Lbs": 56753.6427924255,
+                    "NOS 30 Lbs": 78885.6523973093,
+                    "NOS Dual 40 Lbs": 91689.7541432002,
+                    "NOS Dual 60 LBs": 102756.9684760545
+                },
+                "kit instalação": {
+                    "Kit Nitro": 17472.8938123964
+                },
+                "refil": {
+                    "Refil de Óxido Nitroso": 7905.498680865
+                }
+            },
+            "Redução de Peso": {
+                "reduções": {
+                    "ProReduction Light Pack": 33281.4721133013,
+                    "ProReduction Super Pack": 66562.9442163632,
+                    "ProReduction Ultra Pack": 99844.4163245447,
+                    "ProReduction Extreme Pack": 149766.624486817,
+                    "ProReduction Nismo Pack": 199688.8326490895,
+                    "ProReduction Apex Pack": 249611.0408113617
+                }
+            },
+            "SuperCharger": {
+                "compressor": {
+                    "TakaShing Blower": 32616.2297208696,
+                    "Vortech Blower": 71756.673029698,
+                    "Edelbrock Blower": 120679.808047312,
+                    "Vartech CCSq V-30": 113504.8664728291,
+                    "Vartecj Sc 2200x": 185912.2674788117,
+                    "ProRacing Sc Kompressor": 220158.9458289051,
+                    "ProRacing SC Kompressor HP": 235815.1231544843,
+                    "Edelbrock Supercompressor HAF": 318660.7820644616
+                },
+                "intercooler": {
+                    "TakaShing": 27623.2831812752,
+                    "ProRacing I-Flow": 44196.2854708301,
+                    "HKS S-Type": 62152.9919294751,
+                    "HKS R-Type": 105521.9577636494,
+                    "Garret F80": 137840.6426907443,
+                    "Mashimoto TMIC": 166291.2455189145,
+                    "Mashimoto R-Line": 199715.4423693612,
+                    "ProRacing Competition": 233139.6392198079
+                },
+                "kit instalação": {
+                    "Kit Supercharger": 14560.3416660063
+                },
+                "remover tudo": {
+                    "Remover Supercharger": 3640.6901822198
+                },
+                "polias": {
+                    "TakaShing 3.9": 29120.6833320124,
+                    "Magnuson 3.6": 43681.0249980187,
+                    "Magnuson 3.2": 64066.4709363265,
+                    "Edelbrock 3.0": 81536.9457237359,
+                    "Edelbrock 2.6": 96097.2873692634,
+                    "ProRacing 2.2": 116482.7333178104,
+                    "ProRacing 2.1": 139778.3123570426,
+                    "ProRacing 2.0": 154338.6540537671,
+                    "ATI Performance 1.9": 198019.6790415464,
+                    "ATI Performance 1.8": 230052.9144841111,
+                    "ATI Performance 1.7": 273733.9395230875
+                }
+            },
+            "Suspensão": {
+                "amortecedores": {
+                    "Ferro-Velho": 1296.6178990114,
+                    "TakaShing": 3243.9638101456,
+                    "OEM": 4540.581709157,
+                    "ProRacing SForce": 6487.9276192674,
+                    "ProRacing SForce+": 8108.6999949516
+                },
+                "kit suspenAir": {
+                    "Kit SuspenAir": 1582.067361527
+                },
+                "bolsas de ar": {
+                    "TakaShing 1/8": 3328.6310240071,
+                    "TakaShing 1/4": 3826.9580521006,
+                    "TakaShing 1/2": 4160.7887797529,
+                    "Culkin Originals 1/4": 3993.8734159268,
+                    "Culkin Original 3/8": 4992.9465354986,
+                    "Culkin Pro 1/4": 4992.9465354986,
+                    "Culkin Pro 3/8": 5992.0196535346,
+                    "Culkin Pro 1/2": 6991.0927777143,
+                    "Betão C1 3/8": 6657.2620459663,
+                    "Betão C2 1/2": 8321.5775574579
+                },
+                "compressor": {
+                    "TakaShing 200 PSI": 4243.0369302295,
+                    "Culkin 200 PSI": 5302.5866323743,
+                    "Culkin 300 PSI": 7636.9826630673,
+                    "Betão 200 PSI": 7213.6465937599,
+                    "Betão 300 PSI": 8909.4099266946
+                },
+                "molas": {
+                    "Ferro-Velho": 732.9761631112,
+                    "TakaShing": 1831.2308758296,
+                    "OEM": 2564.207038941,
+                    "ProRacing SForce": 3662.4617516594,
+                    "ProRacing SForce+": 4576.8676578818
+                }
+            },
+            "Transmissão": {
+                "caixa de marchas": {
+                    "Z-Pro One": 24959.8945507237,
+                    "Z-Pro Carbon": 31201.077720097,
+                    "Z-Pro GTronic": 31201.077720097,
+                    "Z-Pro Gtronic I/C": 43678.605932074,
+                    "Z-Pro Paddle Master": 43678.605932074
+                },
+                "diferencial": {
+                    "RWD": 99844.4163245447,
+                    "FWD": 99844.4163245447,
+                    "AWD": 166407.3605409079,
+                    "Blocagem do Diferencial": 133125.8884327263
+                },
+                "embreagem": {
+                    "TakaShing": 16640.7360540907,
+                    "OEM": 20801.5248353796,
+                    "GGClutch Light": 34113.6298664872,
+                    "GGClutch Tracj": 43681.0249980187,
+                    "GGClutch Heavy": 59073.5244274503,
+                    "Edyxe Sport": 79042.8915045242,
+                    "Edyxe Super Sport": 95683.6275586149,
+                    "ProClutch Ultra": 139364.6525463943,
+                    "Edyxe Racing": 162246.5717749781,
+                    "ProClutch Extreme": 189286.8607086666
+                }
+            },
+            "Turbo": {
+                "intercooler": {
+                    "TakaShing": 27623.2831812752,
+                    "ProRacing I-Flow": 44196.2854708301,
+                    "HKS S-Type": 62152.9919294751,
+                    "HKS R-Type": 105521.9577636494,
+                    "Garret F80": 137840.6426907443,
+                    "Mashimoto TMIC": 166291.2455189145,
+                    "Mashimoto R-Line": 199715.4423693612,
+                    "ProRacing Competition": 233139.6392198079
+                },
+                "Turbinas": {
+                    "padrão": 0,
+                    "TakaShing .36": 52583.1777319988,
+                    "SPA .42": 75719.098603191,
+                    "SPA .48": 111475.2723927873,
+                    "Garret .58": 169844.8494034093,
+                    "Garret .63": 219798.5054076034,
+                    "HKS .70": 269224.805639981,
+                    "HKS .82": 326014.7343447814,
+                    "roletadas": 0,
+                    "MasterPower .70": 381227.4338045849,
+                    "MasterPower .82": 431708.4455805956,
+                    "MasterPower .84": 488498.3743365929
+                },
+                "válvula de alívio": {
+                    "TakaShing": 7905.498680865,
+                    "Beep Turbo USC": 11858.2480212973,
+                    "SPA MCSI": 15810.9973617298,
+                    "HKS ControFlow": 19763.7467021623,
+                    "HKS GT II": 32413.028406783,
+                    "ProRacing WGV": 45062.3101114037
+                },
+                "válvula de prioridade": {
+                    "TakaShing": 9567.3951315315,
+                    "Beep Turbo USC": 14349.8831643249,
+                    "SPA MCSI": 19134.7902579433,
+                    "HKS ControFlow": 23919.6973566814,
+                    "HKS GT II": 39225.110504259,
+                    "ProRacing BOV": 54535.3617632471
+                },
+                "kit instalação": {
+                    "Kit Turbo": 18138.1362048281,
+                    "Kit Manta Térmica": 9069.0680998542
+                },
+                "remover tudo": {
+                    "Remover Turbo": 4533.3245195146
+                }
+            }
+        },
+        "Classe S": {
+        "Cabeçote": {
+                "cabeçote": {
+                    "TakaShing": 14040.1937046004,
+                    "OEM": 16849.2529928341,
+                    "ProRacing S1": 29483.6413691759,
+                    "ProRacing S2": 42120.5811192012,
+                    "Edelbrock E-Street": 63182.147354844,
+                    "Edelbrock Victor": 84241.1622276029,
+                    "TrickFlow PowerPort": 109512.4903485702,
+                    "TrickFlow GenX": 140401.9370460048,
+                    "ProRacing S3": 188138.0853679896,
+                    "ProRacing S4": 235874.2336899746,
+                    "Edelbrock Masterflow": 273080.8745755801
+                },
+                "coletor de admissão": {
+                    "TakaShing Polido": 9827.8804563919,
+                    "TakaShing Plenum": 14249.4061144549,
+                    "FolegoTurbo Individual": 20638.0386847664,
+                    "FolegoTurbo Variável": 34889.9961675049,
+                    "ProRacing Variável": 43046.7287295449,
+                    "Mann-Hummel": 56017.8980325218,
+                    "TrickFlow StreetBurner": 67320.4708688274,
+                    "TrickFlow TrackHeat": 88450.9241075277,
+                    "Edelbrock Perfomer": 125601.4348368941,
+                    "Edelbrock Flathead": 157049.6317284359
+                },
+                "coletor de escape": {
+                    "TakaShing Polido": 8072.5373222815,
+                    "Bellows Manel": 18002.4726126169,
+                    "Bellows Hastelloy": 29868.8983687979,
+                    "BBK Titanium": 40281.0427453323,
+                    "ProRacing Cerâmico": 43429.4343554833,
+                    "ProRacing h-Cerâmico": 48435.2239336886,
+                    "ProRacing y-Variável": 62965.2808347388,
+                    "FMIC Vanos": 81694.8941425789,
+                    "FMIC R6": 116245.5579989657
+                },
+                "comandos": {
+                    "OEM": 10529.5074363796,
+                    "260": 15792.9854704273,
+                    "264": 21059.0148727588,
+                    "268": 26325.0442750905,
+                    "272": 31588.5223091384,
+                    "280": 36852.0003431861,
+                    "288": 42118.0297455177,
+                    "292": 47384.0591478494,
+                    "304": 52647.5371818972,
+                    "312": 57911.0151889464,
+                    "320": 63177.0446182765
+                },
+                "juntas": {
+                    "TakaShing Aluminium": 2194.1789184481,
+                    "SPA Aço": 2699.3503434991,
+                    "BBK Aço": 3730.1041609299,
+                    "ProRacing Carbon": 4365.3954985839,
+                    "Edelbrock Racing Series": 6033.9920224925,
+                    "Edelbrock Carbon": 7679.6262124085
+                },
+                "molas": {
+                    "TakaShing SPR1": 3860.2240735329,
+                    "OEM Aço": 6638.6669105035,
+                    "Edelbrock Magnum": 8570.0546343817,
+                    "ProRacing Carbon": 11774.5764061716,
+                    "ProRacing M1": 16134.8691606285
+                },
+                "tuchos": {
+                    "HIDRÁULICO": 0,
+                    "TakaShing TPT1": 5352.7760119935,
+                    "OEM Aço": 8297.0579580373,
+                    "Edelbrock Flat": 10544.8156622809,
+                    "Edelbrock Performer": 13489.0976045449,
+                    "Crower 350T": 17022.7462143181,
+                    "MECÂNICO": 0,
+                    "Edelbrock M-Tec": 17129.903784829,
+                    "ProRacing OBB": 21250.3676830282,
+                    "ProRacing OBB+": 27513.9830832439
+                },
+                "válvulas": {
+                    "TakaShing Aço": 14917.8652743556,
+                    "Bosch Aço": 28343.1786070107,
+                    "Eaton Aço": 42516.0435973578,
+                    "Continental Aço": 56538.3777023733,
+                    "ProRacing Carbon": 77273.3684791161,
+                    "ProRacing Tungstênio": 101442.5044215712
+                },
+                "corpo da borboleta": {
+                    "TBI": 0,
+                    "TakaShing 50mm": 9871.2537604129,
+                    "TakaShing 52mm": 15991.9923963472,
+                    "FolegoTurbo 53mm": 26554.6676528134,
+                    "FolegoTurbo 54mm": 38301.1789754659,
+                    "MaxPower 55mm": 46098.1682477195,
+                    "ThorRacing 58mm": 58339.6454925895,
+                    "ProRacing 60mm": 71269.9929138263,
+                    "ITB": 0,
+                    "TakaShing 40mm": 51626.9888478608,
+                    "JapaParts 41mm": 59128.0191022179,
+                    "FolegoTurbn 42mm": 70282.612416076,
+                    "ProRacing 43mm": 81240.7501560986,
+                    "JapaParts 44mm": 94270.6009943978,
+                    "RDS 46mm": 108287.8323304475
+                }
+            },
+            "ECU": {
+                "chip": {
+                    "Remapeamento ECU": 13162.5221402451,
+                    "Chip TakaShing": 42120.5811192012,
+                    "Chip NascarParts": 52254.6260720242,
+                    "Chip MNS GT2": 67654.7004379784,
+                    "Chip FolegoTurbo": 86213.3719088173,
+                    "Chip ProRacing GT-R": 94507.8784607728,
+                    "Chip ProRacing GT-S": 115566.8933335316,
+                    "Chip Farftech Shiftpower": 132941.7287327847
+                },
+                "módulo de injeção": {
+                    "ProCrane 3": 39485.0150416521,
+                    "ProCrane +": 59227.5225732776,
+                    "ProRacing Ftech+": 118455.0451465552,
+                    "ProRacing Ftech+ V2": 197425.0752082604,
+                    "ProRacing Ftech+ V300": 315880.1203548154,
+                    "ProRacing Ftech+ V450": 394850.1504165206,
+                    "ProRacing Ftech+ V600": 533047.7031055006,
+                    "ProRacing Ftech R700": 612017.7329512171
+                }
+            },
+            "Escapamento": {
+                "projetos especiais": {
+                    "Escape Direto em Ferro": 26148.9996907225,
+                    "Escape Direto em Inox": 31379.309899284,
+                    "Escape Silencioso Difusor": 52297.9993760452,
+                    "Escape Esportivo Difusor": 65371.2235561637
+                }
+            },
+            "Injetores": {
+                "água": {
+                    "TakaShing 30 PSI": 10090.6716542017,
+                    "AEM 35 PSI": 32290.1492891257,
+                    "PernaPerformance 50 PSI": 48333.169099745,
+                    "AEM 60 PSI": 60745.5882140145,
+                    "ProRacing 70 PSI": 70634.7015632129,
+                    "ProRacing 80 PSI": 78707.2389124929,
+                    "PernaPerformance 100 PSI": 85771.9847097583,
+                    "SnowPerformance 125 PSI": 92834.1791927372,
+                    "UltimatePerformance 150 PSI": 114025.8653782414,
+                    "ProRacing Performance 200 PSI": 135215.0001414644
+                },
+                "água/metanol": {
+                    "TakaShing 30 PSI": 19127.6271488806,
+                    "AEM 35 PSI": 61207.3863593431,
+                    "PernaPerformance 50 PSI": 91622.2780700303,
+                    "AEM 60 PSI": 115148.4685030235,
+                    "ProRacing 70 PSI": 133893.390074563,
+                    "ProRacing 80 PSI": 149196.5123215421,
+                    "PernaPerformance 100 PSI": 162583.5550975432,
+                    "SnowPerformance 125 PSI": 175973.1492418277,
+                    "UltimatePerformance 150 PSI": 216141.9316746818,
+                    "ProRacing Performance 200 PSI": 256310.7141075357
+                }
+            },
+            "Motor": {
+                "bielas": {
+                    "OEM": 18426.0001688933,
+                    "TakaShing Forjado": 34826.211901015,
+                    "OEM Forjado": 51223.8722540536,
+                    "ProRacing Steel+": 64858.3979911633,
+                    "ProRacing Carbon+": 75546.0904231252
+                },
+                "bloco": {
+                    "OEM": 61421.7014571674,
+                    "ProRacing Aluminium": 135128.2535658206,
+                    "TAPerformance V3800": 233401.9553391757,
+                    "TAPerformance V4550": 276397.6566922466,
+                    "Edelbrock 350 SBC": 368530.2089049963,
+                    "Brodix BS Aluminium": 498129.6418382773
+                },
+                "bomba de óleo": {
+                    "OEM": 5615.5672081835,
+                    "TakaShing P1": 12353.7375843468,
+                    "Melling M295": 21339.6656647538,
+                    "Melling M295HV": 23023.5704167237,
+                    "Edelbrock Performer": 29200.4392088972
+                },
+                "bronzinas": {
+                    "OEM": 7896.4927325137,
+                    "TakaShing": 17372.2840147702,
+                    "Mahie": 30006.6723911119,
+                    "Takao": 33165.2694851975,
+                    "King Aluminium": 36323.8665792829,
+                    "King Cobre": 40270.8372613979,
+                    "King pMaxKote": 45799.6578615394
+                },
+                "cárter": {
+                    "húmido": 0,
+                    "TakaShing": 6932.0745601163,
+                    "OEM Aço": 10743.822588201,
+                    "Edelbrock Aluminium": 13654.9367103781,
+                    "ProRacing Carbon": 17469.2361067465,
+                    "seco": 0,
+                    "Edelbrock DOPS": 22181.6180407388,
+                    "ProRacing Dry+": 27519.085825211
+                },
+                "correias": {
+                    "correia dentada": 0,
+                    "TakaShing": 1349.6751720195,
+                    "OEM": 1699.2129762515,
+                    "Optibel Alpha": 3543.8540899276,
+                    "Optibel Alpha V": 5475.241812186,
+                    "ProRacing B1": 6824.9169842056,
+                    "seco": 0,
+                    "ProRacing Confort": 2161.0110972815
+                },
+                "pistões": {
+                    "OEM": 32468.7452471771,
+                    "TakaShing Forjado": 47080.4460197019,
+                    "OEM Forjado": 74028.0247823883,
+                    "ProRacing Steel+": 101302.1790039748,
+                    "ProRacing Titanium": 169811.5886809555,
+                    "OmegaPistons 308": 241892.9175189639,
+                    "Diamond Pistons Racer": 319168.8373663638,
+                    "IASA Tunner Titanium": 413327.1780482834
+                },
+                "rolamentos": {
+                    "OEM": 6582.5367542644,
+                    "SKF Roll+": 8820.0889745736,
+                    "SKF Conne": 14348.909574715,
+                    "Jtekt TRD": 20538.5352245061,
+                    "Thomson Multirac": 34425.6466754916,
+                    "Thomson XR": 43906.540699715
+                },
+                "tensionadores": {
+                    "OEM": 1097.0894592239,
+                    "TakaShing": 1592.0554008807
+                },
+                "virabrequim": {
+                    "OEM": 28958.0589789561,
+                    "TakaShing Forjado": 41990.4612017382,
+                    "OEM Forjado": 66024.3744847633,
+                    "ProRacing Steel+": 90349.1440005197,
+                    "ProRacing Titanium": 151451.9241522358,
+                    "OmegaPistons 308": 215738.8150538758,
+                    "Diamond Pistons Racer": 284656.44408823,
+                    "IASA Tunner Titanium": 368637.3664809071
+                }
+            },
+            "Óxido Nitroso": {
+                "bico injetor": {
+                    "TakaShing 0.3mm": 10090.6716542017,
+                    "TakaShing 0.5mm": 10090.6716542017,
+                    "NX 0.5mm": 10090.6716542017,
+                    "NX 0.6mm": 10090.6716542017,
+                    "NX 0.7mm": 10090.6716542017,
+                    "NX 0.8mm": 10090.6716542017,
+                    "NOS 2.0mm EC": 120771.6898700554
+                },
+                "garrafas": {
+                    "TakaShing 10 Lbs": 16673.2084084661,
+                    "TakaShing 20 Lbs": 25008.5369231575,
+                    "NX 20 Lbs": 28345.7299752944,
+                    "NX Dual 40 Lbs": 33346.4168169322,
+                    "NOS 20 Lbs": 59857.7111873235,
+                    "NOS 30 Lbs": 83200.2029418971,
+                    "NOS Dual 40 Lbs": 96704.6087669436,
+                    "NOS Dual 60 LBs": 108377.1303283722
+                },
+                "kit instalação": {
+                    "Kit Nitro": 18428.5515425766
+                },
+                "refil": {
+                    "Refil de Óxido Nitroso": 8337.879888375
+                }
+            },
+            "Redução de Peso": {
+                "reduções": {
+                    "ProReduction Light Pack": 35101.7599510428,
+                    "ProReduction Super Pack": 70203.5198912862,
+                    "ProReduction Ultra Pack": 105305.2798369292,
+                    "ProReduction Extreme Pack": 157957.9197553937,
+                    "ProReduction Nismo Pack": 210610.5596738585,
+                    "ProReduction Apex Pack": 263263.1995923229
+                }
+            },
+            "SuperCharger": {
+                "compressor": {
+                    "TakaShing Blower": 34400.1329710553,
+                    "Vortech Blower": 75681.313104154,
+                    "Edelbrock Blower": 127280.2368414971,
+                    "Vartech CCSq V-30": 119712.8709523663,
+                    "Vartecj Sc 2200x": 196080.5027728081,
+                    "ProRacing Sc Kompressor": 232200.2596896037,
+                    "ProRacing SC Kompressor HP": 248712.731745003,
+                    "Edelbrock Supercompressor HAF": 336089.5287251393
+                },
+                "intercooler": {
+                    "TakaShing": 29134.103563324,
+                    "ProRacing I-Flow": 46613.5451594047,
+                    "HKS S-Type": 65552.3708662996,
+                    "HKS R-Type": 111293.3471925166,
+                    "Garret F80": 145379.661535291,
+                    "Mashimoto TMIC": 175386.3339426021,
+                    "Mashimoto R-Line": 210638.6247789765,
+                    "ProRacing Competition": 245890.9156153509
+                },
+                "kit instalação": {
+                    "Kit Supercharger": 15356.7010565334
+                },
+                "remover tudo": {
+                    "Remover Supercharger": 3839.8131067443
+                },
+                "polias": {
+                    "TakaShing 3.9": 30713.4021130665,
+                    "Magnuson 3.6": 46070.1031695999,
+                    "Magnuson 3.2": 67570.505176621,
+                    "Edelbrock 3.0": 85996.505388712,
+                    "Edelbrock 2.6": 101353.2064236465,
+                    "ProRacing 2.2": 122853.6084414669,
+                    "ProRacing 2.1": 147423.3095824469,
+                    "ProRacing 2.0": 162780.0106713786,
+                    "ATI Performance 1.9": 208850.113830179,
+                    "ATI Performance 1.8": 242635.3663914909,
+                    "ATI Performance 1.7": 288705.4696042886
+                }
+            },
+            "Suspensão": {
+                "amortecedores": {
+                    "Ferro-Velho": 1367.5347678246,
+                    "TakaShing": 3421.3882897353,
+                    "OEM": 4788.9230575599,
+                    "ProRacing SForce": 6842.7765783908,
+                    "ProRacing SForce+": 8552.1950401965
+                },
+                "kit suspenAir": {
+                    "Kit SuspenAir": 1668.5965260685
+                },
+                "bolsas de ar": {
+                    "TakaShing 1/8": 3510.686269301,
+                    "TakaShing 1/4": 4036.2686611407,
+                    "TakaShing 1/2": 4388.3578363563,
+                    "Culkin Originals 1/4": 4212.3132487485,
+                    "Culkin Original 3/8": 5266.0294034114,
+                    "Culkin Pro 1/4": 5266.0294034114,
+                    "Culkin Pro 3/8": 6319.7455564546,
+                    "Culkin Pro 1/2": 7373.4617159774,
+                    "Betão C1 3/8": 7021.3725364421,
+                    "Betão C2 1/2": 8776.7156705526
+                },
+                "compressor": {
+                    "TakaShing 200 PSI": 4475.1044449383,
+                    "Culkin 200 PSI": 5592.604872031,
+                    "Culkin 300 PSI": 8054.6777280962,
+                    "Betão 200 PSI": 7608.1878302678,
+                    "Betão 300 PSI": 9396.6987844652
+                },
+                "molas": {
+                    "Ferro-Velho": 773.065363208,
+                    "TakaShing": 1931.3877222582,
+                    "OEM": 2704.4530854664,
+                    "ProRacing SForce": 3862.7754445166,
+                    "ProRacing SForce+": 4827.1936201539
+                }
+            },
+            "Transmissão": {
+                "caixa de marchas": {
+                    "Z-Pro One": 26325.0442750905,
+                    "Z-Pro Carbon": 32907.5810293548,
+                    "Z-Pro GTronic": 32907.5810293548,
+                    "Z-Pro Gtronic I/C": 46067.5517959164,
+                    "Z-Pro Paddle Master": 46067.5517959164
+                },
+                "diferencial": {
+                    "RWD": 105305.2798369292,
+                    "FWD": 105305.2798369292,
+                    "AWD": 175508.7997282154,
+                    "Blocagem do Diferencial": 140407.0397825723
+                },
+                "embreagem": {
+                    "TakaShing": 17550.8799728214,
+                    "OEM": 21939.2378107977,
+                    "GGClutch Light": 35979.4315153982,
+                    "GGClutch Tracj": 46070.1031695999,
+                    "GGClutch Heavy": 62304.4758012881,
+                    "Edyxe Sport": 83366.0420423306,
+                    "Edyxe Super Sport": 100916.922015152,
+                    "ProClutch Ultra": 146987.0251739526,
+                    "Edyxe Racing": 171120.4419064382,
+                    "ProClutch Extreme": 199639.6650924172
+                }
+            },
+            "Turbo": {
+                "intercooler": {
+                    "TakaShing": 29134.103563324,
+                    "ProRacing I-Flow": 46613.5451594047,
+                    "HKS S-Type": 65552.3708662996,
+                    "HKS R-Type": 111293.3471925166,
+                    "Garret F80": 145379.661535291,
+                    "Mashimoto TMIC": 175386.3339426021,
+                    "Mashimoto R-Line": 210638.6247789765,
+                    "ProRacing Competition": 245890.9156153509
+                },
+                "Turbinas": {
+                    "padrão": 0,
+                    "TakaShing .36": 55459.1478384144,
+                    "SPA .42": 79860.458510677,
+                    "SPA .48": 117572.2708024344,
+                    "Garret .58": 179134.2976771983,
+                    "Garret .63": 231820.1054373485,
+                    "HKS .70": 283949.714371675,
+                    "HKS .82": 343845.6960832545,
+                    "roletadas": 0,
+                    "MasterPower .70": 402078.1839999331,
+                    "MasterPower .82": 455320.190585907,
+                    "MasterPower .84": 515216.1723514836
+                },
+                "válvula de alívio": {
+                    "TakaShing": 8337.879888375,
+                    "Beep Turbo USC": 12506.8198325623,
+                    "SPA MCSI": 16675.7597767498,
+                    "HKS ControFlow": 20844.6997209373,
+                    "HKS GT II": 34185.8178192338,
+                    "ProRacing WGV": 47526.9359175303
+                },
+                "válvula de prioridade": {
+                    "TakaShing": 10090.6716542017,
+                    "Beep Turbo USC": 15134.7317944608,
+                    "SPA MCSI": 20181.3433030037,
+                    "HKS ControFlow": 25227.9548169463,
+                    "HKS GT II": 41370.4780932255,
+                    "ProRacing BOV": 57518.1040952727
+                },
+                "kit instalação": {
+                    "Kit Turbo": 19130.1785225642,
+                    "Kit Manta Térmica": 9565.0892585822
+                },
+                "remover tudo": {
+                    "Remover Turbo": 4781.2689451492
+                }
+            }
+        }
+}

@@ -1,0 +1,292 @@
+:root {
+    --primary-color: #2c2c2c;
+    /* cinza escuro */
+    --secondary-color: #6c5ce7;
+    /* roxo suave */
+    --accent-color: #0984e3;
+    /* azul para detalhes */
+    --background-color: #f8f8f8;
+    /* branco levemente cinza */
+    --card-color: #ffffff;
+    /* branco puro para cartões */
+    --text-color: #333333;
+    /* cinza escuro para texto */
+    --border-color: #dddddd;
+    /* cinza claro para bordas */
+    --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body e header */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    user-select: none;
+    -webkit-user-select: none;
+    /* Safari/Chrome */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE/Edge */
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    box-shadow: var(--shadow-light);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    color: #ffffff;
+}
+
+.title-img {
+    max-width: 280px;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+/* Controles de inflação */
+.inflation-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0.5rem auto;
+    padding: 0.8rem;
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    max-width: 500px;
+    flex-wrap: wrap;
+    color: #ffffff;
+    box-shadow: var(--shadow-light);
+}
+
+.inflation-input {
+    width: 80px;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.inflation-input:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+.inflation-slider {
+    flex-grow: 1;
+    max-width: 200px;
+}
+
+.inflation-slider::-webkit-slider-thumb {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.inflation-slider::-moz-range-thumb {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+/* Container principal */
+.container {
+    max-width: 90%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Seletor de classe */
+.class-selector label {
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background-color: var(--card-color);
+    color: var(--text-color);
+}
+
+/* Botões de categoria */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.category-btn {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-light);
+}
+
+.category-btn:hover,
+.category-btn:focus {
+    background-color: var(--accent-color);
+    transform: scale(1.05);
+    outline: none;
+}
+
+.category-btn.active {
+    background-color: var(--secondary-color);
+}
+
+/* Lista de peças */
+.parts-container {
+    background-color: var(--card-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-medium);
+    margin-bottom: 2rem;
+}
+
+.parts-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.part-item {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--card-color);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.part-item:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.part-name {
+    font-weight: bold;
+    color: var(--primary-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.part-price {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* Peças selecionadas */
+.selected-part {
+    background-color: #e8e8ff;
+    border-color: var(--secondary-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Resumo */
+.summary {
+    background-color: var(--card-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-medium);
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.summary-item span {
+    overflow-wrap: anywhere;
+}
+
+.summary-item input {
+    width: 120px;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    text-align: right;
+    font-weight: bold;
+}
+
+
+.summary-item button {
+    background: transparent;
+    border: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid var(--secondary-color);
+}
+
+/* Mensagens de carregamento e erro */
+.loading,
+.error {
+    text-align: center;
+    padding: 2rem;
+    font-style: italic;
+    color: #666666;
+}
+
+.currency-input {
+    padding-left: 0.5rem;
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .parts-list {
+        grid-template-columns: 1fr;
+    }
+
+    .categories {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .category-btn {
+        width: 100%;
+    }
+
+    .inflation-container {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .inflation-slider {
+        max-width: 100%;
+    }
+}

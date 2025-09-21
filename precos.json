@@ -84,23 +84,6 @@
             "Continental Aço": 10470.61047,
             "ProRacing Carbon": 14310.62181,
             "ProRacing Tungstênio": 18786.61879
-        },
-        "corpo da borboleta": {
-            "TBI": 0,
-            "TakaShing 50mm": 1828.104328,
-            "TakaShing 52mm": 2961.632962,
-            "FolegoTurbo 53mm": 4917.784918,
-            "FolegoTurbo 54mm": 7093.177093,
-            "MaxPower 55mm": 8537.138537,
-            "ThorRacing 58mm": 10804.1958,
-            "ProRacing 60mm": 13198.8282,
-            "ITB": 0,
-            "TakaShing 40mm": 9561.047061,
-            "JapaParts 41mm": 10950.19845,
-            "FolegoTurbn 42mm": 13015.97052,
-            "ProRacing 43mm": 15045.36005,
-            "JapaParts 44mm": 17458.41996,
-            "RDS 46mm": 20054.33755
         }
     },
     "ECU": {
@@ -123,40 +106,6 @@
             "ProRacing Ftech+ V450": 73124.17312,
             "ProRacing Ftech+ V600": 98717.63372,
             "ProRacing Ftech R700": 113342.4683
-        }
-    },
-    "Escapamento": {
-        "projetos especiais": {
-            "Escape Direto em Ferro": 4842.657343,
-            "Escape Direto em Inox": 5811.283311,
-            "Escape Silencioso Difusor": 9685.314685,
-            "Escape Esportivo Difusor": 12106.40711
-        }
-    },
-    "Injetores": {
-        "água": {
-            "TakaShing 30 PSI": 1868.739369,
-            "AEM 35 PSI": 5979.96598,
-            "PernaPerformance 50 PSI": 8951.048951,
-            "AEM 60 PSI": 11249.76375,
-            "ProRacing 70 PSI": 13081.17558,
-            "ProRacing 80 PSI": 14576.16708,
-            "PernaPerformance 100 PSI": 15884.52088,
-            "SnowPerformance 125 PSI": 17192.40219,
-            "UltimatePerformance 150 PSI": 21116.99112,
-            "ProRacing Performance 200 PSI": 25041.10754
-        },
-        "água/metanol": {
-            "TakaShing 30 PSI": 3542.336042,
-            "AEM 35 PSI": 11335.28634,
-            "PernaPerformance 50 PSI": 16967.96447,
-            "AEM 60 PSI": 21324.89132,
-            "ProRacing 70 PSI": 24796.3523,
-            "ProRacing 80 PSI": 27630.41013,
-            "PernaPerformance 100 PSI": 30109.62011,
-            "SnowPerformance 125 PSI": 32589.30259,
-            "UltimatePerformance 150 PSI": 40028.35003,
-            "ProRacing Performance 200 PSI": 47467.39747
         }
     },
     "Motor": {
@@ -201,16 +150,6 @@
             "Edelbrock DOPS": 4107.919108,
             "ProRacing Dry+": 5096.390096
         },
-        "correias": {
-            "correia dentada": 0,
-            "TakaShing": 249.95275,
-            "OEM": 314.6853147,
-            "Optibel Alpha": 656.3031563,
-            "Optibel Alpha V": 1013.986014,
-            "ProRacing B1": 1263.938764,
-            "seco": 0,
-            "ProRacing Confort": 400.2079002
-        },
         "pistões": {
             "OEM": 6013.041013,
             "TakaShing Forjado": 8719.051219,
@@ -220,18 +159,6 @@
             "OmegaPistons 308": 44797.2973,
             "Diamond Pistons Racer": 59108.39161,
             "IASA Tunner Titanium": 76546.02155
-        },
-        "rolamentos": {
-            "OEM": 1219.051219,
-            "SKF Roll+": 1633.434133,
-            "SKF Conne": 2657.342657,
-            "Jtekt TRD": 3803.628804,
-            "Thomson Multirac": 6375.448875,
-            "Thomson XR": 8131.260631
-        },
-        "tensionadores": {
-            "OEM": 203.1752032,
-            "TakaShing": 294.8402948
         },
         "virabrequim": {
             "OEM": 5362.880363,
@@ -367,24 +294,6 @@
             "Z-Pro GTronic": 6094.311094,
             "Z-Pro Gtronic I/C": 8531.468531,
             "Z-Pro Paddle Master": 8531.468531
-        },
-        "diferencial": {
-            "RWD": 19501.9845,
-            "FWD": 19501.9845,
-            "AWD": 32503.3075,
-            "Blocagem do Diferencial": 26002.646
-        },
-        "embreagem": {
-            "TakaShing": 3250.33075,
-            "OEM": 4063.031563,
-            "GGClutch Light": 6663.201663,
-            "GGClutch Tracj": 8531.941032,
-            "GGClutch Heavy": 11538.46154,
-            "Edyxe Sport": 15438.95294,
-            "Edyxe Super Sport": 18689.28369,
-            "ProClutch Ultra": 27221.22472,
-            "Edyxe Racing": 31690.60669,
-            "ProClutch Extreme": 36972.21697
         }
     },
     "Turbo": {
@@ -522,23 +431,6 @@
                 "Continental Aço": 32791.5437513218,
                 "ProRacing Carbon": 44817.5760654799,
                 "ProRacing Tungstênio": 58835.369127402
-            },
-            "corpo da borboleta": {
-                "TBI": 0,
-                "TakaShing 50mm": 5725.2022912464,
-                "TakaShing 52mm": 9275.153261315,
-                "FolegoTurbo 53mm": 15401.3712724992,
-                "FolegoTurbo 54mm": 22214.1992243346,
-                "MaxPower 55mm": 26736.3543557677,
-                "ThorRacing 58mm": 33836.2562802461,
-                "ProRacing 60mm": 41335.6941915231,
-                "ITB": 0,
-                "TakaShing 40mm": 29943.0003539448,
-                "JapaParts 41mm": 34293.5029994322,
-                "FolegoTurbn 42mm": 40763.025995035,
-                "ProRacing 43mm": 47118.607243343,
-                "JapaParts 44mm": 54675.7558776122,
-                "RDS 46mm": 62805.5727083696
             }
         },
         "ECU": {
@@ -561,40 +453,6 @@
                 "ProRacing Ftech+ V450": 229008.0916498569,
                 "ProRacing Ftech+ V600": 309160.923752361,
                 "ProRacing Ftech R700": 354962.5419445345
-            }
-        },
-        "Escapamento": {
-            "projetos especiais": {
-                "Escape Direto em Ferro": 15166.0889869437,
-                "Escape Direto em Inox": 18199.6027347184,
-                "Escape Silencioso Difusor": 30332.1779707556,
-                "Escape Esportivo Difusor": 37914.4825945262
-            }
-        },
-        "Injetores": {
-            "água": {
-                "TakaShing 30 PSI": 5852.4618935978,
-                "AEM 35 PSI": 18727.8780570075,
-                "PernaPerformance 50 PSI": 28032.6265730082,
-                "AEM 60 PSI": 35231.6726190044,
-                "ProRacing 70 PSI": 40967.2332457892,
-                "ProRacing 80 PSI": 45649.2027756999,
-                "PernaPerformance 100 PSI": 49746.6659558872,
-                "SnowPerformance 125 PSI": 53842.6494060672,
-                "UltimatePerformance 150 PSI": 66133.5592792571,
-                "ProRacing Performance 200 PSI": 78422.9893598042
-            },
-            "água/metanol": {
-                "TakaShing 30 PSI": 11093.7817461494,
-                "AEM 35 PSI": 35499.5097006861,
-                "PernaPerformance 50 PSI": 53139.7620877094,
-                "AEM 60 PSI": 66784.6548886049,
-                "ProRacing 70 PSI": 77656.4722418367,
-                "ProRacing 80 PSI": 86532.0895320119,
-                "PernaPerformance 100 PSI": 94296.4049710031,
-                "SnowPerformance 125 PSI": 102062.2001713192,
-                "UltimatePerformance 150 PSI": 125359.5857722677,
-                "ProRacing Performance 200 PSI": 148656.9713732162
             }
         },
         "Motor": {
@@ -639,16 +497,6 @@
                 "Edelbrock DOPS": 12865.0578247395,
                 "ProRacing Dry+": 15960.721610799
             },
-            "correias": {
-                "correia dentada": 0,
-                "TakaShing": 782.7945238601,
-                "OEM": 985.5220280087,
-                "Optibel Alpha": 2055.3905357862,
-                "Optibel Alpha V": 3175.5709790348,
-                "ProRacing B1": 3958.3655028949,
-                "seco": 0,
-                "ProRacing Confort": 1253.3590955975
-            },
             "pistões": {
                 "OEM": 18831.4614531049,
                 "TakaShing Forjado": 27306.0630358694,
@@ -658,18 +506,6 @@
                 "OmegaPistons 308": 140294.8317638944,
                 "Diamond Pistons Racer": 185113.8875906993,
                 "IASA Tunner Titanium": 239724.5339073767
-            },
-            "rolamentos": {
-                "OEM": 3817.7880360915,
-                "SKF Roll+": 5115.540014657,
-                "SKF Conne": 8322.1860128342,
-                "Jtekt TRD": 11912.0905793904,
-                "Thomson Multirac": 19966.43952307,
-                "Thomson XR": 25465.2381061061
-            },
-            "tensionadores": {
-                "OEM": 636.2980061196,
-                "TakaShing": 923.3719900371
             },
             "virabrequim": {
                 "OEM": 16795.3078342737,
@@ -805,24 +641,6 @@
                 "Z-Pro GTronic": 19085.9806546759,
                 "Z-Pro Gtronic I/C": 26718.5972010772,
                 "Z-Pro Paddle Master": 26718.5972010772
-            },
-            "diferencial": {
-                "RWD": 61075.7299969875,
-                "FWD": 61075.7299969875,
-                "AWD": 101792.8833283125,
-                "Blocagem do Diferencial": 81434.30666265
-            },
-            "embreagem": {
-                "TakaShing": 10179.2883328312,
-                "OEM": 12724.4803579362,
-                "GGClutch Light": 20867.6150719362,
-                "GGClutch Tracj": 26720.076965534,
-                "GGClutch Heavy": 36135.8076967841,
-                "Edyxe Sport": 48351.2496484466,
-                "Edyxe Super Sport": 58530.5379812778,
-                "ProClutch Ultra": 85250.6149405483,
-                "Edyxe Racing": 99247.6913126028,
-                "ProClutch Extreme": 115788.479939042
             }
         },
         "Turbo": {
@@ -960,23 +778,6 @@
                     "Continental Aço": 53606.4414849071,
                     "ProRacing Carbon": 73266.1684692011,
                     "ProRacing Tungstênio": 96181.9546005318
-                },
-                "corpo da borboleta": {
-                    "TBI": 0,
-                    "TakaShing 50mm": 9359.3556906751,
-                    "TakaShing 52mm": 15162.6884155518,
-                    "FolegoTurbo 53mm": 25177.6102451193,
-                    "FolegoTurbo 54mm": 36314.9774186938,
-                    "MaxPower 55mm": 43707.6346926921,
-                    "ThorRacing 58mm": 55314.300116847,
-                    "ProRacing 60mm": 67574.1126651464,
-                    "ITB": 0,
-                    "TakaShing 40mm": 48949.7447430054,
-                    "JapaParts 41mm": 56061.790679722,
-                    "FolegoTurbn 42mm": 66637.9352043317,
-                    "ProRacing 43mm": 77027.8118406296,
-                    "JapaParts 44mm": 89381.9678123004,
-                    "RDS 46mm": 102672.3012447861
                 }
             },
             "ECU": {
@@ -999,40 +800,6 @@
                     "ProRacing Ftech+ V450": 374374.2276270068,
                     "ProRacing Ftech+ V600": 505405.2073374169,
                     "ProRacing Ftech R700": 580280.0526375513
-                }
-            },
-            "Escapamento": {
-                "projetos especiais": {
-                    "Escape Direto em Ferro": 24792.9791899694,
-                    "Escape Direto em Inox": 29752.0588370565,
-                    "Escape Silencioso Difusor": 49585.958374819,
-                    "Escape Esportivo Difusor": 61981.2384573102
-                }
-            },
-            "Injetores": {
-                "água": {
-                    "TakaShing 30 PSI": 9567.3951315315,
-                    "AEM 35 PSI": 30615.664416805,
-                    "PernaPerformance 50 PSI": 45826.7340949339,
-                    "AEM 60 PSI": 57595.4767786721,
-                    "ProRacing 70 PSI": 66971.7659053614,
-                    "ProRacing 80 PSI": 74625.6820351612,
-                    "PernaPerformance 100 PSI": 81324.0681151522,
-                    "SnowPerformance 125 PSI": 88020.0351855153,
-                    "UltimatePerformance 150 PSI": 108112.7745182545,
-                    "ProRacing Performance 200 PSI": 128203.0947389715
-                },
-                "água/metanol": {
-                    "TakaShing 30 PSI": 18135.7171388833,
-                    "AEM 35 PSI": 58033.3272487671,
-                    "PernaPerformance 50 PSI": 86870.9801673138,
-                    "AEM 60 PSI": 109177.1623051874,
-                    "ProRacing 70 PSI": 126950.0200029018,
-                    "ProRacing 80 PSI": 141459.5613199076,
-                    "PernaPerformance 100 PSI": 154152.3861654554,
-                    "SnowPerformance 125 PSI": 166847.6300718279,
-                    "UltimatePerformance 150 PSI": 204933.361790946,
-                    "ProRacing Performance 200 PSI": 243019.093510064
                 }
             },
             "Motor": {
@@ -1077,16 +844,6 @@
                     "Edelbrock DOPS": 21031.3358441396,
                     "ProRacing Dry+": 26092.01614827
                 },
-                "correias": {
-                    "correia dentada": 0,
-                    "TakaShing": 1279.6844563416,
-                    "OEM": 1611.096120609,
-                    "Optibel Alpha": 3360.078845962,
-                    "Optibel Alpha V": 5191.3097217918,
-                    "ProRacing B1": 6470.9941781334,
-                    "seco": 0,
-                    "ProRacing Confort": 2048.9465676655
-                },
                 "pistões": {
                     "OEM": 30784.998843504,
                     "TakaShing Forjado": 44638.9740420963,
@@ -1096,18 +853,6 @@
                     "OmegaPistons 308": 229348.9671184798,
                     "Diamond Pistons Racer": 302617.5546485059,
                     "IASA Tunner Titanium": 391893.083682113
-                },
-                "rolamentos": {
-                    "OEM": 6241.1831693733,
-                    "SKF Roll+": 8362.7016324401,
-                    "SKF Conne": 13604.8116827536,
-                    "Jtekt TRD": 19473.4591164609,
-                    "Thomson Multirac": 32640.4203495984,
-                    "Thomson XR": 41629.6593654325
-                },
-                "tensionadores": {
-                    "OEM": 1040.1971950661,
-                    "TakaShing": 1509.4954640777
                 },
                 "virabrequim": {
                     "OEM": 27456.3678205209,
@@ -1243,24 +988,6 @@
                     "Z-Pro GTronic": 31201.077720097,
                     "Z-Pro Gtronic I/C": 43678.605932074,
                     "Z-Pro Paddle Master": 43678.605932074
-                },
-                "diferencial": {
-                    "RWD": 99844.4163245447,
-                    "FWD": 99844.4163245447,
-                    "AWD": 166407.3605409079,
-                    "Blocagem do Diferencial": 133125.8884327263
-                },
-                "embreagem": {
-                    "TakaShing": 16640.7360540907,
-                    "OEM": 20801.5248353796,
-                    "GGClutch Light": 34113.6298664872,
-                    "GGClutch Tracj": 43681.0249980187,
-                    "GGClutch Heavy": 59073.5244274503,
-                    "Edyxe Sport": 79042.8915045242,
-                    "Edyxe Super Sport": 95683.6275586149,
-                    "ProClutch Ultra": 139364.6525463943,
-                    "Edyxe Racing": 162246.5717749781,
-                    "ProClutch Extreme": 189286.8607086666
                 }
             },
             "Turbo": {
@@ -1398,23 +1125,6 @@
                     "Continental Aço": 56538.3777023733,
                     "ProRacing Carbon": 77273.3684791161,
                     "ProRacing Tungstênio": 101442.5044215712
-                },
-                "corpo da borboleta": {
-                    "TBI": 0,
-                    "TakaShing 50mm": 9871.2537604129,
-                    "TakaShing 52mm": 15991.9923963472,
-                    "FolegoTurbo 53mm": 26554.6676528134,
-                    "FolegoTurbo 54mm": 38301.1789754659,
-                    "MaxPower 55mm": 46098.1682477195,
-                    "ThorRacing 58mm": 58339.6454925895,
-                    "ProRacing 60mm": 71269.9929138263,
-                    "ITB": 0,
-                    "TakaShing 40mm": 51626.9888478608,
-                    "JapaParts 41mm": 59128.0191022179,
-                    "FolegoTurbn 42mm": 70282.612416076,
-                    "ProRacing 43mm": 81240.7501560986,
-                    "JapaParts 44mm": 94270.6009943978,
-                    "RDS 46mm": 108287.8323304475
                 }
             },
             "ECU": {
@@ -1437,40 +1147,6 @@
                     "ProRacing Ftech+ V450": 394850.1504165206,
                     "ProRacing Ftech+ V600": 533047.7031055006,
                     "ProRacing Ftech R700": 612017.7329512171
-                }
-            },
-            "Escapamento": {
-                "projetos especiais": {
-                    "Escape Direto em Ferro": 26148.9996907225,
-                    "Escape Direto em Inox": 31379.309899284,
-                    "Escape Silencioso Difusor": 52297.9993760452,
-                    "Escape Esportivo Difusor": 65371.2235561637
-                }
-            },
-            "Injetores": {
-                "água": {
-                    "TakaShing 30 PSI": 10090.6716542017,
-                    "AEM 35 PSI": 32290.1492891257,
-                    "PernaPerformance 50 PSI": 48333.169099745,
-                    "AEM 60 PSI": 60745.5882140145,
-                    "ProRacing 70 PSI": 70634.7015632129,
-                    "ProRacing 80 PSI": 78707.2389124929,
-                    "PernaPerformance 100 PSI": 85771.9847097583,
-                    "SnowPerformance 125 PSI": 92834.1791927372,
-                    "UltimatePerformance 150 PSI": 114025.8653782414,
-                    "ProRacing Performance 200 PSI": 135215.0001414644
-                },
-                "água/metanol": {
-                    "TakaShing 30 PSI": 19127.6271488806,
-                    "AEM 35 PSI": 61207.3863593431,
-                    "PernaPerformance 50 PSI": 91622.2780700303,
-                    "AEM 60 PSI": 115148.4685030235,
-                    "ProRacing 70 PSI": 133893.390074563,
-                    "ProRacing 80 PSI": 149196.5123215421,
-                    "PernaPerformance 100 PSI": 162583.5550975432,
-                    "SnowPerformance 125 PSI": 175973.1492418277,
-                    "UltimatePerformance 150 PSI": 216141.9316746818,
-                    "ProRacing Performance 200 PSI": 256310.7141075357
                 }
             },
             "Motor": {
@@ -1515,16 +1191,6 @@
                     "Edelbrock DOPS": 22181.6180407388,
                     "ProRacing Dry+": 27519.085825211
                 },
-                "correias": {
-                    "correia dentada": 0,
-                    "TakaShing": 1349.6751720195,
-                    "OEM": 1699.2129762515,
-                    "Optibel Alpha": 3543.8540899276,
-                    "Optibel Alpha V": 5475.241812186,
-                    "ProRacing B1": 6824.9169842056,
-                    "seco": 0,
-                    "ProRacing Confort": 2161.0110972815
-                },
                 "pistões": {
                     "OEM": 32468.7452471771,
                     "TakaShing Forjado": 47080.4460197019,
@@ -1534,18 +1200,6 @@
                     "OmegaPistons 308": 241892.9175189639,
                     "Diamond Pistons Racer": 319168.8373663638,
                     "IASA Tunner Titanium": 413327.1780482834
-                },
-                "rolamentos": {
-                    "OEM": 6582.5367542644,
-                    "SKF Roll+": 8820.0889745736,
-                    "SKF Conne": 14348.909574715,
-                    "Jtekt TRD": 20538.5352245061,
-                    "Thomson Multirac": 34425.6466754916,
-                    "Thomson XR": 43906.540699715
-                },
-                "tensionadores": {
-                    "OEM": 1097.0894592239,
-                    "TakaShing": 1592.0554008807
                 },
                 "virabrequim": {
                     "OEM": 28958.0589789561,

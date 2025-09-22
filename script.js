@@ -287,7 +287,7 @@ function updateSummary() {
         }
     }
 
-    totalPriceElement.textContent = `Lp$ ${Math.round(total)}`;
+    totalPriceElement.textContent = `Lp$ ${Math.round(total)} (✅ Desmanche do Paul Lyce)`;
 
     updateProfit();
 }

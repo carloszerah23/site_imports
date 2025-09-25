@@ -55,13 +55,13 @@ async function syncUsersToGithub() {
         // Pega o SHA atual do arquivo no GitHub
         const { data: fileData } = await octokit.repos.getContent({
             owner: "carloszerah23", // seu usuário GitHub
-            repo: "https://github.com/carloszerah23/site_imports.git",     // seu repositório
+            repo: "site_imports",     // seu repositório
             path: "users.json"
         });
 
         await octokit.repos.createOrUpdateFileContents({
             owner: "carloszerah23",
-            repo: "https://github.com/carloszerah23/site_imports.git",
+            repo: "site_imports",
             path: "users.json",
             message: `Atualização do users.json - ${new Date().toLocaleString()}`,
             content: Buffer.from(JSON.stringify(users, null, 2)).toString('base64'),

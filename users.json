@@ -5,14 +5,6 @@
     "role": "admin",
     "blocked": false,
     "expiry_date": "5071-02-07",
-    "device_id": "71fc87d6-c730-4dce-8955-f263e8702356"
-  },
-  {
-    "username": "a_macedo29",
-    "password": "andre",
-    "role": "user",
-    "blocked": false,
-    "expiry_date": "2028-06-20",
-    "device_id": "ae2098aa-0d04-4bb8-b45f-6cc15eaabfda"
+    "device_id": ""
   }
 ]

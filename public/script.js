@@ -136,19 +136,10 @@ function loadCategoryParts() {
 
                 partInfo.appendChild(partName);
                 partInfo.appendChild(partPrice);
+                partItem.appendChild(partInfo);
 
-                const selectBtn = document.createElement('button');
-                selectBtn.className = 'category-btn';
-                selectBtn.textContent = 'Selecionar';
-
-                if (selectedParts[currentCategory] &&
-                    selectedParts[currentCategory][subcat] &&
-                    selectedParts[currentCategory][subcat].name === name) {
-                    selectBtn.style.backgroundColor = 'var(--secondary-color)';
-                    selectBtn.style.color = '#ffffff';
-                }
-
-                selectBtn.addEventListener('click', () => {
+                // Adiciona o clique no card para selecionar/remover
+                partItem.addEventListener('click', () => {
                     if (
                         selectedParts[currentCategory] &&
                         selectedParts[currentCategory][subcat] &&
@@ -162,9 +153,9 @@ function loadCategoryParts() {
                         selectPart(currentCategory, subcat, name, price);
                     }
 
+                    // Atualiza visualmente os cards
                     const allItems = partsListElement.querySelectorAll('.part-item');
                     allItems.forEach(item => {
-                        const btn = item.querySelector('button');
                         const partText = item.querySelector('.part-name').textContent;
                         const sub = item.dataset.subcat;
 
@@ -174,20 +165,14 @@ function loadCategoryParts() {
                             selectedParts[currentCategory][sub].name === partText
                         ) {
                             item.classList.add('selected-part');
-                            btn.style.backgroundColor = 'var(--secondary-color)';
-                            btn.style.color = '#ffffff';
                         } else {
                             item.classList.remove('selected-part');
-                            btn.style.backgroundColor = 'var(--primary-color)';
-                            btn.style.color = '#ffffff';
                         }
                     });
 
                     updateSummary();
                 });
 
-                partItem.appendChild(partInfo);
-                partItem.appendChild(selectBtn);
                 partsListElement.appendChild(partItem);
             }
         }

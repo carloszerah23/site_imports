@@ -30,13 +30,5 @@
     "blocked": false,
     "expiry_date": "2025-09-26",
     "device_id": ""
-  },
-  {
-    "username": "orosa",
-    "password": "orosa",
-    "role": "user",
-    "blocked": true,
-    "expiry_date": "2025-09-26",
-    "device_id": ""
   }
 ]

@@ -273,7 +273,7 @@
                     tr.innerHTML = `
                 <td>
                     <button class="delete-btn" onclick="deleteUser('${escapeHtml(user.username)}')" 
-                            title="Eliminar usuário" ${user.role === 'admin' ? 'disabled' : ''}>
+                            title="Eliminar usuário" ${user.username === 'admin' ? 'disabled' : ''}>
                         🗑️
                     </button>
                 </td>

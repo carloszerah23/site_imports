@@ -132,9 +132,9 @@ app.post('/admin/users/:username/delete', checkAuth, checkAdmin, (req, res) => {
         }
 
         // Não permitir deletar outros admins
-        if (users[userIndex].role === 'admin') {
-            return res.status(400).json({ success: false, message: 'Não pode eliminar outros administradores' });
-        }
+        // if (users[userIndex].role === 'admin') {
+        //     return res.status(400).json({ success: false, message: 'Não pode eliminar outros administradores' });
+        // }
 
         users.splice(userIndex, 1);
         writeUsers(users);

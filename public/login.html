@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Alberto Tunning</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: var(--background-color);
+        }
+
+        .login-box {
+            background: var(--card-color);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-medium);
+            width: 300px;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.6rem;
+            margin: 0.5rem 0;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+        }
+
+        button {
+            width: 100%;
+            padding: 0.6rem;
+            border: none;
+            background: var(--secondary-color);
+            color: #fff;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: var(--accent-color);
+        }
+
+        .error {
+            color: red;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-box">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Usuário">
+        <input type="password" id="password" placeholder="Senha">
+        <button id="login-btn">Entrar</button>
+        <div class="error" id="error-msg"></div>
+    </div>
+
+    <script>
+        document.getElementById('login-btn').addEventListener('click', async () => {
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const device_id = localStorage.getItem('device_id') || crypto.randomUUID();
+            localStorage.setItem('device_id', device_id);
+
+            const res = await fetch('/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username, password, device_id })
+            });
+            const data = await res.json();
+            if (data.success) {
+                window.location.href = 'main.html';
+            } else {
+                document.getElementById('error-msg').textContent = data.message;
+            }
+        });
+    </script>
+</body>
+
+</html>

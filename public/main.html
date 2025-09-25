@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alberto Tunning - Customização de Carros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="src/title.png" alt="Alberto Tunning" class="title-img">
+        <div class="inflation-container">
+            <span class="inflation-label">Inflação:</span>
+            <div class="inflation-input-container">
+                <input type="number" id="inflation-input" class="inflation-input" min="1" max="3" step="0.0001"
+                    value="1.0000">
+            </div>
+            <input type="range" id="inflation-slider" class="inflation-slider" min="1" max="3" step="0.0001"
+                value="1.0000">
+        </div>
+
+        <!-- Botões de controle de sessão -->
+        <button id="logout-btn" class="header-btn">Sair</button>
+        <button id="admin-btn" class="header-btn" style="display:none;">Painel Admin</button>
+    </header>
+
+    <div class="container">
+        <div class="class-selector">
+            <label for="class-select">Selecione a Classe:</label>
+            <select id="class-select">
+                <option value="Classe A">Classe A</option>
+                <option value="Classe B">Classe B</option>
+                <option value="Classe C">Classe C</option>
+            </select>
+        </div>
+
+        <div class="categories">
+            <button class="category-btn active" data-category="Cabeçote">Cabeçote</button>
+            <button class="category-btn" data-category="ECU">ECU</button>
+            <button class="category-btn" data-category="Motor">Motor</button>
+            <button class="category-btn" data-category="Óxido Nitroso">Óxido Nitroso</button>
+            <button class="category-btn" data-category="Redução de Peso">Redução de Peso</button>
+            <button class="category-btn" data-category="SuperCharger">SuperCharger</button>
+            <button class="category-btn" data-category="Transmissão">Transmissão</button>
+            <button class="category-btn" data-category="Turbo">Turbo</button>
+        </div>
+
+        <div class="parts-container">
+            <h2 id="current-category">Cabeçote</h2>
+            <div class="parts-list" id="parts-list">
+                <div class="loading">Carregando peças...</div>
+            </div>
+        </div>
+
+        <div class="summary">
+            <h2>Resumo da Customização</h2>
+            <div id="summary-items"></div>
+            <div class="summary-item total">
+                <span>Total:</span>
+                <span id="total-price">Lp$ 0.00 (✅ Desmanche do Paul Lyce)</span>
+            </div>
+
+            <div class="summary-item">
+                <label for="car-price">Preço do Carro:</label>
+                <input type="text" id="car-price" class="currency-input" value="Lp$ ">
+            </div>
+            <div class="summary-item">
+                <label for="payment-price">Preço do Pagamento:</label>
+                <input type="text" id="payment-price" class="currency-input" value="Lp$ ">
+            </div>
+            <div class="summary-item total" style="margin-top:1rem;">
+                <span>Lucro:</span>
+                <span id="profit">Lp$ 0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        // Verificar login
+        fetch('/me')
+            .then(res => res.json())
+            .then(user => {
+                // Mostrar botão admin apenas para administradores
+                if (user.role === 'admin') {
+                    document.getElementById('admin-btn').style.display = 'block';
+                }
+            })
+            .catch(() => {
+                // Se não estiver logado, redireciona para login
+                window.location.href = '/login.html';
+            });
+
+        // Logout
+        document.getElementById('logout-btn').addEventListener('click', () => {
+            fetch('/logout').then(() => window.location.href = '/login.html');
+        });
+
+        // Abrir painel admin
+        document.getElementById('admin-btn').addEventListener('click', () => {
+            window.location.href = '/admin.html';
+        });
+    </script>
+</body>
+
+</html>

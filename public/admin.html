@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Admin - Alberto Tunning</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* --- Header e botões --- */
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 1rem;
+            text-align: center;
+            box-shadow: var(--shadow-light);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            color: #fff;
+            position: relative;
+        }
+
+        header img.title-img {
+            max-width: 200px;
+            display: block;
+            margin: 0 auto 0.5rem auto;
+        }
+
+        header h2 {
+            margin: 0.5rem 0 0 0;
+        }
+
+        .header-btn {
+            position: absolute;
+            top: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            border: 2px solid var(--secondary-color);
+            background-color: var(--primary-color);
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s ease;
+        }
+
+        .header-btn:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--accent-color);
+            transform: scale(1.05);
+        }
+
+        #back-btn {
+            right: 1rem;
+        }
+
+        /* --- Container --- */
+        .container {
+            max-width: 90%;
+            margin: 2rem auto;
+            background-color: var(--card-color);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-medium);
+        }
+
+        /* --- Tabela --- */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th,
+        td {
+            padding: 0.8rem;
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        th {
+            background-color: var(--secondary-color);
+            color: #fff;
+            font-weight: bold;
+            border-radius: 8px 8px 0 0;
+        }
+
+        td button {
+            margin: 0 2px;
+            padding: 0.4rem 0.6rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.2s ease;
+        }
+
+        td button:hover {
+            transform: scale(1.05);
+        }
+
+        td button:nth-child(1) {
+            background-color: #e74c3c;
+            color: #fff;
+        }
+
+        /* Bloquear */
+        td button:nth-child(2) {
+            background-color: #2ecc71;
+            color: #fff;
+        }
+
+        /* Desbloquear */
+        td button:nth-child(3) {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        /* + Dias */
+        td button:nth-child(4) {
+            background-color: #f1c40f;
+            color: #fff;
+        }
+
+        /* - Dias */
+        td button:nth-child(5) {
+            background-color: #9b59b6;
+            color: #fff;
+        }
+
+        /* Reset Device */
+
+        td button:hover {
+            opacity: 0.8;
+        }
+
+        /* --- Formulário criar usuário --- */
+        .create-user {
+            margin-top: 2rem;
+            padding: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            background-color: #f4f4f4;
+        }
+
+        .create-user h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .create-user label {
+            display: block;
+            margin: 0.5rem 0 0.2rem 0;
+            font-weight: bold;
+        }
+
+        .create-user input[type="text"],
+        .create-user input[type="password"],
+        .create-user input[type="number"] {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .create-user input[type="checkbox"] {
+            margin-right: 0.3rem;
+        }
+
+        .create-user button {
+            margin-top: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            border: 2px solid var(--secondary-color);
+            background-color: var(--primary-color);
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .create-user button:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--accent-color);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="src/title.png" alt="Alberto Tunning" class="title-img">
+        <h2>Painel Administrativo</h2>
+        <button id="back-btn" class="header-btn">Voltar</button>
+    </header>
+
+    <div class="container">
+        <!-- Tabela de usuários -->
+        <table id="users-table">
+            <thead>
+                <tr>
+                    <th>Ação</th> <!-- Nova coluna -->
+                    <th>Usuário</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Data Expiração</th>
+                    <th>Device ID</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <!-- Formulário criar usuário -->
+        <div class="create-user">
+            <h3>Criar Novo Usuário</h3>
+            <label for="new-username">Username:</label>
+            <input type="text" id="new-username">
+
+            <label for="new-password">Senha:</label>
+            <input type="password" id="new-password">
+
+            <label for="new-days">Dias de Acesso:</label>
+            <input type="number" id="new-days" min="1" value="1">
+
+            <label>
+                <input type="checkbox" id="new-admin"> Tornar administrador
+            </label>
+
+            <button id="create-user-btn">Adicionar Usuário</button>
+        </div>
+    </div>
+
+    <script>
+        const tbody = document.querySelector('#users-table tbody');
+
+        // Função para prevenir XSS
+        function escapeHtml(unsafe) {
+            if (!unsafe) return '';
+            return unsafe
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+
+        // Modificar a função loadUsers para ser segura
+        async function loadUsers() {
+            try {
+                const res = await fetch('/admin/users');
+                const users = await res.json();
+                tbody.innerHTML = '';
+                users.forEach(user => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                <td>
+                    <button class="delete-btn" onclick="deleteUser('${escapeHtml(user.username)}')" 
+                            title="Eliminar usuário" ${user.role === 'admin' ? 'disabled' : ''}>
+                        🗑️
+                    </button>
+                </td>
+                <td>${escapeHtml(user.username)}</td>
+                <td>${escapeHtml(user.role)}</td>
+                <td>${user.blocked ? 'Bloqueado' : 'Ativo'}</td>
+                <td>${escapeHtml(user.expiry_date)}</td>
+                <td>${escapeHtml(user.device_id || '')}</td>
+                <td>
+                    <button onclick="updateUser('${escapeHtml(user.username)}','block')">Bloquear</button>
+                    <button onclick="updateUser('${escapeHtml(user.username)}','unblock')">Desbloquear</button>
+                    <button onclick="updateUser('${escapeHtml(user.username)}','add')">+ Dias</button>
+                    <button onclick="updateUser('${escapeHtml(user.username)}','remove')">- Dias</button>
+                    <button onclick="updateUser('${escapeHtml(user.username)}','reset')">Reset Device</button>
+                </td>
+            `;
+                    tbody.appendChild(tr);
+                });
+            } catch (err) {
+                console.error('Erro ao carregar usuários:', err);
+            }
+        }
+
+        // Nova função para eliminar usuário - CORRIGIDA
+        async function deleteUser(username) {
+            if (!confirm(`Tem certeza que deseja eliminar o usuário "${username}"? Esta ação é irreversível!`)) {
+                return;
+            }
+
+            try {
+                // MUDAR: Usar POST para /delete em vez de DELETE
+                const res = await fetch(`/admin/users/${username}/delete`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' }
+                });
+
+                const result = await res.json();
+
+                if (res.ok && result.success) {
+                    alert(`Usuário "${username}" eliminado com sucesso!`);
+                    loadUsers();
+                } else {
+                    alert('Erro ao eliminar usuário: ' + (result.message || 'Erro desconhecido'));
+                }
+            } catch (err) {
+                alert('Erro ao eliminar usuário: ' + err.message);
+            }
+        }
+
+        async function updateUser(username, action) {
+            let body = {};
+
+            if (action === 'block') body.blocked = true;
+            if (action === 'unblock') body.blocked = false;
+            if (action === 'add') {
+                const days = prompt('Adicionar quantos dias?');
+                if (days && !isNaN(days)) body.addDays = parseInt(days);
+                else return alert('Número de dias inválido');
+            }
+            if (action === 'remove') {
+                const days = prompt('Remover quantos dias?');
+                if (days && !isNaN(days)) body.removeDays = parseInt(days);
+                else return alert('Número de dias inválido');
+            }
+            if (action === 'reset') body.resetDevice = true;
+
+            try {
+                const res = await fetch(`/admin/users/${username}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(body)
+                });
+
+                if (res.ok) {
+                    loadUsers();
+                } else {
+                    const error = await res.json();
+                    alert('Erro: ' + error.message);
+                }
+            } catch (err) {
+                alert('Erro ao atualizar usuário: ' + err.message);
+            }
+        }
+
+        // Criar novo usuário (CORRIGIDO)
+        document.getElementById('create-user-btn').addEventListener('click', async () => {
+            const username = document.getElementById('new-username').value.trim();
+            const password = document.getElementById('new-password').value.trim();
+            const days = parseInt(document.getElementById('new-days').value) || 1;
+            const isAdmin = document.getElementById('new-admin').checked;
+
+            if (!username || !password) return alert('Preencha username e senha!');
+
+            try {
+                const res = await fetch('/admin/users', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ username, password, days, isAdmin })
+                });
+
+                const result = await res.json();
+
+                if (res.ok && result.success) {
+                    alert('Usuário criado com sucesso!');
+                    document.getElementById('new-username').value = '';
+                    document.getElementById('new-password').value = '';
+                    document.getElementById('new-days').value = 1;
+                    document.getElementById('new-admin').checked = false;
+                    loadUsers();
+                } else {
+                    alert('Erro ao criar usuário: ' + result.message);
+                }
+            } catch (err) {
+                alert('Erro ao criar usuário: ' + err.message);
+            }
+        });
+
+        document.getElementById('back-btn').addEventListener('click', () => {
+            window.location.href = '/main.html';
+        });
+
+        loadUsers();
+    </script>
+</body>
+
+</html>

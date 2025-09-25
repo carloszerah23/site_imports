@@ -25,10 +25,10 @@ function readUsers() {
 }
 
 function writeUsers(users) {
-    fs.writeFileSync(USERS_FILE, JSON.stringify(users, null, 2));
+  fs.writeFileSync(USERS_FILE, JSON.stringify(users, null, 2));
 
-    // Sincroniza com GitHub de forma assíncrona
-    syncUsersToGithub();
+  // Sincroniza com GitHub de forma assíncrona
+  syncUsersToGithub();
 }
 
 // Middleware para verificar login
@@ -54,14 +54,14 @@ async function syncUsersToGithub() {
 
         // Pega o SHA atual do arquivo no GitHub
         const { data: fileData } = await octokit.repos.getContent({
-            owner: "SEU_USUARIO", // seu usuário GitHub
-            repo: "SEU_REPO",     // seu repositório
+            owner: "carloszerah23", // seu usuário GitHub
+            repo: "https://github.com/carloszerah23/site_imports.git",     // seu repositório
             path: "users.json"
         });
 
         await octokit.repos.createOrUpdateFileContents({
-            owner: "SEU_USUARIO",
-            repo: "SEU_REPO",
+            owner: "carloszerah23",
+            repo: "https://github.com/carloszerah23/site_imports.git",
             path: "users.json",
             message: `Atualização do users.json - ${new Date().toLocaleString()}`,
             content: Buffer.from(JSON.stringify(users, null, 2)).toString('base64'),

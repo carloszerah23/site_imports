@@ -11,7 +11,7 @@
     "username": "a_macedo29",
     "password": "andre",
     "role": "user",
-    "blocked": true,
+    "blocked": false,
     "expiry_date": "2025-09-26",
     "device_id": "ae2098aa-0d04-4bb8-b45f-6cc15eaabfda"
   },

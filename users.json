@@ -22,13 +22,5 @@
     "blocked": false,
     "expiry_date": "2028-06-20",
     "device_id": ""
-  },
-  {
-    "username": "mts",
-    "password": "mts",
-    "role": "user",
-    "blocked": false,
-    "expiry_date": "2025-09-26",
-    "device_id": ""
   }
 ]

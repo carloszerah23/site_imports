@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
         currentClass = classSelect.value;
         loadCategoryParts();
         updateSummary();
-        location.reload(true);
     });
 
     // Alterar categoria

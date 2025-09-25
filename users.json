@@ -30,5 +30,13 @@
     "blocked": false,
     "expiry_date": "2025-10-01",
     "device_id": ""
+  },
+  {
+    "username": "poke",
+    "password": "poke",
+    "role": "admin",
+    "blocked": false,
+    "expiry_date": "2025-09-26",
+    "device_id": ""
   }
 ]

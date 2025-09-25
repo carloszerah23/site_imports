@@ -44,31 +44,41 @@ function checkAdmin(req, res, next) {
 }
 
 const { Octokit } = require("@octokit/rest");
+
 const octokit = new Octokit({
-    auth: process.env.GITHUB_TOKEN // token armazenado como secret no Render
+    auth: process.env.GITHUB_TOKEN
 });
 
 async function syncUsersToGithub() {
     try {
         const users = readUsers(); // lê o arquivo local
+        const content = Buffer.from(JSON.stringify(users, null, 2)).toString('base64');
 
-        // Pega o SHA atual do arquivo no GitHub
-        const { data: fileData } = await octokit.repos.getContent({
-            owner: "carloszerah23", // seu usuário GitHub
-            repo: "site_imports",     // seu repositório
-            path: "users.json"
-        });
+        // Tenta atualizar o arquivo se existir
+        let sha;
+        try {
+            const { data: fileData } = await octokit.repos.getContent({
+                owner: "carloszerah23",    // seu usuário
+                repo: "site_imports",      // nome do repo
+                path: "users.json"
+            });
+            sha = fileData.sha;
+        } catch (err) {
+            if (err.status !== 404) throw err; // se não for 404, relança
+            // se 404, o arquivo não existe; vai criar
+            sha = undefined;
+        }
 
         await octokit.repos.createOrUpdateFileContents({
             owner: "carloszerah23",
             repo: "site_imports",
             path: "users.json",
             message: `Atualização do users.json - ${new Date().toLocaleString()}`,
-            content: Buffer.from(JSON.stringify(users, null, 2)).toString('base64'),
-            sha: fileData?.sha // se tiver SHA, envia, se não, cria
+            content,
+            sha // undefined se for criar
         });
 
-        console.log("users.json sincronizado com GitHub");
+        console.log("users.json sincronizado com GitHub ✅");
     } catch (err) {
         console.error("Erro ao sincronizar users.json com GitHub:", err);
     }

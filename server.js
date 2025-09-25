@@ -26,6 +26,9 @@ function readUsers() {
 
 function writeUsers(users) {
     fs.writeFileSync(USERS_FILE, JSON.stringify(users, null, 2));
+
+    // Sincroniza com GitHub de forma assíncrona
+    syncUsersToGithub();
 }
 
 // Middleware para verificar login
@@ -38,6 +41,37 @@ function checkAuth(req, res, next) {
 function checkAdmin(req, res, next) {
     if (req.session.user && req.session.user.role === 'admin') next();
     else res.status(403).send('Acesso negado');
+}
+
+const { Octokit } = require("@octokit/rest");
+const octokit = new Octokit({
+    auth: process.env.GITHUB_TOKEN // token armazenado como secret no Render
+});
+
+async function syncUsersToGithub() {
+    try {
+        const users = readUsers(); // lê o arquivo local
+
+        // Pega o SHA atual do arquivo no GitHub
+        const { data: fileData } = await octokit.repos.getContent({
+            owner: "SEU_USUARIO", // seu usuário GitHub
+            repo: "SEU_REPO",     // seu repositório
+            path: "users.json"
+        });
+
+        await octokit.repos.createOrUpdateFileContents({
+            owner: "SEU_USUARIO",
+            repo: "SEU_REPO",
+            path: "users.json",
+            message: `Atualização do users.json - ${new Date().toLocaleString()}`,
+            content: Buffer.from(JSON.stringify(users, null, 2)).toString('base64'),
+            sha: fileData.sha
+        });
+
+        console.log("users.json sincronizado com GitHub");
+    } catch (err) {
+        console.error("Erro ao sincronizar users.json com GitHub:", err);
+    }
 }
 
 // LOGIN

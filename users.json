@@ -35,7 +35,7 @@
     "username": "orosa",
     "password": "orosa",
     "role": "user",
-    "blocked": false,
+    "blocked": true,
     "expiry_date": "2025-09-26",
     "device_id": ""
   }

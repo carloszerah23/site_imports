@@ -25,10 +25,10 @@ function readUsers() {
 }
 
 function writeUsers(users) {
-  fs.writeFileSync(USERS_FILE, JSON.stringify(users, null, 2));
+    fs.writeFileSync(USERS_FILE, JSON.stringify(users, null, 2));
 
-  // Sincroniza com GitHub de forma assíncrona
-  syncUsersToGithub();
+    // Sincroniza com GitHub de forma assíncrona
+    syncUsersToGithub();
 }
 
 // Middleware para verificar login
@@ -65,7 +65,7 @@ async function syncUsersToGithub() {
             path: "users.json",
             message: `Atualização do users.json - ${new Date().toLocaleString()}`,
             content: Buffer.from(JSON.stringify(users, null, 2)).toString('base64'),
-            sha: fileData.sha
+            sha: fileData?.sha // se tiver SHA, envia, se não, cria
         });
 
         console.log("users.json sincronizado com GitHub");

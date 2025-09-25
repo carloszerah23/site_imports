@@ -5,7 +5,7 @@
     "role": "admin",
     "blocked": false,
     "expiry_date": "5071-02-07",
-    "device_id": "web-b37d7a09-1af0-4399-b7dd-1f42b2c99699"
+    "device_id": ""
   },
   {
     "username": "a_macedo29",
@@ -13,6 +13,6 @@
     "role": "user",
     "blocked": false,
     "expiry_date": "2025-09-26",
-    "device_id": "web-b37d7a09-1af0-4399-b7dd-1f42b2c99699"
+    "device_id": ""
   }
 ]

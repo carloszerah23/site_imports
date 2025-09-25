@@ -22,5 +22,13 @@
     "blocked": false,
     "expiry_date": "2025-09-26",
     "device_id": ""
+  },
+  {
+    "username": "Rosa",
+    "password": "Imports",
+    "role": "user",
+    "blocked": false,
+    "expiry_date": "2025-10-01",
+    "device_id": ""
   }
 ]

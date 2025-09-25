@@ -251,22 +251,18 @@ function updateSummary() {
 
                 const allItems = partsListElement.querySelectorAll('.part-item');
                 allItems.forEach(item => {
-                    const btn = item.querySelector('button');
                     const partText = item.querySelector('.part-name').textContent;
                     const sub = item.dataset.subcat;
 
+                    // Verifica se esta peça ainda está selecionada
                     if (
                         selectedParts[currentCategory] &&
                         selectedParts[currentCategory][sub] &&
                         selectedParts[currentCategory][sub].name === partText
                     ) {
                         item.classList.add('selected-part');
-                        btn.style.backgroundColor = 'var(--secondary-color)';
-                        btn.style.color = '#ffffff';
                     } else {
                         item.classList.remove('selected-part');
-                        btn.style.backgroundColor = 'var(--primary-color)';
-                        btn.style.color = '#ffffff';
                     }
                 });
 

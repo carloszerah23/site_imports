@@ -174,11 +174,14 @@ select {
     border-radius: 8px;
     padding: 1rem;
     display: flex;
-    flex-direction: column; /* empilha os elementos */
-    align-items: flex-start; /* alinhamento à esquerda */
+    flex-direction: column;
+    /* empilha os elementos */
+    align-items: flex-start;
+    /* alinhamento à esquerda */
     background-color: var(--card-color);
     transition: background-color 0.3s ease, transform 0.2s ease;
-    gap: 0.5rem; /* espaçamento entre nome, preço e botão */
+    gap: 0.5rem;
+    /* espaçamento entre nome, preço e botão */
 }
 
 .part-item:hover {
@@ -353,4 +356,8 @@ td button.delete-btn:disabled {
     background-color: #cccccc !important;
     cursor: not-allowed;
     opacity: 0.5;
+}
+
+.hidden {
+    display: none;
 }

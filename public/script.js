@@ -17,6 +17,19 @@ const carPriceInput = document.getElementById('car-price');
 const paymentPriceInput = document.getElementById('payment-price');
 const profitElement = document.getElementById('profit');
 
+fetch('/me')
+    .then(res => res.json())
+    .then(user => {
+        if (user.role === 'admin' || user.role === 'user') {
+            document.body.classList.remove('hidden'); // libera a página
+        } else {
+            window.location.href = '/login.html';
+        }
+    })
+    .catch(() => {
+        window.location.href = '/login.html';
+    });
+
 document.addEventListener('DOMContentLoaded', () => {
     fetch('precos.json')
         .then(res => res.json())

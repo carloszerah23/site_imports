@@ -190,7 +190,7 @@
     </style>
 </head>
 
-<body>
+<body class="hidden">
     <header>
         <img src="src/title.png" alt="Alberto Tunning" class="title-img">
         <h2>Painel Administrativo</h2>
@@ -235,6 +235,20 @@
     </div>
 
     <script>
+
+        fetch('/me')
+            .then(res => res.json())
+            .then(user => {
+                if (user.role === 'admin') {
+                    document.body.classList.remove('hidden'); // libera a página
+                } else {
+                    window.location.href = '/main.html';
+                }
+            })
+            .catch(() => {
+                window.location.href = '/login.html';
+            });
+
         const tbody = document.querySelector('#users-table tbody');
 
         // Função para prevenir XSS

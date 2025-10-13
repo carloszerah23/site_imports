@@ -30,5 +30,13 @@
     "blocked": false,
     "expiry_date": "2026-01-01",
     "device_id": "e1f41cba-d61f-454c-aeb8-607f3b77590b"
+  },
+  {
+    "username": "SantosR",
+    "password": "Hellcat21",
+    "role": "user",
+    "blocked": false,
+    "expiry_date": "2025-10-15",
+    "device_id": ""
   }
 ]

@@ -4,51 +4,51 @@
         "cabeçote": {
             "TakaShing": 2600.1701,
             "OEM": 3120.39312,
-            "ProRacing S1": 5460.21546,
-            "ProRacing S2": 7800.510301,
-            "Edelbrock E-Street": 11701.0017,
-            "Edelbrock Victor": 15601.0206,
+            "ProRacing Header S1": 5460.21546,
+            "ProRacing Header S2": 7800.510301,
+            "Edelbrock E-Street Header": 11701.0017,
+            "Edelbrock Victor Header": 15601.0206,
             "TrickFlow PowerPort": 20281.13778,
             "TrickFlow GenX": 26001.701,
-            "ProRacing S3": 34842.18484,
-            "ProRacing S4": 43682.66868,
-            "Edelbrock Masterflow": 50573.14307
+            "ProRacing Header S3": 34842.18484,
+            "ProRacing Header S4": 43682.66868,
+            "Edelbrock Masterflow Header": 50573.14307
         },
         "coletor de admissão": {
             "TakaShing Polido": 1820.07182,
             "TakaShing Plenum": 2638.915139,
-            "FolegoTurbo Individual": 3822.056322,
-            "FolegoTurbo Variável": 6461.443961,
+            "Folego Turbo Individual": 3822.056322,
+            "Folego Turbo Variável": 6461.443961,
             "ProRacing Variável": 7972.027972,
-            "Mann-Hummel": 10374.22037,
+            "Mann-Hummel GF50": 10374.22037,
             "TrickFlow StreetBurner": 12467.39747,
-            "TrickFlow TrackHeat": 16380.64638,
-            "Edelbrock Perfomer": 23260.72576,
-            "Edelbrock Flathead": 29084.76658
+            "TrickFlow TrackHeat Variável": 16380.64638,
+            "Edelbrock Perfomer Variável": 23260.72576,
+            "Edelbrock Flathead Variável": 29084.76658
         },
         "coletor de escape": {
             "TakaShing Polido": 1494.991495,
             "Bellows Manel": 3333.963334,
             "Bellows Hastelloy": 5531.563032,
-            "BBK Titanium": 7459.83746,
+            "BBK Titanium Variável": 7459.83746,
             "ProRacing Cerâmico": 8042.903043,
-            "ProRacing h-Cerâmico": 8969.94897,
-            "ProRacing y-Variável": 11660.83916,
+            "ProRacing H-Cerâmico": 8969.94897,
+            "ProRacing Y-Variável": 11660.83916,
             "FMIC Vanos": 15129.46513,
             "FMIC R6": 21528.06653
         },
         "comandos": {
-            "OEM": 1950.00945,
-            "260": 2924.777925,
-            "264": 3900.0189,
-            "268": 4875.259875,
-            "272": 5850.02835,
-            "280": 6824.796825,
-            "288": 7800.0378,
-            "292": 8775.278775,
-            "304": 9750.04725,
-            "312": 10724.81572,
-            "320": 11700.0567
+            "Comando OEM": 1950.00945,
+            "Comando 260": 2924.777925,
+            "Comando 264": 3900.0189,
+            "Comando 268": 4875.259875,
+            "Comando 272": 5850.02835,
+            "Comando 280": 6824.796825,
+            "Comando 288": 7800.0378,
+            "Comando 292": 8775.278775,
+            "Comando 304": 9750.04725,
+            "Comando 312": 10724.81572,
+            "Comando 320": 11700.0567
         },
         "juntas": {
             "TakaShing Aluminium": 406.3504064,
@@ -88,14 +88,14 @@
         "chip": {
             "Remapeamento ECU": 2437.629938,
             "Chip TakaShing": 7800.510301,
-            "Chip NascarParts": 9677.282177,
+            "Chip Nascar Parts": 9677.282177,
             "Chip MNS GT2": 12529.29503,
-            "Chip FolegoTurbo": 15966.26347,
+            "Chip Folego Turbo": 15966.26347,
             "Chip ProRacing GT-R": 17502.3625
         },
         "módulo de injeção": {
             "ProCrane 3": 7312.417312,
-            "ProCrane +": 10968.62597,
+            "ProCrane+": 10968.62597,
             "ProRacing Ftech+": 21937.25194,
             "ProRacing Ftech+ V2": 36562.08656,
             "ProRacing Ftech+ V300": 58499.3385,
@@ -147,14 +147,14 @@
             "TakaShing Forjado": 8719.051219,
             "OEM Forjado": 13709.60121,
             "ProRacing Steel+": 18760.63126,
-            "ProRacing Titanium": 31448.21395
+            "ProRacing Titanium+": 31448.21395
         },
         "virabrequim": {
             "OEM": 5362.880363,
             "TakaShing Forjado": 7776.412776,
             "OEM Forjado": 12227.36723,
             "ProRacing Steel+": 16732.18673,
-            "ProRacing Titanium": 28048.10055
+            "ProRacing Titanium+": 28048.10055
         }
     },
     "Óxido Nitroso": {
@@ -202,8 +202,8 @@
             "TakaShing Blower": 6370.723871,
             "Vortech Blower": 14015.78152,
             "Edelbrock Blower": 23571.63107,
-            "Vartech CCSq V-30": 22170.19467,
-            "Vartecj Sc 2200x": 36313.07881,
+            "Vortech CCSq V-30": 22170.19467,
+            "Vortech Sc 2200x": 36313.07881,
             "ProRacing Sc Kompressor": 43002.268,
             "ProRacing SC Kompressor HP": 46060.29106
         },
@@ -276,51 +276,51 @@
             "cabeçote": {
                 "TakaShing": 8143.134714,
                 "OEM": 9772.35356133,
-                "ProRacing S1": 17100.1389710025,
-                "ProRacing S2": 24429.4041451318,
-                "Edelbrock E-Street": 36644.8460936625,
-                "Edelbrock Victor": 48858.808284,
+                "ProRacing Header S1": 17100.1389710025,
+                "ProRacing Header S2": 24429.4041451318,
+                "Edelbrock E-Street Header": 36644.8460936625,
+                "Edelbrock Victor Header": 48858.808284,
                 "TrickFlow PowerPort": 63515.85886467,
                 "TrickFlow GenX": 81431.34714,
-                "ProRacing S3": 109117.709215335,
-                "ProRacing S4": 136804.07129067,
-                "Edelbrock Masterflow": 158383.4522708363
+                "ProRacing Header S3": 109117.709215335,
+                "ProRacing Header S4": 136804.07129067,
+                "Edelbrock Masterflow Header": 158383.4522708363
             },
             "coletor de admissão": {
                 "TakaShing Polido": 5700.0463236675,
                 "TakaShing Plenum": 8264.4752647879,
-                "FolegoTurbo Individual": 11969.8013274368,
-                "FolegoTurbo Variável": 20235.7563535496,
+                "Folego Turbo Individual": 11969.8013274368,
+                "Folego Turbo Variável": 20235.7563535496,
                 "ProRacing Variável": 24966.5580416344,
-                "Mann-Hummel": 32489.6721278477,
+                "Mann-Hummel GF80": 32489.6721278477,
                 "TrickFlow StreetBurner": 39045.0213742527,
-                "TrickFlow TrackHeat": 51300.4169130075,
-                "Edelbrock Perfomer": 72847.2431127064,
-                "Edelbrock Flathead": 91086.7994313853
+                "TrickFlow TrackHeat Variável": 51300.4169130075,
+                "Edelbrock Perfomer Variável": 72847.2431127064,
+                "Edelbrock Flathead Variável": 91086.7994313853
             },
             "coletor de escape": {
                 "TakaShing Polido": 4681.9695142519,
                 "Bellows Manel": 10441.2063504224,
                 "Bellows Hastelloy": 17323.5831565628,
-                "BBK Titanium": 23362.4951618833,
+                "BBK Titanium Variável": 23362.4951618833,
                 "ProRacing Cerâmico": 25188.5224627379,
-                "ProRacing h-Cerâmico": 28091.8170855113,
-                "ProRacing y-Variável": 36519.0662557679,
+                "ProRacing H-Cerâmico": 28091.8170855113,
+                "ProRacing Y-Variável": 36519.0662557679,
                 "FMIC Vanos": 47382.0050097321,
                 "FMIC R6": 67420.9529160206
             },
             "comandos": {
-                "OEM": 6106.9810951688,
-                "260": 9159.7317620906,
-                "264": 12213.9621903375,
-                "268": 15268.1926185844,
-                "272": 18320.9432855063,
-                "280": 21373.6939524281,
-                "288": 24427.924380675,
-                "292": 27482.1548089219,
-                "304": 30534.9054758438,
-                "312": 33587.6561271068,
-                "320": 36641.8865710125
+                "Comando OEM": 6106.9810951688,
+                "Comando 260": 9159.7317620906,
+                "Comando 264": 12213.9621903375,
+                "Comando 268": 15268.1926185844,
+                "Comando 272": 18320.9432855063,
+                "Comando 280": 21373.6939524281,
+                "Comando 288": 24427.924380675,
+                "Comando 292": 27482.1548089219,
+                "Comando 304": 30534.9054758438,
+                "Comando 312": 33587.6561271068,
+                "Comando 320": 36641.8865710125
             },
             "juntas": {
                 "TakaShing Aluminium": 1272.5960122393,
@@ -362,12 +362,12 @@
                 "Chip TakaShing": 24429.4041451318,
                 "Chip NascarParts": 30307.0220031767,
                 "Chip MNS GT2": 39238.8702957321,
-                "Chip FolegoTurbo": 50002.6649469691,
+                "Chip Folego Turbo": 50002.6649469691,
                 "Chip ProRacing GT-R": 54813.3738061067
             },
             "módulo de injeção": {
                 "ProCrane 3": 22900.8091649857,
-                "ProCrane +": 34351.2137537421,
+                "ProCrane+": 34351.2137537421,
                 "ProRacing Ftech+": 68702.4275074842,
                 "ProRacing Ftech+ V2": 114504.0458249285,
                 "ProRacing Ftech+ V300": 183206.4733324126,
@@ -419,14 +419,14 @@
                 "TakaShing Forjado": 27306.0630358694,
                 "OEM Forjado": 42935.3177810357,
                 "ProRacing Steel+": 58753.9821605746,
-                "ProRacing Titanium": 98488.5730012602
+                "ProRacing Titanium+": 98488.5730012602
             },
             "virabrequim": {
                 "OEM": 16795.3078342737,
                 "TakaShing Forjado": 24353.9362392632,
                 "OEM Forjado": 38293.301869535,
                 "ProRacing Steel+": 52401.3604349166,
-                "ProRacing Titanium": 87840.1998586429
+                "ProRacing Titanium+": 87840.1998586429
             }
         },
         "Óxido Nitroso": {
@@ -475,8 +475,8 @@
                 "TakaShing Blower": 19951.641897293,
                 "Vortech Blower": 43894.2040904753,
                 "Edelbrock Blower": 73820.9270353959,
-                "Vartech CCSq V-30": 69431.9505610094,
-                "Vartecj Sc 2200x": 113724.2108237183,
+                "Vortech CCSq V-30": 69431.9505610094,
+                "Vortech Sc 2200x": 113724.2108237183,
                 "ProRacing Sc Kompressor": 134673.2128530866,
                 "ProRacing SC Kompressor HP": 144250.2377316122
             },
@@ -549,51 +549,51 @@
                 "cabeçote": {
                     "TakaShing": 13312.1050311076,
                     "OEM": 15975.4936616592,
-                    "ProRacing S1": 27954.6948470785,
-                    "ProRacing S2": 39936.3150984426,
-                    "Edelbrock E-Street": 59905.6821703968,
-                    "Edelbrock Victor": 79872.6301866458,
+                    "ProRacing Header S1": 27954.6948470785,
+                    "ProRacing Header S2": 39936.3150984426,
+                    "Edelbrock E-Street Header": 59905.6821703968,
+                    "Edelbrock Victor Header": 79872.6301866458,
                     "TrickFlow PowerPort": 103833.4516183095,
                     "TrickFlow GenX": 133121.0503110763,
-                    "ProRacing S3": 178381.7236046772,
-                    "ProRacing S4": 223642.3968982782,
-                    "Edelbrock Masterflow": 258919.5961837547
+                    "ProRacing Header S3": 178381.7236046772,
+                    "ProRacing Header S4": 223642.3968982782,
+                    "Edelbrock Masterflow Header": 258919.5961837547
                 },
                 "coletor de admissão": {
                     "TakaShing Polido": 9318.2316156928,
                     "TakaShing Plenum": 13510.4682184247,
-                    "FolegoTurbo Individual": 19567.80258079,
-                    "FolegoTurbo Variável": 33080.6898600395,
+                    "Folego Turbo Individual": 19567.80258079,
+                    "Folego Turbo Variável": 33080.6898600395,
                     "ProRacing Variável": 40814.4350533806,
-                    "Mann-Hummel": 53112.9525646404,
+                    "Mann-Hummel GF50": 53112.9525646404,
                     "TrickFlow StreetBurner": 63829.4027706901,
-                    "TrickFlow TrackHeat": 83864.0845412356,
-                    "Edelbrock Perfomer": 119088.0644373655,
-                    "Edelbrock Flathead": 148905.4379627737
+                    "TrickFlow TrackHeat Variável": 83864.0845412356,
+                    "Edelbrock Perfomer Variável": 119088.0644373655,
+                    "Edelbrock Flathead Variável": 148905.4379627737
                 },
                 "coletor de escape": {
                     "TakaShing Polido": 7653.9161042013,
                     "Bellows Manel": 17068.9102501677,
                     "Bellows Hastelloy": 28319.9734002695,
-                    "BBK Titanium": 38192.1704978114,
+                    "BBK Titanium Variável": 38192.1704978114,
                     "ProRacing Cerâmico": 41177.2945406268,
-                    "ProRacing h-Cerâmico": 45923.4966252076,
-                    "ProRacing y-Variável": 59700.0617954852,
+                    "ProRacing H-Cerâmico": 45923.4966252076,
+                    "ProRacing Y-Variável": 59700.0617954852,
                     "FMIC Vanos": 77458.4050770527,
                     "FMIC R6": 110217.3595350677
                 },
                 "comandos": {
-                    "OEM": 9983.4740081246,
-                    "260": 14974.0014817742,
-                    "264": 19966.9480162489,
-                    "268": 24959.8945507237,
-                    "272": 29950.4220243735,
-                    "280": 34940.9494980231,
-                    "288": 39933.8960324979,
-                    "292": 44926.8425669727,
-                    "304": 49917.3700406224,
-                    "312": 54907.8974886736,
-                    "320": 59900.8440487468
+                    "Comando OEM": 9983.4740081246,
+                    "Comando 260": 14974.0014817742,
+                    "Comando 264": 19966.9480162489,
+                    "Comando 268": 24959.8945507237,
+                    "Comando 272": 29950.4220243735,
+                    "Comando 280": 34940.9494980231,
+                    "Comando 288": 39933.8960324979,
+                    "Comando 292": 44926.8425669727,
+                    "Comando 304": 49917.3700406224,
+                    "Comando 312": 54907.8974886736,
+                    "Comando 320": 59900.8440487468
                 },
                 "juntas": {
                     "TakaShing Aluminium": 2080.3943901324,
@@ -635,12 +635,12 @@
                     "Chip TakaShing": 39936.3150984426,
                     "Chip NascarParts": 49544.8342998367,
                     "Chip MNS GT2": 64146.3000459451,
-                    "Chip FolegoTurbo": 81742.5660986476,
+                    "Chip Folego Turbo": 81742.5660986476,
                     "Chip ProRacing GT-R": 89606.9406738119
                 },
                 "módulo de injeção": {
                     "ProCrane 3": 37437.4227627007,
-                    "ProCrane +": 56156.1341542905,
+                    "ProCrane+": 56156.1341542905,
                     "ProRacing Ftech+": 112312.268308581,
                     "ProRacing Ftech+ V2": 187187.1138135035,
                     "ProRacing Ftech+ V300": 299499.3821220843,
@@ -747,8 +747,8 @@
                     "TakaShing Blower": 32616.2297208696,
                     "Vortech Blower": 71756.673029698,
                     "Edelbrock Blower": 120679.808047312,
-                    "Vartech CCSq V-30": 113504.8664728291,
-                    "Vartecj Sc 2200x": 185912.2674788117,
+                    "Vortech CCSq V-30": 113504.8664728291,
+                    "Vortech Sc 2200x": 185912.2674788117,
                     "ProRacing Sc Kompressor": 220158.9458289051,
                     "ProRacing SC Kompressor HP": 235815.1231544843
                 },

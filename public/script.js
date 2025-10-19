@@ -1369,7 +1369,7 @@ class SearchEngine {
             for (const [subcategory, parts] of Object.entries(subcategories)) {
                 for (const [partName, price] of Object.entries(parts)) {
                     const normalizedPart = Utils.normalizeText(partName);
-                    
+
                     if (normalizedPart.includes(normalized) || normalized.includes(normalizedPart)) {
                         const score = this.calculateMatchScore(normalized, normalizedPart);
                         if (score >= 0.6) {
@@ -1608,8 +1608,15 @@ class UIManager {
         }
 
         if (inflationInput) {
-            inflationInput.addEventListener('input', Utils.debounce(() => this.handleInflationInput(), CONFIG.DEBOUNCE_DELAY));
-            inflationInput.addEventListener('blur', () => this.validateInflation());
+            // REMOVER: inflationInput.addEventListener('input', ...)
+            // ADICIONAR:
+            inflationInput.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') {
+                    this.handleInflationInputFinal();
+                    inflationInput.blur(); // Opcional: sair do campo após Enter
+                }
+            });
+            inflationInput.addEventListener('blur', () => this.handleInflationInputFinal());
         }
 
         if (carPriceInput) {
@@ -1688,6 +1695,15 @@ class UIManager {
         this.loadCategoryParts();
     }
 
+    static handleInflationInputFinal() {
+        let value = Cache.elements.inflationInput.value.replace(/[^\d.]/g, '');
+        const parts = value.split('.');
+        if (parts.length > 2) value = parts[0] + '.' + parts.slice(1).join('');
+
+        AppState.inflation = parseFloat(value) || CONFIG.MIN_INFLATION;
+        this.updateInflationFields();
+    }
+
     static handleInflationChange() {
         AppState.inflation = parseFloat(Cache.elements.inflationSlider.value);
         this.updateInflationFields();
@@ -1703,12 +1719,14 @@ class UIManager {
 
     static updateInflationFields() {
         AppState.inflation = Math.max(CONFIG.MIN_INFLATION, Math.min(CONFIG.MAX_INFLATION, AppState.inflation));
+
         if (Cache.elements.inflationInput) {
             Cache.elements.inflationInput.value = AppState.inflation.toFixed(4);
         }
         if (Cache.elements.inflationSlider) {
             Cache.elements.inflationSlider.value = AppState.inflation;
         }
+
         this.loadCategoryParts();
         this.updateSummary();
     }

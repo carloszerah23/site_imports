@@ -30,24 +30,97 @@ const Cache = {
     ocrResults: new Map()
 };
 
-// ========== MAPEAMENTOS MELHORADOS E EXPANDIDOS ==========
+// ========== MAPEAMENTOS MELHORADOS E COMPLETOS ==========
 const MAPPINGS = {
     categoryMapping: {
-        // Motor - Expansão
+        // ========== CABEÇOTE ==========
+        'cabecote': { category: 'Cabeçote', subcategory: 'cabeçote' },
+        'cabeçote': { category: 'Cabeçote', subcategory: 'cabeçote' },
+        'head': { category: 'Cabeçote', subcategory: 'cabeçote' },
+        'cabecote': { category: 'Cabeçote', subcategory: 'cabeçote' },
+        'cabeçote': { category: 'Cabeçote', subcategory: 'cabeçote' },
+        'head': { category: 'Cabeçote', subcategory: 'cabeçote' },
+        'cylinder head': { category: 'Cabeçote', subcategory: 'cabeçote' },
+        'hed': { category: 'Cabeçote', subcategory: 'cabeçote' },
+        'heder': { category: 'Cabeçote', subcategory: 'cabeçote' },
+
+        // DEPOIS as subcategorias do cabeçote
+        'coletor admissao': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
+        'coletor admissão': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
+        // ... resto das subcategorias ...
+
+        'junta cabecote': { category: 'Cabeçote', subcategory: 'juntas' },
+        'junta cabeçote': { category: 'Cabeçote', subcategory: 'juntas' },
+        'cylinder head': { category: 'Cabeçote', subcategory: 'cabeçote' },
+        'hed': { category: 'Cabeçote', subcategory: 'cabeçote' },
+        'heder': { category: 'Cabeçote', subcategory: 'cabeçote' },
+        'cabecote': { category: 'Cabeçote', subcategory: 'cabeçote' },
+        'cabeçote': { category: 'Cabeçote', subcategory: 'cabeçote' },
+
+        // ... depois as outras entradas existentes ...
+        'junta cabecote': { category: 'Cabeçote', subcategory: 'juntas' },
+
+        'coletor admissao': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
+        'coletor admissão': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
+        'coletor de admissao': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
+        'coletor de admissão': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
+        'admissao': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
+        'admissão': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
+        'intake': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
+        'intake manifold': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
+
+        'coletor escape': { category: 'Cabeçote', subcategory: 'coletor de escape' },
+        'coletor de escape': { category: 'Cabeçote', subcategory: 'coletor de escape' },
+        'escape': { category: 'Cabeçote', subcategory: 'coletor de escape' },
+        'exhaust': { category: 'Cabeçote', subcategory: 'coletor de escape' },
+        'exhaust manifold': { category: 'Cabeçote', subcategory: 'coletor de escape' },
+
+        'comando': { category: 'Cabeçote', subcategory: 'comandos' },
+        'comandos': { category: 'Cabeçote', subcategory: 'comandos' },
+        'comando valvula': { category: 'Cabeçote', subcategory: 'comandos' },
+        'camshaft': { category: 'Cabeçote', subcategory: 'comandos' },
+        'cams': { category: 'Cabeçote', subcategory: 'comandos' },
+
+        'junta': { category: 'Cabeçote', subcategory: 'juntas' },
+        'juntas': { category: 'Cabeçote', subcategory: 'juntas' },
+        'junta cabecote': { category: 'Cabeçote', subcategory: 'juntas' },
+        'gasket': { category: 'Cabeçote', subcategory: 'juntas' },
+        'gaskets': { category: 'Cabeçote', subcategory: 'juntas' },
+
+        'mola': { category: 'Cabeçote', subcategory: 'molas' },
+        'molas': { category: 'Cabeçote', subcategory: 'molas' },
+        'mola valvula': { category: 'Cabeçote', subcategory: 'molas' },
+        'spring': { category: 'Cabeçote', subcategory: 'molas' },
+        'springs': { category: 'Cabeçote', subcategory: 'molas' },
+
+        'tucho': { category: 'Cabeçote', subcategory: 'tuchos' },
+        'tuchos': { category: 'Cabeçote', subcategory: 'tuchos' },
+        'tucho valvula': { category: 'Cabeçote', subcategory: 'tuchos' },
+        'lifter': { category: 'Cabeçote', subcategory: 'tuchos' },
+        'lifters': { category: 'Cabeçote', subcategory: 'tuchos' },
+
+        'valvula': { category: 'Cabeçote', subcategory: 'válvulas' },
+        'válvula': { category: 'Cabeçote', subcategory: 'válvulas' },
+        'valvulas': { category: 'Cabeçote', subcategory: 'válvulas' },
+        'válvulas': { category: 'Cabeçote', subcategory: 'válvulas' },
+        'valve': { category: 'Cabeçote', subcategory: 'válvulas' },
+        'valves': { category: 'Cabeçote', subcategory: 'válvulas' },
+
+        // ========== MOTOR ==========
+        'motor': { category: 'Motor', subcategory: 'pistões' },
+        'engine': { category: 'Motor', subcategory: 'pistões' },
+
         'bomba de oleo': { category: 'Motor', subcategory: 'bomba de óleo' },
         'bomba oleo': { category: 'Motor', subcategory: 'bomba de óleo' },
         'bomba óleo': { category: 'Motor', subcategory: 'bomba de óleo' },
         'bomba de óleo': { category: 'Motor', subcategory: 'bomba de óleo' },
         'bomba oleo p1': { category: 'Motor', subcategory: 'bomba de óleo' },
-        'bomba de lubrificacao': { category: 'Motor', subcategory: 'bomba de óleo' },
         'oil pump': { category: 'Motor', subcategory: 'bomba de óleo' },
 
-        'bronzinasas': { category: 'Motor', subcategory: 'bronzinas' },
-        'bronzinaas': { category: 'Motor', subcategory: 'bronzinas' },
+        'bronzinas': { category: 'Motor', subcategory: 'bronzinas' },
         'bronzina': { category: 'Motor', subcategory: 'bronzinas' },
         'bronzin': { category: 'Motor', subcategory: 'bronzinas' },
         'bronzinos': { category: 'Motor', subcategory: 'bronzinas' },
-        'bronzinaos': { category: 'Motor', subcategory: 'bronzinas' },
         'bronzina biela': { category: 'Motor', subcategory: 'bronzinas' },
         'bronzina motor': { category: 'Motor', subcategory: 'bronzinas' },
         'bearing': { category: 'Motor', subcategory: 'bronzinas' },
@@ -62,19 +135,13 @@ const MAPPINGS = {
         'pistao forjado': { category: 'Motor', subcategory: 'pistões' },
         'piston forged': { category: 'Motor', subcategory: 'pistões' },
 
-        'bronzina': { category: 'Motor', subcategory: 'bronzinas' },
-        'bronzinas': { category: 'Motor', subcategory: 'bronzinas' },
-        'bronzinos': { category: 'Motor', subcategory: 'bronzinas' },
-        'bronzina motor': { category: 'Motor', subcategory: 'bronzinas' },
-        'bronzina biela': { category: 'Motor', subcategory: 'bronzinas' },
-        'bearing': { category: 'Motor', subcategory: 'bronzinas' },
-
         'biela': { category: 'Motor', subcategory: 'bielas' },
         'bielas': { category: 'Motor', subcategory: 'bielas' },
         'bleios': { category: 'Motor', subcategory: 'bielas' },
         'biela forjada': { category: 'Motor', subcategory: 'bielas' },
         'conecting rod': { category: 'Motor', subcategory: 'bielas' },
         'con rod': { category: 'Motor', subcategory: 'bielas' },
+        'connecting rod': { category: 'Motor', subcategory: 'bielas' },
 
         'virabrequim': { category: 'Motor', subcategory: 'virabrequim' },
         'virabrequim forjado': { category: 'Motor', subcategory: 'virabrequim' },
@@ -91,58 +158,13 @@ const MAPPINGS = {
         'cárter óleo': { category: 'Motor', subcategory: 'cárter' },
         'oil pan': { category: 'Motor', subcategory: 'cárter' },
 
-        // Cabeçote - Expansão
-        'cabecote': { category: 'Cabeçote', subcategory: 'cabeçote' },
-        'cabeçote': { category: 'Cabeçote', subcategory: 'cabeçote' },
-        'head': { category: 'Cabeçote', subcategory: 'cabeçote' },
-        'cylinder head': { category: 'Cabeçote', subcategory: 'cabeçote' },
-
-        'coletor admissao': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
-        'coletor admissão': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
-        'coletor de admissao': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
-        'coletor de admissão': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
-        'admissao': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
-        'admissão': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
-        'intake manifold': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
-
-        'coletor escape': { category: 'Cabeçote', subcategory: 'coletor de escape' },
-        'coletor de escape': { category: 'Cabeçote', subcategory: 'coletor de escape' },
-        'escape': { category: 'Cabeçote', subcategory: 'coletor de escape' },
-        'exhaust manifold': { category: 'Cabeçote', subcategory: 'coletor de escape' },
-
-        'valvula': { category: 'Cabeçote', subcategory: 'válvulas' },
-        'válvula': { category: 'Cabeçote', subcategory: 'válvulas' },
-        'valvulas': { category: 'Cabeçote', subcategory: 'válvulas' },
-        'válvulas': { category: 'Cabeçote', subcategory: 'válvulas' },
-        'valve': { category: 'Cabeçote', subcategory: 'válvulas' },
-
-        'tucho': { category: 'Cabeçote', subcategory: 'tuchos' },
-        'tuchos': { category: 'Cabeçote', subcategory: 'tuchos' },
-        'tucho valvula': { category: 'Cabeçote', subcategory: 'tuchos' },
-        'lifter': { category: 'Cabeçote', subcategory: 'tuchos' },
-
-        'comando': { category: 'Cabeçote', subcategory: 'comandos' },
-        'comandos': { category: 'Cabeçote', subcategory: 'comandos' },
-        'comando valvula': { category: 'Cabeçote', subcategory: 'comandos' },
-        'camshaft': { category: 'Cabeçote', subcategory: 'comandos' },
-
-        'mola': { category: 'Cabeçote', subcategory: 'molas' },
-        'molas': { category: 'Cabeçote', subcategory: 'molas' },
-        'mola valvula': { category: 'Cabeçote', subcategory: 'molas' },
-        'spring': { category: 'Cabeçote', subcategory: 'molas' },
-
-        'junta': { category: 'Cabeçote', subcategory: 'juntas' },
-        'juntas': { category: 'Cabeçote', subcategory: 'juntas' },
-        'junta cabecote': { category: 'Cabeçote', subcategory: 'juntas' },
-        'gasket': { category: 'Cabeçote', subcategory: 'juntas' },
-
-        // Turbo - Expansão
-        'turbino': { category: 'Turbo', subcategory: 'Turbinas' },
-        'turbinos': { category: 'Turbo', subcategory: 'Turbinas' },
+        // ========== TURBO ==========
         'turbina': { category: 'Turbo', subcategory: 'Turbinas' },
         'turbinas': { category: 'Turbo', subcategory: 'Turbinas' },
         'turbo': { category: 'Turbo', subcategory: 'Turbinas' },
         'turbos': { category: 'Turbo', subcategory: 'Turbinas' },
+        'turbino': { category: 'Turbo', subcategory: 'Turbinas' },
+        'turbinos': { category: 'Turbo', subcategory: 'Turbinas' },
         'hks': { category: 'Turbo', subcategory: 'Turbinas' },
         'garret': { category: 'Turbo', subcategory: 'Turbinas' },
         'masterpower': { category: 'Turbo', subcategory: 'Turbinas' },
@@ -151,24 +173,29 @@ const MAPPINGS = {
         'intercooler': { category: 'Turbo', subcategory: 'intercooler' },
         'intercooler turbo': { category: 'Turbo', subcategory: 'intercooler' },
         'cooler': { category: 'Turbo', subcategory: 'intercooler' },
+        'intercooler': { category: 'Turbo', subcategory: 'intercooler' },
 
         'valvula alivio': { category: 'Turbo', subcategory: 'válvula de alívio' },
         'valvula de alivio': { category: 'Turbo', subcategory: 'válvula de alívio' },
         'válvula de alívio': { category: 'Turbo', subcategory: 'válvula de alívio' },
         'wastegate': { category: 'Turbo', subcategory: 'válvula de alívio' },
         'wgv': { category: 'Turbo', subcategory: 'válvula de alívio' },
+        'alivio': { category: 'Turbo', subcategory: 'válvula de alívio' },
 
         'valvula prioridade': { category: 'Turbo', subcategory: 'válvula de prioridade' },
         'valvula de prioridade': { category: 'Turbo', subcategory: 'válvula de prioridade' },
         'válvula de prioridade': { category: 'Turbo', subcategory: 'válvula de prioridade' },
-        'valvula prioridadede': { category: 'Turbo', subcategory: 'válvula de prioridade' },
-        'valvula de prioridadede': { category: 'Turbo', subcategory: 'válvula de prioridade' },
         'blow off': { category: 'Turbo', subcategory: 'válvula de prioridade' },
         'bov': { category: 'Turbo', subcategory: 'válvula de prioridade' },
-        'alivio': { category: 'Turbo', subcategory: 'válvula de alívio' },
         'prioridade': { category: 'Turbo', subcategory: 'válvula de prioridade' },
 
-        // Supercharger - Expansão
+        'kit turbo': { category: 'Turbo', subcategory: 'kit instalação' },
+        'kit instalacao turbo': { category: 'Turbo', subcategory: 'kit instalação' },
+        'kit instalação turbo': { category: 'Turbo', subcategory: 'kit instalação' },
+
+        'remover turbo': { category: 'Turbo', subcategory: 'remover tudo' },
+
+        // ========== SUPERCHARGER ==========
         'supercharger': { category: 'SuperCharger', subcategory: 'polias' },
         'superchargers': { category: 'SuperCharger', subcategory: 'polias' },
         'super charger': { category: 'SuperCharger', subcategory: 'polias' },
@@ -182,20 +209,27 @@ const MAPPINGS = {
         'compressor sc': { category: 'SuperCharger', subcategory: 'compressor' },
         'blower': { category: 'SuperCharger', subcategory: 'compressor' },
 
-        // ECU - Expansão
+        'kit supercharger': { category: 'SuperCharger', subcategory: 'kit instalação' },
+        'kit instalacao sc': { category: 'SuperCharger', subcategory: 'kit instalação' },
+
+        'remover supercharger': { category: 'SuperCharger', subcategory: 'remover tudo' },
+
+        // ========== ECU ==========
         'chip': { category: 'ECU', subcategory: 'chip' },
         'chip ecu': { category: 'ECU', subcategory: 'chip' },
         'reprogramacao': { category: 'ECU', subcategory: 'chip' },
         'remapeamento': { category: 'ECU', subcategory: 'chip' },
         'tuning': { category: 'ECU', subcategory: 'chip' },
+        'tune': { category: 'ECU', subcategory: 'chip' },
 
         'modulo injecao': { category: 'ECU', subcategory: 'módulo de injeção' },
         'módulo de injeção': { category: 'ECU', subcategory: 'módulo de injeção' },
         'modulo de injecao': { category: 'ECU', subcategory: 'módulo de injeção' },
         'injection module': { category: 'ECU', subcategory: 'módulo de injeção' },
         'ftech': { category: 'ECU', subcategory: 'módulo de injeção' },
+        'procrane': { category: 'ECU', subcategory: 'módulo de injeção' },
 
-        // Óxido Nitroso - Expansão
+        // ========== ÓXIDO NITROSO ==========
         'nitro': { category: 'Óxido Nitroso', subcategory: 'garrafas' },
         'nitrous': { category: 'Óxido Nitroso', subcategory: 'garrafas' },
         'nos': { category: 'Óxido Nitroso', subcategory: 'garrafas' },
@@ -209,196 +243,122 @@ const MAPPINGS = {
         'injector': { category: 'Óxido Nitroso', subcategory: 'bico injetor' },
         'nozzle': { category: 'Óxido Nitroso', subcategory: 'bico injetor' },
 
-        // Redução de Peso - Expansão
+        'kit nitro': { category: 'Óxido Nitroso', subcategory: 'kit instalação' },
+        'kit instalacao nitro': { category: 'Óxido Nitroso', subcategory: 'kit instalação' },
+
+        // ========== REDUÇÃO DE PESO ==========
         'reducao': { category: 'Redução de Peso', subcategory: 'reduções' },
         'redução': { category: 'Redução de Peso', subcategory: 'reduções' },
         'reduções': { category: 'Redução de Peso', subcategory: 'reduções' },
         'weight reduction': { category: 'Redução de Peso', subcategory: 'reduções' },
         'lightweight': { category: 'Redução de Peso', subcategory: 'reduções' },
         'proreduction': { category: 'Redução de Peso', subcategory: 'reduções' },
+        'weight': { category: 'Redução de Peso', subcategory: 'reduções' },
 
-        // Transmissão - Expansão
+        // ========== TRANSMISSÃO ==========
         'transmissao': { category: 'Transmissão', subcategory: 'caixa de marchas' },
         'transmissão': { category: 'Transmissão', subcategory: 'caixa de marchas' },
         'caixa marcha': { category: 'Transmissão', subcategory: 'caixa de marchas' },
         'caixa de marcha': { category: 'Transmissão', subcategory: 'caixa de marchas' },
         'caixa de marchas': { category: 'Transmissão', subcategory: 'caixa de marchas' },
-        'bomba de oleo': { category: 'Motor', subcategory: 'bomba de óleo' },
-        'bomba oleo': { category: 'Motor', subcategory: 'bomba de óleo' },
-        'bomba óleo': { category: 'Motor', subcategory: 'bomba de óleo' },
-        'bomba de óleo': { category: 'Motor', subcategory: 'bomba de óleo' },
-        'oil pump': { category: 'Motor', subcategory: 'bomba de óleo' },
-
-        'bronzinas': { category: 'Motor', subcategory: 'bronzinas' },
-        'bronzina': { category: 'Motor', subcategory: 'bronzinas' },
-        'bronzin': { category: 'Motor', subcategory: 'bronzinas' },
-        'bronzinos': { category: 'Motor', subcategory: 'bronzinas' },
-        'bronzina biela': { category: 'Motor', subcategory: 'bronzinas' },
-        'bronzina motor': { category: 'Motor', subcategory: 'bronzinas' },
-        'bearing': { category: 'Motor', subcategory: 'bronzinas' },
-        'bearings': { category: 'Motor', subcategory: 'bronzinas' },
-
-        'pistao': { category: 'Motor', subcategory: 'pistões' },
-        'pistões': { category: 'Motor', subcategory: 'pistões' },
-        'pista0': { category: 'Motor', subcategory: 'pistões' },
-        'pistoes': { category: 'Motor', subcategory: 'pistões' },
-        'pistöes': { category: 'Motor', subcategory: 'pistões' },
-        'pistons': { category: 'Motor', subcategory: 'pistões' },
-
-        'biela': { category: 'Motor', subcategory: 'bielas' },
-        'bielas': { category: 'Motor', subcategory: 'bielas' },
-        'bleios': { category: 'Motor', subcategory: 'bielas' },
-        'conecting rod': { category: 'Motor', subcategory: 'bielas' },
-        'con rod': { category: 'Motor', subcategory: 'bielas' },
-
-        'virabrequim': { category: 'Motor', subcategory: 'virabrequim' },
-        'crankshaft': { category: 'Motor', subcategory: 'virabrequim' },
-
-        'bloco': { category: 'Motor', subcategory: 'bloco' },
-        'bloco motor': { category: 'Motor', subcategory: 'bloco' },
-        'engine block': { category: 'Motor', subcategory: 'bloco' },
-
-        'carter': { category: 'Motor', subcategory: 'cárter' },
-        'cárter': { category: 'Motor', subcategory: 'cárter' },
-        'carter oleo': { category: 'Motor', subcategory: 'cárter' },
-        'cárter óleo': { category: 'Motor', subcategory: 'cárter' },
-        'oil pan': { category: 'Motor', subcategory: 'cárter' },
-
-        // Cabeçote - Baseado no JSON
-        'cabecote': { category: 'Cabeçote', subcategory: 'cabeçote' },
-        'cabeçote': { category: 'Cabeçote', subcategory: 'cabeçote' },
-        'head': { category: 'Cabeçote', subcategory: 'cabeçote' },
-        'cylinder head': { category: 'Cabeçote', subcategory: 'cabeçote' },
-
-        'coletor admissao': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
-        'coletor admissão': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
-        'coletor de admissao': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
-        'coletor de admissão': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
-        'admissao': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
-        'admissão': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
-        'intake manifold': { category: 'Cabeçote', subcategory: 'coletor de admissão' },
-
-        'coletor escape': { category: 'Cabeçote', subcategory: 'coletor de escape' },
-        'coletor de escape': { category: 'Cabeçote', subcategory: 'coletor de escape' },
-        'escape': { category: 'Cabeçote', subcategory: 'coletor de escape' },
-        'exhaust manifold': { category: 'Cabeçote', subcategory: 'coletor de escape' },
-
-        'valvula': { category: 'Cabeçote', subcategory: 'válvulas' },
-        'válvula': { category: 'Cabeçote', subcategory: 'válvulas' },
-        'valvulas': { category: 'Cabeçote', subcategory: 'válvulas' },
-        'válvulas': { category: 'Cabeçote', subcategory: 'válvulas' },
-        'valve': { category: 'Cabeçote', subcategory: 'válvulas' },
-
-        'tucho': { category: 'Cabeçote', subcategory: 'tuchos' },
-        'tuchos': { category: 'Cabeçote', subcategory: 'tuchos' },
-        'lifter': { category: 'Cabeçote', subcategory: 'tuchos' },
-
-        'comando': { category: 'Cabeçote', subcategory: 'comandos' },
-        'comandos': { category: 'Cabeçote', subcategory: 'comandos' },
-        'comando valvula': { category: 'Cabeçote', subcategory: 'comandos' },
-        'camshaft': { category: 'Cabeçote', subcategory: 'comandos' },
-
-        'mola': { category: 'Cabeçote', subcategory: 'molas' },
-        'molas': { category: 'Cabeçote', subcategory: 'molas' },
-        'spring': { category: 'Cabeçote', subcategory: 'molas' },
-
-        'junta': { category: 'Cabeçote', subcategory: 'juntas' },
-        'juntas': { category: 'Cabeçote', subcategory: 'juntas' },
-        'gasket': { category: 'Cabeçote', subcategory: 'juntas' },
-
-        // Turbo - Baseado no JSON
-        'turbina': { category: 'Turbo', subcategory: 'Turbinas' },
-        'turbinas': { category: 'Turbo', subcategory: 'Turbinas' },
-        'turbo': { category: 'Turbo', subcategory: 'Turbinas' },
-        'turbos': { category: 'Turbo', subcategory: 'Turbinas' },
-        'hks': { category: 'Turbo', subcategory: 'Turbinas' },
-        'garret': { category: 'Turbo', subcategory: 'Turbinas' },
-        'masterpower': { category: 'Turbo', subcategory: 'Turbinas' },
-        'turbine': { category: 'Turbo', subcategory: 'Turbinas' },
-
-        'intercooler': { category: 'Turbo', subcategory: 'intercooler' },
-        'cooler': { category: 'Turbo', subcategory: 'intercooler' },
-
-        'valvula alivio': { category: 'Turbo', subcategory: 'válvula de alívio' },
-        'valvula de alivio': { category: 'Turbo', subcategory: 'válvula de alívio' },
-        'válvula de alívio': { category: 'Turbo', subcategory: 'válvula de alívio' },
-        'wastegate': { category: 'Turbo', subcategory: 'válvula de alívio' },
-        'wgv': { category: 'Turbo', subcategory: 'válvula de alívio' },
-
-        'valvula prioridade': { category: 'Turbo', subcategory: 'válvula de prioridade' },
-        'valvula de prioridade': { category: 'Turbo', subcategory: 'válvula de prioridade' },
-        'válvula de prioridade': { category: 'Turbo', subcategory: 'válvula de prioridade' },
-        'blow off': { category: 'Turbo', subcategory: 'válvula de prioridade' },
-        'bov': { category: 'Turbo', subcategory: 'válvula de prioridade' },
-
-        // Supercharger - Baseado no JSON
-        'supercharger': { category: 'SuperCharger', subcategory: 'polias' },
-        'super charger': { category: 'SuperCharger', subcategory: 'polias' },
-        'sc': { category: 'SuperCharger', subcategory: 'polias' },
-        'polia': { category: 'SuperCharger', subcategory: 'polias' },
-        'polias': { category: 'SuperCharger', subcategory: 'polias' },
-        'pulley': { category: 'SuperCharger', subcategory: 'polias' },
-
-        'compressor': { category: 'SuperCharger', subcategory: 'compressor' },
-        'blower': { category: 'SuperCharger', subcategory: 'compressor' },
-
-        // ECU - Baseado no JSON
-        'chip': { category: 'ECU', subcategory: 'chip' },
-        'remapeamento': { category: 'ECU', subcategory: 'chip' },
-        'tuning': { category: 'ECU', subcategory: 'chip' },
-
-        'modulo injecao': { category: 'ECU', subcategory: 'módulo de injeção' },
-        'módulo de injeção': { category: 'ECU', subcategory: 'módulo de injeção' },
-        'modulo de injecao': { category: 'ECU', subcategory: 'módulo de injeção' },
-        'injection module': { category: 'ECU', subcategory: 'módulo de injeção' },
-
-        // Óxido Nitroso - Baseado no JSON
-        'nitro': { category: 'Óxido Nitroso', subcategory: 'garrafas' },
-        'nitrous': { category: 'Óxido Nitroso', subcategory: 'garrafas' },
-        'nos': { category: 'Óxido Nitroso', subcategory: 'garrafas' },
-        'nx': { category: 'Óxido Nitroso', subcategory: 'garrafas' },
-        'garrafa': { category: 'Óxido Nitroso', subcategory: 'garrafas' },
-        'garrafas': { category: 'Óxido Nitroso', subcategory: 'garrafas' },
-        'bottle': { category: 'Óxido Nitroso', subcategory: 'garrafas' },
-
-        'bico injetor': { category: 'Óxido Nitroso', subcategory: 'bico injetor' },
-        'bico nitro': { category: 'Óxido Nitroso', subcategory: 'bico injetor' },
-        'injector': { category: 'Óxido Nitroso', subcategory: 'bico injetor' },
-
-        // Redução de Peso - Baseado no JSON
-        'reducao': { category: 'Redução de Peso', subcategory: 'reduções' },
-        'redução': { category: 'Redução de Peso', subcategory: 'reduções' },
-        'reduções': { category: 'Redução de Peso', subcategory: 'reduções' },
-        'weight reduction': { category: 'Redução de Peso', subcategory: 'reduções' },
-
-        // Transmissão - Baseado no JSON
-        'transmissao': { category: 'Transmissão', subcategory: 'caixa de marchas' },
-        'transmissão': { category: 'Transmissão', subcategory: 'caixa de marchas' },
-        'caixa marcha': { category: 'Transmissão', subcategory: 'caixa de marchas' },
-        'caixa de marcha': { category: 'Transmissão', subcategory: 'caixa de marchas' },
-        'caixa de marchas': { category: 'Transmissão', subcategory: 'caixa de marchas' },
-        'gearbox': { category: 'Transmissão', subcategory: 'caixa de marchas' },
-        'transmission': { category: 'Transmissão', subcategory: 'caixa de marchas' },
-
-        // Kit instalação/remoção
-        'kit instalacao': { category: 'Turbo', subcategory: 'kit instalação' },
-        'kit instalação': { category: 'Turbo', subcategory: 'kit instalação' },
-        'kit turbo': { category: 'Turbo', subcategory: 'kit instalação' },
-        'remover turbo': { category: 'Turbo', subcategory: 'remover tudo' },
-        'kit supercharger': { category: 'SuperCharger', subcategory: 'kit instalação' },
-        'remover supercharger': { category: 'SuperCharger', subcategory: 'remover tudo' },
-        'kit nitro': { category: 'Óxido Nitroso', subcategory: 'kit instalação' },
         'gearbox': { category: 'Transmissão', subcategory: 'caixa de marchas' },
         'transmission': { category: 'Transmissão', subcategory: 'caixa de marchas' },
         'z-pro': { category: 'Transmissão', subcategory: 'caixa de marchas' }
     },
 
     partMapping: {
-        // Mapeamentos existentes mantidos
+        // ========== CABEÇOTE ==========
+        // Cabeçote
         'takashing': 'TakaShing',
-        'takashing p1': 'TakaShing P1',
+        'takashing p1': 'TakaShing',
+        'takdo': 'Takao',
+        'edelbrock aluminium': 'Edelbrock Aluminium',
+        'edelbrock aluminum': 'Edelbrock Aluminium',
+        'edelbrock alum': 'Edelbrock Aluminium',
+        'edelbrock': 'Edelbrock Aluminium',
+        'proracing obb+': 'ProRacing OBB+',
+        'proracing obb+ tuchos': 'ProRacing OBB+',
+        'proracing obb plus tuchos': 'ProRacing OBB+',
+        'tuchos proracing obb+': 'ProRacing OBB+',
+        'tuchos proracing obb plus': 'ProRacing OBB+',
+
+        // Depois os menos específicos
+        'proracing obb+': 'ProRacing OBB+',
+        'proracing obb plus': 'ProRacing OBB+',
+        'proracing obb +': 'ProRacing OBB+',
+
+        // Mapeamentos para OBB regular (APENAS quando não tem +)
+        'proracing obb tuchos': 'ProRacing OBB',
+        'tuchos proracing obb': 'ProRacing OBB',
+        'proracing obb': 'ProRacing OBB',
+
+        // Mapeamentos genéricos
+        'obb+': 'ProRacing OBB+',
+        'obb plus': 'ProRacing OBB+',
+        'obb +': 'ProRacing OBB+',
+        'obb': 'ProRacing OBB',
+        'proracing obb plus': 'ProRacing OBB+',
+        'proracing obb +': 'ProRacing OBB+',
+        'obb+': 'ProRacing OBB+',
+        'obb plus': 'ProRacing OBB+',
+        'obb +': 'ProRacing OBB+',
+        'takdo bronzina': 'Takao',
+        'takda': 'Takao',
+        'taka0': 'Takao',
+        'takashing': 'TakaShing',
+        'takashing cabeçote': 'TakaShing',
+        'cabeçote takashing': 'TakaShing',
+        'taka0 bronzina': 'Takao',
+        'taka': 'Takao',
+        'tako': 'Takao',
+        'takau': 'Takao',
+        'aem': 'OEM',
+        'dem': 'OEM',
+        'oem': 'OEM',
+        '0em': 'OEM',
+
+        // Virabrequim OEM
+        'virabrequim oem': 'OEM',
+        'virabrequim dem': 'OEM',
+        'virabrequim aem': 'OEM',
+        'virabreqoim oem': 'OEM',
+        'virabreqoim dem': 'OEM',
+        'virabreqoim aem': 'OEM',
+
+        // Correções para outras bronzinas com erros de OCR
+        'mahie': 'Mahie',
+        'mahle': 'Mahie',
+        'mohle': 'Mahie',
+        'mahie bronzina': 'Mahie',
+        'king aluminium': 'King Aluminium',
+        'king cobre': 'King Cobre',
+        'king pmaxkote': 'King pMaxKote',
+        'king pmax': 'King pMaxKote',
+
+        // Mapeamentos genéricos para bronzinas
+        'bronzina takao': 'Takao',
+        'bronzina mahie': 'Mahie',
+        'bronzina king': 'King Aluminium',
+        'bronzina aluminium': 'King Aluminium',
+        'bronzina cobre': 'King Cobre',
+        'bronzina pmax': 'King pMaxKote',
+        'proracing y varlavel': 'ProRacing Y-Variável',
+        'proracing y varlável': 'ProRacing Y-Variável',
+        'proracing y variavel': 'ProRacing Y-Variável',
+        'y varlavel': 'ProRacing Y-Variável',
+        'y varlável': 'ProRacing Y-Variável',
+        'y variavel': 'ProRacing Y-Variável',
+        'y variável': 'ProRacing Y-Variável',
+        'y-varlavel': 'ProRacing Y-Variável',
+        'y-varlável': 'ProRacing Y-Variável',
+        'y-variavel': 'ProRacing Y-Variável',
+        'y-variável': 'ProRacing Y-Variável',
+
+        // Outras variações comuns
+        'proracing y': 'ProRacing Y-Variável',
+        'y varia': 'ProRacing Y-Variável',
+        'y var': 'ProRacing Y-Variável',
         'proracing header s4': 'ProRacing Header S4',
-        'takashing': 'TakaShing',
         'header s1': 'ProRacing Header S1',
         'header s2': 'ProRacing Header S2',
         'header s3': 'ProRacing Header S3',
@@ -421,7 +381,18 @@ const MAPPINGS = {
         'performer variavel': 'Edelbrock Perfomer Variável',
         'flathead variavel': 'Edelbrock Flathead Variável',
 
+        // Coletor de escape
+        'bellows manel': 'Bellows Manel',
+        'bellows hastelloy': 'Bellows Hastelloy',
+        'bbk titanium variavel': 'BBK Titanium Variável',
+        'proracing ceramico': 'ProRacing Cerâmico',
+        'proracing h ceramico': 'ProRacing H-Cerâmico',
+        'proracing y variavel': 'ProRacing Y-Variável',
+        'fmic vanos': 'FMIC Vanos',
+        'fmic r6': 'FMIC R6',
+
         // Comandos
+        'comando oem': 'Comando OEM',
         'comando 260': 'Comando 260',
         'comando 264': 'Comando 264',
         'comando 268': 'Comando 268',
@@ -433,14 +404,275 @@ const MAPPINGS = {
         'comando 312': 'Comando 312',
         'comando 320': 'Comando 320',
 
+        // Comandos com símbolos de grau
+        '260°': 'Comando 260',
+        '260 º': 'Comando 260',
+        '260 graus': 'Comando 260',
+        '264°': 'Comando 264',
+        '264 º': 'Comando 264',
+        '264 graus': 'Comando 264',
+        '268°': 'Comando 268',
+        '268 º': 'Comando 268',
+        '268 graus': 'Comando 268',
+        '272°': 'Comando 272',
+        '272 º': 'Comando 272',
+        '272 graus': 'Comando 272',
+        '280°': 'Comando 280',
+        '280 º': 'Comando 280',
+        '280 graus': 'Comando 280',
+        '288°': 'Comando 288',
+        '288 º': 'Comando 288',
+        '288 graus': 'Comando 288',
+        '292°': 'Comando 292',
+        '292 º': 'Comando 292',
+        '292 graus': 'Comando 292',
+        '304°': 'Comando 304',
+        '304 º': 'Comando 304',
+        '304 graus': 'Comando 304',
+        '312°': 'Comando 312',
+        '312 º': 'Comando 312',
+        '312 graus': 'Comando 312',
+        '320°': 'Comando 320',
+        '320 º': 'Comando 320',
+        '320 graus': 'Comando 320',
+
+        // Comandos sem símbolo (apenas números)
+        '260': 'Comando 260',
+        '264': 'Comando 264',
+        '268': 'Comando 268',
+        '272': 'Comando 272',
+        '280': 'Comando 280',
+        '288': 'Comando 288',
+        '292': 'Comando 292',
+        '304': 'Comando 304',
+        '312': 'Comando 312',
+        '320': 'Comando 320',
+
+        // Variações com "comando" antes/after
+        'comando 260': 'Comando 260',
+        'comando 264': 'Comando 264',
+        'comando 268': 'Comando 268',
+        'comando 272': 'Comando 272',
+        'comando 280': 'Comando 280',
+        'comando 288': 'Comando 288',
+        'comando 292': 'Comando 292',
+        'comando 304': 'Comando 304',
+        'comando 312': 'Comando 312',
+        'comando 320': 'Comando 320',
+
+        '260 comando': 'Comando 260',
+        '264 comando': 'Comando 264',
+        '268 comando': 'Comando 268',
+        '272 comando': 'Comando 272',
+        '280 comando': 'Comando 280',
+        '288 comando': 'Comando 288',
+        '292 comando': 'Comando 292',
+        '304 comando': 'Comando 304',
+        '312 comando': 'Comando 312',
+        '320 comando': 'Comando 320',
+
+        // Juntas
+        'takashing aluminium': 'TakaShing Aluminium',
+        'spa aco': 'SPA Aço',
+        'bbk aco': 'BBK Aço',
+        'proracing carbon': 'ProRacing Carbon',
+        'edelbrock racing series': 'Edelbrock Racing Series',
+        'edelbrock carbon': 'Edelbrock Carbon',
+
+        // Molas
+        'takashing spr1': 'TakaShing SPR1',
+        'oem aco': 'OEM Aço',
+        'edelbrock magnum': 'Edelbrock Magnum',
+        'proracing carbon': 'ProRacing Carbon',
+        'proracing m1': 'ProRacing M1',
+
+        // Tuchos
+        'takashing tpt1': 'TakaShing TPT1',
+        'oem aco': 'OEM Aço',
+        'edelbrock flat': 'Edelbrock Flat',
+        'edelbrock performer': 'Edelbrock Performer',
+        'crower 350t': 'Crower 350T',
+        'edelbrock m tec': 'Edelbrock M-Tec',
+        'proracing obb': 'ProRacing OBB',
+        'proracing obb+': 'ProRacing OBB+',
+        'proracing obb plus': 'ProRacing OBB+',
+        'obb': 'ProRacing OBB',
+        'obb+': 'ProRacing OBB+',
+        'obb plus': 'ProRacing OBB+',
+
+        // Válvulas
+        'takashing aco': 'TakaShing Aço',
+        'bosch aco': 'Bosch Aço',
+        'eaton aco': 'Eaton Aço',
+        'continental aco': 'Continental Aço',
+        'proracing carbon': 'ProRacing Carbon',
+        'proracing tungstenio': 'ProRacing Tungstênio',
+
+        // ========== ECU ==========
+        // Chip
+        'remapeamento ecu': 'Remapeamento ECU',
+        'chip takashing': 'Chip TakaShing',
+        'chip nascar parts': 'Chip Nascar Parts',
+        'chip mns gt2': 'Chip MNS GT2',
+        'chip folego turbo': 'Chip Folego Turbo',
+        'chip proracing gt r': 'Chip ProRacing GT-R',
+        'chip mns 6t2': 'Chip MNS GT2',
+        'mns gt2': 'Chip MNS GT2',
+        'gt r': 'Chip ProRacing GT-R',
+
+        // Módulo de injeção
+        'procrane 3': 'ProCrane 3',
+        'procrane+': 'ProCrane+',
+        'procrane plus': 'ProCrane+',
+        'proracing ftech+': 'ProRacing Ftech+',
+        'proracing ftech+ v2': 'ProRacing Ftech+ V2',
+        'proracing ftech+ v300': 'ProRacing Ftech+ V300',
+        'proracing ftech+ v450': 'ProRacing Ftech+ V450',
+        'ftech+ v2': 'ProRacing Ftech+ V2',
+        'ftech+ v300': 'ProRacing Ftech+ V300',
+        'ftech+ v450': 'ProRacing Ftech+ V450',
+        'ftech v2': 'ProRacing Ftech+ V2',
+        'ftech v300': 'ProRacing Ftech+ V300',
+        'ftech v450': 'ProRacing Ftech+ V450',
+        'v2': 'ProRacing Ftech+ V2',
+        'v300': 'ProRacing Ftech+ V300',
+        'v450': 'ProRacing Ftech+ V450',
+
+        // ========== MOTOR ==========
+        // Bielas
+        'oem': 'OEM',
+        'takashing forjado': 'TakaShing Forjado',
+        'oem forjado': 'OEM Forjado',
+        'proracing steel+': 'ProRacing Steel+',
+        'proracing carbon+': 'ProRacing Carbon+',
+
+        // Bloco
+        'proracing aluminium': 'ProRacing Aluminium',
+        'taperformance v3800': 'TAPerformance V3800',
+        'taperformance v4550': 'TAPerformance V4550',
+        'edelbrock 350 sbc': 'Edelbrock 350 SBC',
+        'brodix bs aluminium': 'Brodix BS Aluminium',
+
+        // Bomba de óleo
+        'takashing p1': 'TakaShing P1',
+        'melling m295': 'Melling M295',
+        'melling m295hv': 'Melling M295HV',
+        'edelbrock performer': 'Edelbrock Performer',
+
         // Bronzinas
-        'mahle': 'Mahle',
+        'takashing': 'TakaShing',
+        'mahie': 'Mahie',
+        'mahle': 'Mahie',
+        'mohle': 'Mahie',
+        'takao': 'Takao',
         'king aluminium': 'King Aluminium',
         'king cobre': 'King Cobre',
         'king pmaxkote': 'King pMaxKote',
 
-        // Turbo
-        'taka .36': 'TakaShing .36',
+        // Cárter
+        'oem aco': 'OEM Aço',
+        'edelbrock aluminium': 'Edelbrock Aluminium',
+        'proracing carbon': 'ProRacing Carbon',
+        'edelbrock dops': 'Edelbrock DOPS',
+        'proracing dry+': 'ProRacing Dry+',
+
+        // Pistões
+        'takashing forjado': 'TakaShing Forjado',
+        'oem forjado': 'OEM Forjado',
+        'proracing steel+': 'ProRacing Steel+',
+        'proracing titanium+': 'ProRacing Titanium+',
+
+        // Virabrequim
+        'takashing forjado': 'TakaShing Forjado',
+        'oem forjado': 'OEM Forjado',
+        'proracing steel+': 'ProRacing Steel+',
+        'proracing titanium+': 'ProRacing Titanium+',
+
+        // ========== ÓXIDO NITROSO ==========
+        // Kit instalação
+        'kit nitro': 'Kit Nitro',
+
+        // Bico injetor
+        'takashing 0.3mm': 'TakaShing 0.3mm',
+        'takashing 0.5mm': 'TakaShing 0.5mm',
+        'nx 0.5mm': 'NX 0.5mm',
+        'nx 0.6mm': 'NX 0.6mm',
+        'nos 0.7mm': 'NOS 0.7mm',
+        'nos 0.8mm': 'NOS 0.8mm',
+        'nos 2.0mm ec': 'NOS 2.0mm EC',
+
+        // Garrafas
+        'takashing 10 lbs': 'TakaShing 10 Lbs',
+        'takashing 20 lbs': 'TakaShing 20 Lbs',
+        'nx 20 lbs': 'NX 20 Lbs',
+        'nx dual 40 lbs': 'NX Dual 40 Lbs',
+        'nos 20 lbs': 'NOS 20 Lbs',
+        'nos 30 lbs': 'NOS 30 Lbs',
+        'nos dual 40 lbs': 'NOS Dual 40 Lbs',
+        'nos dual 60 lbs': 'NOS Dual 60 LBs',
+        'nos dual 40': 'NOS Dual 40 Lbs',
+        'dual 40 lbs': 'NOS Dual 40 Lbs',
+        'nos 40 lbs': 'NOS Dual 40 Lbs',
+
+        // ========== REDUÇÃO DE PESO ==========
+        'proreduction light pack': 'ProReduction Light Pack',
+        'proreduction super pack': 'ProReduction Super Pack',
+        'proreduction ultra pack': 'ProReduction Ultra Pack',
+        'proreduction extreme pack': 'ProReduction Extreme Pack',
+        'proreduction nismo pack': 'ProReduction Nismo Pack',
+        'proreduction apex pack': 'ProReduction Apex Pack',
+        'light pack': 'ProReduction Light Pack',
+        'super pack': 'ProReduction Super Pack',
+        'ultra pack': 'ProReduction Ultra Pack',
+        'extreme pack': 'ProReduction Extreme Pack',
+        'nismo pack': 'ProReduction Nismo Pack',
+        'apex pack': 'ProReduction Apex Pack',
+
+        // ========== SUPERCHARGER ==========
+        // Kit instalação
+        'kit supercharger': 'Kit Supercharger',
+
+        // Remover tudo
+        'remover supercharger': 'Remover Supercharger',
+
+        // Compressor
+        'takashing blower': 'TakaShing Blower',
+        'vortech blower': 'Vortech Blower',
+        'edelbrock blower': 'Edelbrock Blower',
+        'vortech ccsq v 30': 'Vortech CCSq V-30',
+        'vortech sc 2200x': 'Vortech Sc 2200x',
+        'proracing sc kompressor': 'ProRacing Sc Kompressor',
+        'proracing sc kompressor hp': 'ProRacing SC Kompressor HP',
+
+        // Polias
+        'takashing 3.9': 'TakaShing 3.9',
+        'magnuson 3.6': 'Magnuson 3.6',
+        'magnuson 3.2': 'Magnuson 3.2',
+        'edelbrock 3.0': 'Edelbrock 3.0',
+        'edelbrock 2.6': 'Edelbrock 2.6',
+        'proracing 2.2': 'ProRacing 2.2',
+        'proracing 2.1': 'ProRacing 2.1',
+        'proracing 2.0': 'ProRacing 2.0',
+
+        // ========== TURBO ==========
+        // Kit instalação
+        'kit turbo': 'Kit Turbo',
+
+        // Remover tudo
+        'remover turbo': 'Remover Turbo',
+
+        // Intercooler
+        'takashing': 'TakaShing',
+        'proracing i flow': 'ProRacing I-Flow',
+        'hks s type': 'HKS S-Type',
+        'hks r type': 'HKS R-Type',
+        'garret f80': 'Garret F80',
+        'mashimoto tmic': 'Mashimoto TMIC',
+        'mashimoto r line': 'Mashimoto R-Line',
+        'proracing competition': 'ProRacing Competition',
+
+        // Turbinas
+        'takashing .36': 'TakaShing .36',
         'spa .42': 'SPA .42',
         'spa .48': 'SPA .48',
         'garret .58': 'Garret .58',
@@ -450,312 +682,313 @@ const MAPPINGS = {
         'masterpower .70': 'MasterPower .70',
         'masterpower .82': 'MasterPower .82',
         'masterpower .84': 'MasterPower .84',
+        'taka .36': 'TakaShing .36',
+        'hks70': 'HKS .70',
+        'hks 70': 'HKS .70',
+        'hks.70': 'HKS .70',
 
-        // Válvulas
-        'controllflow': 'HKS ControFlow',
-        'gt ii': 'HKS GT II',
+        // Válvula de alívio
+        'takashing': 'TakaShing',
+        'beep turbo usc': 'Beep Turbo USC',
+        'spa mcsi': 'SPA MCSI',
+        'hks controflow': 'HKS ControFlow',
+        'hks gt ii': 'HKS GT II',
+        'proracing wgv': 'ProRacing WGV',
+        'wgv': 'ProRacing WGV',
 
-        // ECU
-        'remapeamento ecu': 'Remapeamento ECU',
-        'mns gt2': 'Chip MNS GT2',
-        'folego turbo': 'Chip Folego Turbo',
-        'gt r': 'Chip ProRacing GT-R',
-        'ftech+ v2': 'ProRacing Ftech+ V2',
-        'ftech+ v300': 'ProRacing Ftech+ V300',
-        'ftech+ v450': 'ProRacing Ftech+ V450',
+        // Válvula de prioridade
+        'takashing': 'TakaShing',
+        'beep turbo usc': 'Beep Turbo USC',
+        'spa mcsi': 'SPA MCSI',
+        'hks controflow': 'HKS ControFlow',
+        'hks gt ii': 'HKS GT II',
+        'proracing bov': 'ProRacing BOV',
+        'bov': 'ProRacing BOV',
 
-        // Redução de Peso
-        'light pack': 'ProReduction Light Pack',
-        'super pack': 'ProReduction Super Pack',
-        'ultra pack': 'ProReduction Ultra Pack',
-        'extreme pack': 'ProReduction Extreme Pack',
-        'nismo pack': 'ProReduction Nismo Pack',
-        'apex pack': 'ProReduction Apex Pack',
-
-        // Transmissão
+        // ========== TRANSMISSÃO ==========
         'z pro one': 'Z-Pro One',
         'z pro carbon': 'Z-Pro Carbon',
-        'header s4': 'ProRacing Header S4',
-        'takashing bronzina': 'TakaShing',
-        'bronzina takashing': 'TakaShing',
-        'takao bronzina': 'Takao',
-        'proracing obb+': 'ProRacing OBB+',
-        'proracing obb +': 'ProRacing OBB+',
-        'proracing obb plus': 'ProRacing OBB+',
-        'proracing obbplus': 'ProRacing OBB+',
-
-        // Para a versão básica, apenas se for explicitamente buscada
-        'proracing obb basic': 'ProRacing OBB',
-        'proracing obb standard': 'ProRacing OBB',
-        'bronzina takao': 'Takao',
-        'king aluminium bronzina': 'King Aluminium',
-        'king cobre bronzina': 'King Cobre',
-        'king pmaxkote bronzina': 'King pMaxKote',
-        'king bronzina': 'King Aluminium',
-
-        // Mapeamentos específicos para bronzinas
-        'oem bronzina': 'OEM',
-        'bronzina oem': 'OEM',
-        'bronzina original': 'OEM',
-        'header s 4': 'ProRacing Header S4',
-        'header-s4': 'ProRacing Header S4',
-        's4 header': 'ProRacing Header S4',
-        'header4': 'ProRacing Header S4',
-        'mohle': 'Mahle',
-        'mahle': 'Mahle',
-        'mahie': 'Mahle',
-        'mohle bronzina': 'Mahle',
-        'mahle bronzina': 'Mahle',
-        'bronzina mohle': 'Mahle',
-        'bronzina mahle': 'Mahle',
-        'hks.70': 'HKS .70',
-        'hks 70': 'HKS .70',
-        'hks70': 'HKS .70',
-        'hks.7o': 'HKS .70',
-        'hks.7O': 'HKS .70',
-        'hks 7o': 'HKS .70',
-        'hks 7O': 'HKS .70',
-        'hks.7': 'HKS .70',
-        'hks 7': 'HKS .70',
-        'proracing obb+': 'ProRacing OBB+',
-        'proracing obb +': 'ProRacing OBB+',
-        'proracing obb plus': 'ProRacing OBB+',
-        'proracing obbplus': 'ProRacing OBB+',
-        'obb+': 'ProRacing OBB+',
-        'obb +': 'ProRacing OBB+',
-
-        // MAPEAMENTOS PARA PRORACING OBB (BÁSICO)
-        'proracing obb': 'ProRacing OBB',
-        'obb': 'ProRacing OBB',
-
-        'hks gt ii': 'HKS GT II',
-        'hks gt2': 'HKS GT II',
-        'hks gt 2': 'HKS GT II',
-        'hks gtii': 'HKS GT II',
-
-        'proracing header s3': 'ProRacing Header S3',
-        'header s3': 'ProRacing Header S3',
-        'header s 3': 'ProRacing Header S3',
-        'header-s3': 'ProRacing Header S3',
-        's3 header': 'ProRacing Header S3',
-        'header3': 'ProRacing Header S3',
-
-        'proracing header s2': 'ProRacing Header S2',
-        'header s2': 'ProRacing Header S2',
-        'header s 2': 'ProRacing Header S2',
-        'header-s2': 'ProRacing Header S2',
-        's2 header': 'ProRacing Header S2',
-        'header2': 'ProRacing Header S2',
-
-        'proracing header s1': 'ProRacing Header S1',
-        'header s1': 'ProRacing Header S1',
-        'header s 1': 'ProRacing Header S1',
-        'header-s1': 'ProRacing Header S1',
-        's1 header': 'ProRacing Header S1',
-        'header1': 'ProRacing Header S1',
-        'oem': 'OEM',
-        'dem': 'OEM',
-        '0em': 'OEM',
-
-        'header s': 'ProRacing Header S4',
-        'proracing header': 'ProRacing Header S4',
-
-        'takashing forjado': 'TakaShing Forjado',
-        'bosch aco': 'Bosch Aço',
-        'bosch aço': 'Bosch Aço',
-        'edelbrock performer': 'Edelbrock Performer',
-        'proracing carbon': 'ProRacing Carbon',
-        'comando 268': 'Comando 268',
-        'comando 268°': 'Comando 268',
-        'garret .63': 'Garret .63',
-        'gorret .63': 'Garret .63',
-        'gorret1.63': 'Garret .63',
-        'spa mcsi': 'SPA MCSI',
-        'proflacing wgv': 'ProRacing WGV',
-        'chip mns 6t2': 'Chip MNS GT2',
-        'nos 20 lbs': 'NOS 20 Lbs',
-        'proreduction extreme pack': 'ProReduction Extreme Pack',
-        'z-pro carbon': 'Z-Pro Carbon',
-        'tap erformance v4550': 'TAPerformance V4550',
-        'prorocing 2.0': 'ProRacing 2.0',
-        'proracing 2.0': 'ProRacing 2.0',
-        'pro racing 2.0': 'ProRacing 2.0',
-        'prorocing': 'ProRacing 2.0',
-        'proracing': 'ProRacing 2.0',
-
-        'bov': 'ProRacing BOV',
-        'proracing bov': 'ProRacing BOV',
-        'wgv': 'ProRacing WGV',
-        'proracing wgv': 'ProRacing WGV',
-        'hks gt ii': 'HKS GT II',
-        'hks controflow': 'HKS ControFlow',
-        'beep turbo usc': 'Beep Turbo USC',
-
-        'ftech+ v450': 'ProRacing Ftech+ V450',
-        'proracing ftech+ v450': 'ProRacing Ftech+ V450',
-        'ftech+ v 450': 'ProRacing Ftech+ V450',
-        'ftech+ v-450': 'ProRacing Ftech+ V450',
-        'ftech v450': 'ProRacing Ftech+ V450',
-        'ftech+ v45o': 'ProRacing Ftech+ V450',
-        'ftech+ v45O': 'ProRacing Ftech+ V450',
-        'ftech+ v45d': 'ProRacing Ftech+ V450',
-        'ftech+ v45D': 'ProRacing Ftech+ V450',
-        'ftech+ v4so': 'ProRacing Ftech+ V450',
-        'ftech+ v4s0': 'ProRacing Ftech+ V450',
-        'ftech+ v 45o': 'ProRacing Ftech+ V450',
-        'ftech+ v 45O': 'ProRacing Ftech+ V450',
-        'v450': 'ProRacing Ftech+ V450',
-        'v45o': 'ProRacing Ftech+ V450',
-        'v45O': 'ProRacing Ftech+ V450',
-        'v45d': 'ProRacing Ftech+ V450',
-
-        'ftech+ v300': 'ProRacing Ftech+ V300',
-        'proracing ftech+ v300': 'ProRacing Ftech+ V300',
-        'ftech+ v 300': 'ProRacing Ftech+ V300',
-        'ftech+ v-300': 'ProRacing Ftech+ V300',
-        'ftech v300': 'ProRacing Ftech+ V300',
-        'ftech+ v3oo': 'ProRacing Ftech+ V300',
-        'ftech+ v3Oo': 'ProRacing Ftech+ V300',
-        'ftech+ v3o0': 'ProRacing Ftech+ V300',
-        'ftech+ v 3oo': 'ProRacing Ftech+ V300',
-        'v300': 'ProRacing Ftech+ V300',
-        'v3oo': 'ProRacing Ftech+ V300',
-
-        'ftech+ v2': 'ProRacing Ftech+ V2',
-        'proracing ftech+ v2': 'ProRacing Ftech+ V2',
-        'ftech+ v 2': 'ProRacing Ftech+ V2',
-        'ftech+ v-2': 'ProRacing Ftech+ V2',
-        'ftech v2': 'ProRacing Ftech+ V2',
-        'ftech+ vZ': 'ProRacing Ftech+ V2',
-        'ftech+ v z': 'ProRacing Ftech+ V2',
-        'v2': 'ProRacing Ftech+ V2',
-        'vz': 'ProRacing Ftech+ V2',
-
-        'ftech+': 'ProRacing Ftech+',
-        'proracing ftech+': 'ProRacing Ftech+',
-        'proracing ftech': 'ProRacing Ftech+',
-        'ftech': 'ProRacing Ftech+',
-
-        // Novos mapeamentos expandidos
-        'melling m295': 'Melling M295',
-        'melling m295hv': 'Melling M295HV',
-        'king aluminium': 'King Aluminium',
-        'king cobre': 'King Cobre',
-        'king pmaxkote': 'King pMaxKote',
-        'edelbrock dops': 'Edelbrock DOPS',
-        'proracing dry+': 'ProRacing Dry+',
-        'vortech ccsq v-30': 'Vortech CCSq V-30',
-        'vortech sc 2200x': 'Vortech Sc 2200x',
-        'proracing sc kompressor': 'ProRacing Sc Kompressor',
-        'proracing sc kompressor hp': 'ProRacing SC Kompressor HP',
-        'magnuson 3.6': 'Magnuson 3.6',
-        'magnuson 3.2': 'Magnuson 3.2',
-        'edelbrock 3.0': 'Edelbrock 3.0',
-        'edelbrock 2.6': 'Edelbrock 2.6',
-        'proracing 2.2': 'ProRacing 2.2',
-        'proracing 2.1': 'ProRacing 2.1',
-        'hks s-type': 'HKS S-Type',
-        'hks r-type': 'HKS R-Type',
-        'garret f80': 'Garret F80',
-        'mashimoto tmic': 'Mashimoto TMIC',
-        'mashimoto r-line': 'Mashimoto R-Line',
-        'proracing competition': 'ProRacing Competition',
-        'masterpower .70': 'MasterPower .70',
-        'masterpower .82': 'MasterPower .82',
-        'masterpower .84': 'MasterPower .84',
-        'proreduction light pack': 'ProReduction Light Pack',
-        'proreduction super pack': 'ProReduction Super Pack',
-        'proreduction ultra pack': 'ProReduction Ultra Pack',
-        'proreduction nismo pack': 'ProReduction Nismo Pack',
-        'proreduction apex pack': 'ProReduction Apex Pack',
-        'z-pro one': 'Z-Pro One'
+        'z pro': 'Z-Pro One'
     },
 
     ocrCorrections: {
-        'valculo': 'valvula', 'valvla': 'valvula', 'válculo': 'válvula', 'válvla': 'válvula',
+        // Correções gerais de texto - APENAS CORREÇÕES ESPECÍFICAS
+        'valculo': 'valvula',
+        'valvla': 'valvula',
+        'válculo': 'válvula',
+        'válvla': 'válvula',
+        'varlavel': 'variável',
+        'varlável': 'variável',
+        'varlavei': 'variável',
+
+        // Correções específicas para virabrequim
+        'virabreqoim': 'virabrequim',
+        'virabrequim': 'virabrequim',
+        'vira breqoim': 'virabrequim',
+        'vira brequim': 'virabrequim',
+
+        // Correções específicas para OEM/DEM
+        'dem': 'oem',
+        '0em': 'oem',
+        'o em': 'oem',
+
+        // Correções específicas para Takao
+        'takdo': 'takao',
+        'takda': 'takao',
+        'taka0': 'takao',
+        'tako': 'takao',
+        'takau': 'takao',
+
+        // Correções específicas para marcas
+        'mahle': 'mahie',
+        'mohle': 'mahie',
+
+        // Correções específicas para palavras comuns
+        'variavei': 'variável',
+        'variavel': 'variável',
         'pistoes': 'pistões',
         'pistöes': 'pistões',
         'pista0': 'pistao',
+        'pistaoes': 'pistões',
         'heder': 'header',
         'hedaer': 'header',
+        'headr': 'header',
         'turbino': 'turbina',
         'turbinos': 'turbinas',
-        'hks.70': 'hks .70',
-        'hks.7o': 'hks .70',
-        'hks.7O': 'hks .70',
-        'hks70': 'hks .70',
-        'valculo': 'valvula', 'valvla': 'valvula', 'válculo': 'válvula', 'válvla': 'válvula',
-        'pistoes': 'pistões', 'pistöes': 'pistões', 'pista0': 'pistao',
-        'heder': 'header', 'hedaer': 'header',
-        'turbino': 'turbina', 'turbinos': 'turbinas',
-        'hks.70': 'hks .70', 'hks.7o': 'hks .70', 'hks.7O': 'hks .70', 'hks70': 'hks .70',
-        '0em': 'oem', '0 em': 'oem', 'dem': 'oem',
-        'mohle': 'mahle', 'mahie': 'mahle',
-        'bronzinasas': 'bronzinas', 'bronzinaas': 'bronzinas', 'bronzinos': 'bronzinas', 'bronzinaos': 'bronzinas',
-        'bombaa': 'bomba', 'bomba de oleo': 'bomba de óleo', 'bomba oleo': 'bomba de óleo',
-        'admisao': 'admissao', 'admisão': 'admissão',
-        'escpe': 'escape', 'exhast': 'exhaust',
+        'turbinaa': 'turbina',
+        'comandoo': 'comando',
+        'comandos': 'comando',
         'comand0': 'comando',
-        'gaskt': 'gasket', 'sprng': 'spring',
-        'tuch': 'tucho', 'tuch0': 'tucho',
-        'biel': 'biela', 'bleios': 'bielas',
-        'v1rabrequim': 'virabrequim', 'brequim': 'virabrequim',
+        'camando': 'comando',
+        'juntaa': 'junta',
+        'juntas': 'juntas',
+        'molaa': 'mola',
+        'molas': 'molas',
+        'tucho': 'tucho',
+        'tuchos': 'tuchos',
+        'tuch0': 'tucho',
+        'bielaa': 'biela',
+        'bielas': 'bielas',
+        'bleios': 'bielas',
+        'virabrequim': 'virabrequim',
+        'brequim': 'virabrequim',
+        'carter': 'cárter',
         'cart3r': 'cárter',
-        'proflacing': 'proracing',
-        'gorret': 'garret',
-        'spa mcsi': 'spa mcs1',
-        'polio': 'polia',
-        'prorocing': 'proracing',
-        'ftech': 'ftech+',
-        '0em': 'oem',
-        '0 em': 'oem',
-        'mohle': 'mahle',
-        'mahie': 'mahle',
-        'mahle': 'Mahle',
+        'bronzina': 'bronzinas',
         'bronzinasas': 'bronzinas',
         'bronzinaas': 'bronzinas',
         'bronzinos': 'bronzinas',
         'bronzinaos': 'bronzinas',
         'bronzin': 'bronzinas',
+        'bombaa': 'bomba',
+        'bomba de oleo': 'bomba de óleo',
+        'bomba oleo': 'bomba de óleo',
+        'admisao': 'admissao',
+        'admisão': 'admissão',
+        'admissao': 'admissão',
+        'escpe': 'escape',
+        'exhast': 'exhaust',
+        'gaskt': 'gasket',
+        'sprng': 'spring',
+        'liftr': 'lifter',
+        'vale': 'valve',
+        'engin': 'engine',
 
-        'takashing': 'TakaShing',
-        'takao': 'Takao',
-        'king': 'King',
-        '0-em': 'oem',
-        'header s': 'header s4',
-        'proracing header': 'proracing header s4',
-        'dem': 'oem',
-        'oem': 'OEM',
-        'bronzinos': 'bronzinas', 'bronzinaos': 'bronzinas', 'bronzin': 'bronzinas',
-        'bombaa': 'bomba', 'bomba de oleo': 'bomba de óleo', 'bomba oleo': 'bomba de óleo',
-        'priorida': 'prioridade', 'prloridade': 'prioridade',
-        'admisao': 'admissao', 'admisão': 'admissão',
-        'escpe': 'escape', 'exhast': 'exhaust',
-        'comando': 'comando', 'comand0': 'comando',
-        'gaskt': 'gasket', 'sprng': 'spring',
-        'tuch': 'tucho', 'tuch0': 'tucho',
-        'biel': 'biela', 'bleios': 'bielas',
-        'v1rabrequim': 'virabrequim', 'brequim': 'virabrequim',
-        'carter': 'cárter', 'cart3r': 'cárter',
-        'takashing': 'TakaShing',
-        'proflacing': 'proracing',
-        'gorret': 'garret',
-        'spa mcsi': 'spa mcs1',
-        'polio': 'polia',
-        'prorocing': 'proracing',
-        'pro rocing': 'proracing',
-        'prioridadede': 'prioridade',
-        'alivio': 'alívio',
-        'wgv': 'bov',
-        'ftech': 'ftech+',
+        // Correções de marcas
+        'tokashing': 'TakaShing',
+        'proracing': 'ProRacing',
+        'pro racing': 'ProRacing',
+        'prorocing': 'ProRacing',
+        'edelbrock': 'Edelbrock',
+        'edelbrok': 'Edelbrock',
+        'edelbsrock': 'edelbrock',
+        'edeLbsrock': 'edelbrock',
+        'trickflow': 'TrickFlow',
+        'trick flow': 'TrickFlow',
+        'melling': 'Melling',
+        'meling': 'Melling',
+        'vortech': 'Vortech',
+        'vorteck': 'Vortech',
+        'magnuson': 'Magnuson',
+        'magnusson': 'Magnuson',
+        'mashimoto': 'Mashimoto',
+        'mashmoto': 'Mashimoto',
+
+        // Correções de números e versões
+        'hks.70': 'hks .70',
+        'hks.7o': 'hks .70',
+        'hks.7O': 'hks .70',
+        'hks70': 'hks .70',
+        'hks.82': 'hks .82',
+        'hks82': 'hks .82',
+        'garret.58': 'garret .58',
+        'garret58': 'garret .58',
+        'edelbsrock': 'edelbrock',
+        'edeLbsrock': 'edelbrock',
+        'edelbrok': 'edelbrock',
+        'edelbrock': 'Edelbrock',
+
+        // ✅ CORREÇÕES ESPECÍFICAS PARA ALUMINUM/ALUMINIUM
+        'aluminum': 'Aluminium',
+        'aluminio': 'Aluminium',
+        'alum': 'Aluminium',
+        'garret.63': 'garret .63',
+        'garret63': 'garret .63',
+        'spa.42': 'spa .42',
+        'spa42': 'spa .42',
+        'spa.48': 'spa .48',
+        'spa48': 'spa .48',
+
+        // Correções de caracteres especiais
+        'proracing obb+': 'proracing obb+',
+        'proracing obb +': 'proracing obb+',
+        'ftech+': 'ftech+',
         'ftech +': 'ftech+',
-        'melling': 'melling',
-        'vortech': 'vortech',
-        'magnuson': 'magnuson',
-        'mashimoto': 'mashimoto',
-        'masterpower': 'masterpower'
+        'procrane+': 'procrane+',
+        'procrane +': 'procrane+',
+
+        // Correções de unidades
+
+        // Correções de modelos
+        's1': 'S1',
+        's2': 'S2',
+        's3': 'S3',
+        's4': 'S4',
+        'v2': 'V2',
+        'v300': 'V300',
+        'v450': 'V450',
+        'gt2': 'GT2',
+        'gt ii': 'GT II',
+        'gt r': 'GT-R',
+
+        // Outras correções específicas
+        'bielos': 'bielas',
+        'córter': 'cárter',
+        'corter': 'cárter',
+        'dops': 'DOPS',
+        'forjado': 'Forjado',
+
+        // Correções para símbolos de grau
+        '°': '',
+        'º': '',
+        'graus': '',
+        'degrees': ''
     }
 };
+
+// ========== SISTEMA DE BUSCA POR SIMILARIDADE PARA CATEGORIAS ==========
+class CategorySimilaritySearch {
+    static findSimilarCategory(searchText) {
+        const normalizedSearch = Utils.normalizeText(searchText);
+
+        // Lista de todas as categorias e subcategorias reais
+        const allCategories = this.getAllCategories();
+
+        let bestMatch = null;
+        let bestScore = 0;
+
+        for (const [category, subcategories] of Object.entries(allCategories)) {
+            // Verificar similaridade com a categoria
+            const categoryScore = this.calculateCategorySimilarity(normalizedSearch, category, subcategories);
+
+            if (categoryScore > bestScore && categoryScore >= 0.6) {
+                bestScore = categoryScore;
+                bestMatch = { category, subcategory: this.findBestSubcategory(normalizedSearch, subcategories) };
+            }
+        }
+
+        if (bestMatch) {
+            console.log(`🎯 CATEGORIA SIMILAR: "${searchText}" -> ${bestMatch.category}/${bestMatch.subcategory} (score: ${bestScore.toFixed(2)})`);
+        }
+
+        return bestMatch;
+    }
+
+    static getAllCategories() {
+        return {
+            'Cabeçote': ['cabeçote', 'coletor de admissão', 'coletor de escape', 'comandos', 'juntas', 'molas', 'tuchos', 'válvulas'],
+            'Motor': ['bielas', 'bloco', 'bomba de óleo', 'bronzinas', 'cárter', 'pistões', 'virabrequim'],
+            'Turbo': ['Turbinas', 'intercooler', 'válvula de alívio', 'válvula de prioridade', 'kit instalação', 'remover tudo'],
+            'SuperCharger': ['polias', 'compressor', 'kit instalação', 'remover tudo'],
+            'ECU': ['chip', 'módulo de injeção'],
+            'Óxido Nitroso': ['garrafas', 'bico injetor', 'kit instalação'],
+            'Redução de Peso': ['reduções'],
+            'Transmissão': ['caixa de marchas']
+        };
+    }
+
+    static calculateCategorySimilarity(searchText, category, subcategories) {
+        const normalizedCategory = Utils.normalizeText(category);
+
+        // Verificar match direto com categoria
+        if (normalizedCategory.includes(searchText) || searchText.includes(normalizedCategory)) {
+            return 0.9;
+        }
+
+        // Verificar similaridade com Levenshtein
+        const distance = Utils.calculateLevenshteinDistance(searchText, normalizedCategory);
+        const maxLength = Math.max(searchText.length, normalizedCategory.length);
+        const similarity = (maxLength - distance) / maxLength;
+
+        if (similarity >= 0.7) {
+            return similarity;
+        }
+
+        // Verificar se alguma subcategoria tem match
+        for (const subcat of subcategories) {
+            const normalizedSubcat = Utils.normalizeText(subcat);
+            if (normalizedSubcat.includes(searchText) || searchText.includes(normalizedSubcat)) {
+                return 0.8;
+            }
+
+            const subcatDistance = Utils.calculateLevenshteinDistance(searchText, normalizedSubcat);
+            const subcatMaxLength = Math.max(searchText.length, normalizedSubcat.length);
+            const subcatSimilarity = (subcatMaxLength - subcatDistance) / subcatMaxLength;
+
+            if (subcatSimilarity >= 0.7) {
+                return subcatSimilarity;
+            }
+        }
+
+        return 0;
+    }
+
+    static findBestSubcategory(searchText, subcategories) {
+        let bestSubcat = subcategories[0]; // Subcategoria padrão
+        let bestScore = 0;
+
+        for (const subcat of subcategories) {
+            const normalizedSubcat = Utils.normalizeText(subcat);
+            const normalizedSearch = Utils.normalizeText(searchText);
+
+            // Match exato
+            if (normalizedSubcat === normalizedSearch) {
+                return subcat;
+            }
+
+            // Contains
+            if (normalizedSubcat.includes(normalizedSearch) || normalizedSearch.includes(normalizedSubcat)) {
+                const score = normalizedSubcat.includes(normalizedSearch) ? 0.9 : 0.8;
+                if (score > bestScore) {
+                    bestScore = score;
+                    bestSubcat = subcat;
+                }
+            }
+
+            // Similaridade
+            const distance = Utils.calculateLevenshteinDistance(normalizedSearch, normalizedSubcat);
+            const maxLength = Math.max(normalizedSearch.length, normalizedSubcat.length);
+            const similarity = (maxLength - distance) / maxLength;
+
+            if (similarity > bestScore && similarity >= 0.6) {
+                bestScore = similarity;
+                bestSubcat = subcat;
+            }
+        }
+
+        return bestSubcat;
+    }
+}
 
 // ========== UTILITÁRIOS ==========
 class Utils {
@@ -851,6 +1084,14 @@ class SearchEngine {
             return exactMatch;
         }
 
+        // Busca por similaridade de categoria
+        const similarityMatch = this.findByCategorySimilarity(normalizedSearch);
+        if (similarityMatch) {
+            console.log(`🎯 BUSCA POR SIMILARIDADE: "${similarityMatch.name}"`);
+            Cache.similarity.set(cacheKey, similarityMatch);
+            return similarityMatch;
+        }
+
         const smartMatch = this.smartCategorySearch(normalizedSearch);
         if (smartMatch) {
             console.log(`🎯 BUSCA INTELIGENTE: "${smartMatch.name}"`);
@@ -862,8 +1103,97 @@ class SearchEngine {
         return null;
     }
 
+    // Busca por similaridade de categoria
+    static findByCategorySimilarity(normalizedSearch) {
+        console.log(`🔍 Buscando por similaridade de categoria: "${normalizedSearch}"`);
+
+        const similarCategory = CategorySimilaritySearch.findSimilarCategory(normalizedSearch);
+        if (!similarCategory) {
+            console.log(`❌ Nenhuma categoria similar encontrada para: "${normalizedSearch}"`);
+            return null;
+        }
+
+        // Agora busca a peça dentro da categoria/subcategoria encontrada
+        const partMatch = this.findPartInCategoryWithSimilarity(similarCategory.category, similarCategory.subcategory, normalizedSearch);
+        return partMatch;
+    }
+
+    static findPartInCategoryWithSimilarity(category, subcategory, searchText) {
+        const categoryData = AppState.partsData[AppState.currentClass]?.[category]?.[subcategory];
+        if (!categoryData) {
+            console.log(`❌ Categoria não encontrada: ${category}/${subcategory}`);
+            return null;
+        }
+
+        console.log(`🔍 Buscando peça em ${category}/${subcategory} para: "${searchText}"`);
+
+        let bestMatch = null;
+        let bestScore = 0;
+
+        for (const [partName, price] of Object.entries(categoryData)) {
+            const normalizedPart = Utils.normalizeText(partName);
+            const score = this.calculatePartSimilarity(searchText, normalizedPart, partName);
+
+            if (score > bestScore && score >= 0.5) {
+                bestScore = score;
+                bestMatch = {
+                    category,
+                    subcategory,
+                    name: partName,
+                    price,
+                    score
+                };
+            }
+        }
+
+        if (bestMatch) {
+            console.log(`✅ PEÇA ENCONTRADA POR SIMILARIDADE: "${bestMatch.name}" (score: ${bestScore.toFixed(2)})`);
+        }
+
+        return bestMatch;
+    }
+
+    static calculatePartSimilarity(searchText, normalizedPart, originalPartName) {
+        // Match exato
+        if (normalizedPart === searchText) return 1.0;
+
+        // Contains
+        if (normalizedPart.includes(searchText)) return 0.9;
+        if (searchText.includes(normalizedPart)) return 0.8;
+
+        // Similaridade por palavras
+        const searchWords = searchText.split(' ').filter(w => w.length > 2);
+        const partWords = normalizedPart.split(' ').filter(w => w.length > 2);
+
+        let commonWords = 0;
+        for (const sWord of searchWords) {
+            for (const pWord of partWords) {
+                if (sWord === pWord) {
+                    commonWords += 1.0;
+                    break;
+                } else if (sWord.includes(pWord) || pWord.includes(sWord)) {
+                    commonWords += 0.7;
+                    break;
+                } else if (Utils.areWordsSimilar(sWord, pWord)) {
+                    commonWords += 0.5;
+                    break;
+                }
+            }
+        }
+
+        const wordScore = commonWords / Math.max(searchWords.length, partWords.length);
+
+        // Similaridade por Levenshtein para a string completa
+        const distance = Utils.calculateLevenshteinDistance(searchText, normalizedPart);
+        const maxLength = Math.max(searchText.length, normalizedPart.length);
+        const levenshteinScore = (maxLength - distance) / maxLength;
+
+        // Combina os scores
+        return Math.max(wordScore, levenshteinScore * 0.8);
+    }
+
     static analyzeColonSeparatedLine(line) {
-        const separators = [':', ';', '-', '–', '—', '•'];
+        const separators = [':', ';', '-', '–', '—', '•', ' '];
 
         let separatorUsed = null;
         for (const sep of separators) {
@@ -876,24 +1206,30 @@ class SearchEngine {
         if (!separatorUsed) return null;
 
         const parts = line.split(separatorUsed).map(part => part.trim());
-        if (parts.length !== 2) return null;
+        if (parts.length < 2) return null;
 
-        const [categoryPart, partName] = parts;
+        // Se tiver mais de 2 partes, junta as extras no nome da peça
+        const categoryPart = parts[0];
+        const partName = parts.slice(1).join(' ').trim();
+
         console.log(`📝 ANALISANDO LINHA: "${categoryPart}" ${separatorUsed} "${partName}"`);
 
+        // Aplica correções OCR
         let correctedCategory = this.applyOCRCorrections(categoryPart.toLowerCase());
         let normalizedCategory = Utils.normalizeText(correctedCategory);
 
         console.log(`🔧 Categoria corrigida: "${correctedCategory}" -> Normalizada: "${normalizedCategory}"`);
 
+        // Busca por mapeamento direto primeiro
         let categoryMatch = this.findCategoryMapping(normalizedCategory);
-        if (!categoryMatch) {
-            console.log(`❌ Categoria não encontrada: "${normalizedCategory}"`);
 
-            const keywordMatch = this.findCategoryByKeywords(normalizedCategory);
-            if (keywordMatch) {
-                console.log(`✅ Categoria encontrada por palavras-chave: ${keywordMatch.category}/${keywordMatch.subcategory}`);
-                categoryMatch = keywordMatch;
+        // Se não encontrou, tenta por similaridade
+        if (!categoryMatch) {
+            console.log(`🔍 Tentando busca por similaridade para categoria: "${normalizedCategory}"`);
+            const similarCategory = CategorySimilaritySearch.findSimilarCategory(normalizedCategory);
+            if (similarCategory) {
+                categoryMatch = similarCategory;
+                console.log(`✅ Categoria encontrada por similaridade: ${categoryMatch.category}/${categoryMatch.subcategory}`);
             }
         }
 
@@ -918,6 +1254,23 @@ class SearchEngine {
             return partMatch;
         }
 
+        // SE NÃO ENCONTRAR A PEÇA ESPECÍFICA, TENTA ENCONTRAR A PRIMEIRA DA CATEGORIA
+        console.log(`⚠️ Peça específica não encontrada, tentando peça padrão da categoria...`);
+        const categoryData = AppState.partsData[AppState.currentClass]?.[categoryMatch.category]?.[categoryMatch.subcategory];
+        if (categoryData) {
+            const firstPart = Object.entries(categoryData)[0];
+            if (firstPart) {
+                console.log(`✅ Usando peça padrão: "${firstPart[0]}"`);
+                return {
+                    category: categoryMatch.category,
+                    subcategory: categoryMatch.subcategory,
+                    name: firstPart[0],
+                    price: firstPart[1],
+                    score: 0.7
+                };
+            }
+        }
+
         console.log(`❌ Peça não encontrada na categoria: "${normalizedPartName}"`);
         return null;
     }
@@ -928,7 +1281,21 @@ class SearchEngine {
         const normalizedText = Utils.normalizeText(categoryText);
         console.log(`🔍 Texto normalizado: "${normalizedText}"`);
 
+        // PRIMEIRO: Busca por match exato
+        if (MAPPINGS.categoryMapping[normalizedText]) {
+            console.log(`✅ MATCH EXATO de categoria: "${normalizedText}" -> ${MAPPINGS.categoryMapping[normalizedText].category}/${MAPPINGS.categoryMapping[normalizedText].subcategory}`);
+            return MAPPINGS.categoryMapping[normalizedText];
+        }
+
+        // SEGUNDO: Busca por contains (mais específico primeiro)
         const mappingKeys = Object.keys(MAPPINGS.categoryMapping).sort((a, b) => b.length - a.length);
+
+        for (const key of mappingKeys) {
+            if (normalizedText === key) {
+                console.log(`✅ MATCH EXATO de categoria: "${key}" -> ${MAPPINGS.categoryMapping[key].category}/${MAPPINGS.categoryMapping[key].subcategory}`);
+                return MAPPINGS.categoryMapping[key];
+            }
+        }
 
         for (const key of mappingKeys) {
             if (normalizedText.includes(key) || key.includes(normalizedText)) {
@@ -937,6 +1304,7 @@ class SearchEngine {
             }
         }
 
+        // TERCEIRO: Busca por palavras-chave
         const words = normalizedText.split(' ');
         for (const word of words) {
             if (word.length > 3) {
@@ -953,63 +1321,6 @@ class SearchEngine {
         return null;
     }
 
-    static findCategoryByKeywords(text) {
-        const words = text.split(' ').filter(word => word.length > 2);
-
-        const keywordMapping = {
-            'turb': 'Turbo',
-            'turbo': 'Turbo',
-            'turbina': 'Turbo',
-            'hks': 'Turbo',
-            'garret': 'Turbo',
-            'bov': 'Turbo',
-            'wgv': 'Turbo',
-            'motor': 'Motor',
-            'pistao': 'Motor',
-            'pistão': 'Motor',
-            'biela': 'Motor',
-            'cabecote': 'Cabeçote',
-            'valvula': 'Cabeçote',
-            'comando': 'Cabeçote',
-            'transmissao': 'Transmissão',
-            'marcha': 'Transmissão',
-            'supercharger': 'SuperCharger',
-            'sc': 'SuperCharger',
-            'nitro': 'Óxido Nitroso',
-            'nos': 'Óxido Nitroso',
-            'reducao': 'Redução de Peso',
-            'peso': 'Redução de Peso',
-            'ecu': 'ECU',
-            'chip': 'ECU'
-        };
-
-        for (const word of words) {
-            for (const [keyword, category] of Object.entries(keywordMapping)) {
-                if (word.includes(keyword) || keyword.includes(word)) {
-                    const subcategory = this.getDefaultSubcategory(category);
-                    console.log(`🔑 CATEGORIA POR PALAVRA-CHAVE: "${keyword}" -> ${category}/${subcategory}`);
-                    return { category, subcategory };
-                }
-            }
-        }
-
-        return null;
-    }
-
-    static getDefaultSubcategory(category) {
-        const defaults = {
-            'Turbo': 'Turbinas',
-            'Motor': 'pistões',
-            'Cabeçote': 'cabeçote',
-            'Transmissão': 'caixa de marchas',
-            'SuperCharger': 'polias',
-            'Óxido Nitroso': 'garrafas',
-            'Redução de Peso': 'reduções',
-            'ECU': 'chip'
-        };
-        return defaults[category] || Object.values(MAPPINGS.categoryMapping).find(m => m.category === category)?.subcategory;
-    }
-
     static findPartInSpecificCategory(category, subcategory, partName) {
         const categoryData = AppState.partsData[AppState.currentClass]?.[category]?.[subcategory];
         if (!categoryData) {
@@ -1020,10 +1331,14 @@ class SearchEngine {
         console.log(`🔍 Buscando "${partName}" em ${category}/${subcategory}`);
         console.log(`📋 Peças disponíveis:`, Object.keys(categoryData));
 
-        // 1. Busca exata
+        // 1. Primeiro tenta limpar símbolos e aplicar correções
+        const cleanedPartName = this.cleanPartName(partName);
+        console.log(`🔧 Nome limpo: "${partName}" -> "${cleanedPartName}"`);
+
+        // 2. Busca exata com o nome limpo
         for (const [availablePartName, price] of Object.entries(categoryData)) {
             const normalizedAvailable = Utils.normalizeText(availablePartName);
-            if (normalizedAvailable === partName) {
+            if (normalizedAvailable === cleanedPartName) {
                 return {
                     category,
                     subcategory,
@@ -1034,8 +1349,8 @@ class SearchEngine {
             }
         }
 
-        // 2. Busca por mapeamento
-        const mappedName = this.findPartMapping(partName, categoryData);
+        // 3. Busca por mapeamento - AGORA COM PRIORIDADE PARA MATCHES MAIS ESPECÍFICOS
+        const mappedName = this.findPartMapping(cleanedPartName, categoryData);
         if (mappedName) {
             return {
                 category,
@@ -1046,13 +1361,37 @@ class SearchEngine {
             };
         }
 
-        // 3. Busca por contains
+        // 4. Busca especial para bronzinas (caso específico)
+        if (subcategory === 'bronzinas') {
+            const bearingMatch = this.findBearingMatch(cleanedPartName, categoryData);
+            if (bearingMatch) {
+                return bearingMatch;
+            }
+        }
+
+        // 5. Busca especial para coletor de escape (caso específico)
+        if (subcategory === 'coletor de escape') {
+            const escapeMatch = this.findEscapeCollectorMatch(cleanedPartName, categoryData);
+            if (escapeMatch) {
+                return escapeMatch;
+            }
+        }
+
+        // 6. Busca por números em comandos (caso especial)
+        if (subcategory === 'comandos') {
+            const commandMatch = this.findCommandByNumber(cleanedPartName, categoryData);
+            if (commandMatch) {
+                return commandMatch;
+            }
+        }
+
+        // 7. Busca por contains
         let bestMatch = null;
         let bestScore = 0;
 
         for (const [availablePartName, price] of Object.entries(categoryData)) {
             const normalizedAvailable = Utils.normalizeText(availablePartName);
-            const score = this.calculateContainsScore(partName, normalizedAvailable);
+            const score = this.calculateContainsScore(cleanedPartName, normalizedAvailable);
 
             if (score > bestScore && score >= 0.7) {
                 bestScore = score;
@@ -1069,277 +1408,255 @@ class SearchEngine {
         return bestMatch;
     }
 
-    static findPartMapping(partName, categoryData) {
-        for (const [key, mappedName] of Object.entries(MAPPINGS.partMapping)) {
-            if (partName.includes(key) && categoryData[mappedName] !== undefined) {
-                console.log(`✅ MAPEAMENTO: "${key}" -> "${mappedName}"`);
-                return mappedName;
+    // Busca especializada para bronzinas
+    static findBearingMatch(partName, categoryData) {
+        console.log(`🔍 Busca especial para bronzinas: "${partName}"`);
+
+        // Mapeamentos específicos para bronzinas
+        const bearingMappings = {
+            'takdo': 'Takao',
+            'takda': 'Takao',
+            'taka0': 'Takao',
+            'tako': 'Takao',
+            'takau': 'Takao',
+            'taka': 'Takao',
+            'mahie': 'Mahie',
+            'mahle': 'Mahie',
+            'mohle': 'Mahie',
+            'king aluminium': 'King Aluminium',
+            'king cobre': 'King Cobre',
+            'king pmaxkote': 'King pMaxKote',
+            'king pmax': 'King pMaxKote',
+            'aluminium': 'King Aluminium',
+            'cobre': 'King Cobre',
+            'pmax': 'King pMaxKote',
+            'oem': 'OEM',
+            'takashing': 'TakaShing'
+        };
+
+        // Verificar mapeamentos específicos
+        for (const [searchTerm, mappedName] of Object.entries(bearingMappings)) {
+            if (partName.includes(searchTerm) && categoryData[mappedName] !== undefined) {
+                console.log(`✅ MAPEAMENTO ESPECÍFICO BRONZINAS: "${searchTerm}" -> "${mappedName}"`);
+                return {
+                    category: 'Motor',
+                    subcategory: 'bronzinas',
+                    name: mappedName,
+                    price: categoryData[mappedName],
+                    score: 0.9
+                };
             }
         }
-        return null;
-    }
 
-
-    static removeCategoryWords(text, category, subcategory) {
-        let cleaned = text.toLowerCase();
-
-        // Palavras comuns de categoria/subcategoria para remover
-        const wordsToRemove = [
-            'bronzina', 'bronzinas', 'bronzin', 'bronzinos',
-            'motor', 'biela', 'bearing', 'bearings',
-            'pistao', 'pistões', 'pistons',
-            'valvula', 'valvulas', 'valve',
-            'cabecote', 'cabeçote', 'head',
-            'turbo', 'turbina', 'turbinas',
-            'coletor', 'admissao', 'admissão', 'escape',
-            'comando', 'comandos', 'camshaft',
-            'mola', 'molas', 'spring',
-            'tucho', 'tuchos', 'lifter',
-            'junta', 'juntas', 'gasket'
-        ];
-
-        wordsToRemove.forEach(word => {
-            cleaned = cleaned.replace(new RegExp(word, 'gi'), '').trim();
-        });
-
-        // Remover espaços extras e pontuação
-        cleaned = cleaned.replace(/\s+/g, ' ').replace(/[^\w\s]/g, '').trim();
-
-        return cleaned || text; // Retorna o original se ficar vazio
-    }
-
-    static findExactMapping(partName, categoryData, category, subcategory) {
-        const mappingKeys = Object.keys(MAPPINGS.partMapping).sort((a, b) => {
-            // PRIORIDADE 1: Match exato tem máxima prioridade
-            if (a === partName && b !== partName) return -1;
-            if (b === partName && a !== partName) return 1;
-
-            // PRIORIDADE 2: Versões com "+" primeiro (mais específicas)
-            const aHasPlus = a.includes('+');
-            const bHasPlus = b.includes('+');
-            if (aHasPlus && !bHasPlus) return -1;
-            if (!aHasPlus && bHasPlus) return 1;
-
-            // PRIORIDADE 3: Maior comprimento primeiro (mais específico)
-            return b.length - a.length;
-        });
-
-        console.log(`🔍 Ordem de mapeamento para "${partName}":`, mappingKeys.slice(0, 5));
-
-        for (const key of mappingKeys) {
-            if (partName === key) {
-                const mappedName = MAPPINGS.partMapping[key];
-                if (categoryData[mappedName] !== undefined) {
-                    console.log(`✅ MAPEAMENTO EXATO: "${partName}" -> "${mappedName}" (via chave: "${key}")`);
+        // Busca por padrões comuns em bronzinas
+        if (partName.includes('tak') || partName.includes('taka')) {
+            console.log(`🎯 DETECTADO PADRÃO "TAK": "${partName}"`);
+            for (const [availablePartName, price] of Object.entries(categoryData)) {
+                const normalizedAvailable = Utils.normalizeText(availablePartName);
+                if (normalizedAvailable.includes('tak')) {
+                    console.log(`✅ ENCONTRADO POR PADRÃO "TAK": "${availablePartName}"`);
                     return {
-                        category,
-                        subcategory,
-                        name: mappedName,
-                        price: categoryData[mappedName],
-                        score: 1.0
+                        category: 'Motor',
+                        subcategory: 'bronzinas',
+                        name: availablePartName,
+                        price,
+                        score: 0.8
                     };
                 }
             }
         }
+
+        // Busca por "king" ou marcas similares
+        if (partName.includes('king') || partName.includes('alum') || partName.includes('cobre') || partName.includes('pmax')) {
+            console.log(`🎯 DETECTADO PADRÃO "KING/ALUM/COBRE/PMAX": "${partName}"`);
+            for (const [availablePartName, price] of Object.entries(categoryData)) {
+                const normalizedAvailable = Utils.normalizeText(availablePartName);
+                if (normalizedAvailable.includes('king') || normalizedAvailable.includes('alum') ||
+                    normalizedAvailable.includes('cobre') || normalizedAvailable.includes('pmax')) {
+                    console.log(`✅ ENCONTRADO POR PADRÃO MARCA: "${availablePartName}"`);
+                    return {
+                        category: 'Motor',
+                        subcategory: 'bronzinas',
+                        name: availablePartName,
+                        price,
+                        score: 0.8
+                    };
+                }
+            }
+        }
+
         return null;
     }
 
-    static extractVersionNumber(text) {
-        const versionMatch = text.match(/s(\d+)/i) || text.match(/v(\d+)/i);
-        return versionMatch ? parseInt(versionMatch[1]) : null;
-    }
+    static findEscapeCollectorMatch(partName, categoryData) {
+        console.log(`🔍 Busca especial para coletor de escape: "${partName}"`);
 
-    static findCaseInsensitiveMatch(partName, categoryData, category, subcategory) {
-        const normalizedSearch = Utils.normalizeText(partName);
+        // Mapeamentos específicos para coletor de escape
+        const escapeMappings = {
+            'proracing y variável': 'ProRacing Y-Variável',
+            'proracing y variavel': 'ProRacing Y-Variável',
+            'proracing y varlavel': 'ProRacing Y-Variável',
+            'proracing y varlável': 'ProRacing Y-Variável',
+            'y variável': 'ProRacing Y-Variável',
+            'y variavel': 'ProRacing Y-Variável',
+            'y varlavel': 'ProRacing Y-Variável',
+            'y varlável': 'ProRacing Y-Variável',
+            'y var': 'ProRacing Y-Variável',
+            'proracing ceramico': 'ProRacing Cerâmico',
+            'proracing h ceramico': 'ProRacing H-Cerâmico',
+            'bellows manel': 'Bellows Manel',
+            'bellows hastelloy': 'Bellows Hastelloy',
+            'bbk titanium variavel': 'BBK Titanium Variável',
+            'fmic vanos': 'FMIC Vanos',
+            'fmic r6': 'FMIC R6'
+        };
 
-        for (const [availablePartName, price] of Object.entries(categoryData)) {
-            const normalizedAvailable = Utils.normalizeText(availablePartName);
-
-            if (normalizedAvailable === normalizedSearch) {
+        // Verificar mapeamentos específicos
+        for (const [searchTerm, mappedName] of Object.entries(escapeMappings)) {
+            if (partName.includes(searchTerm) && categoryData[mappedName] !== undefined) {
+                console.log(`✅ MAPEAMENTO ESPECÍFICO COLETOR ESCAPE: "${searchTerm}" -> "${mappedName}"`);
                 return {
-                    category,
-                    subcategory,
-                    name: availablePartName,
-                    price,
-                    score: 1.0
+                    category: 'Cabeçote',
+                    subcategory: 'coletor de escape',
+                    name: mappedName,
+                    price: categoryData[mappedName],
+                    score: 0.9
                 };
             }
         }
+
+        // Busca por "y" + "var" (para pegar Y-Variável mesmo com erros)
+        if ((partName.includes('y') || partName.includes('i')) && partName.includes('var')) {
+            console.log(`🎯 DETECTADO PADRÃO "Y-VAR": "${partName}"`);
+            for (const [availablePartName, price] of Object.entries(categoryData)) {
+                const normalizedAvailable = Utils.normalizeText(availablePartName);
+                if (normalizedAvailable.includes('y') && normalizedAvailable.includes('var')) {
+                    console.log(`✅ ENCONTRADO POR PADRÃO: "${availablePartName}"`);
+                    return {
+                        category: 'Cabeçote',
+                        subcategory: 'coletor de escape',
+                        name: availablePartName,
+                        price,
+                        score: 0.8
+                    };
+                }
+            }
+        }
+
         return null;
     }
 
-    static findBestContainsMatch(partName, categoryData, category, subcategory) {
-        const normalizedSearch = Utils.normalizeText(partName);
+    static cleanPartName(partName) {
+        let cleaned = partName.toLowerCase();
+
+        // Remover símbolos de grau mas PRESERVAR +, -, etc.
+        cleaned = cleaned.replace(/[°º]|graus|degrees/gi, '').trim();
+
+        // Remover espaços extras mas preservar símbolos importantes
+        cleaned = cleaned.replace(/\s+/g, ' ').trim();
+
+        // Aplicar correções OCR MAS preservar símbolos como +
+        cleaned = this.applyOCRCorrections(cleaned);
+
+        return cleaned; // NÃO normalizar completamente para preservar símbolos
+    }
+
+    // Busca especializada para comandos por número
+    static findCommandByNumber(partName, categoryData) {
+        // Extrair números do nome da peça
+        const numberMatch = partName.match(/\d+/);
+        if (!numberMatch) return null;
+
+        const number = numberMatch[0];
+        console.log(`🔍 Buscando comando por número: ${number}`);
+
+        // Tentar encontrar comando com este número
+        for (const [availablePartName, price] of Object.entries(categoryData)) {
+            const normalizedAvailable = Utils.normalizeText(availablePartName);
+
+            // Verificar se contém o número
+            if (normalizedAvailable.includes(number)) {
+                console.log(`✅ Comando encontrado por número: "${availablePartName}"`);
+                return {
+                    category: 'Cabeçote',
+                    subcategory: 'comandos',
+                    name: availablePartName,
+                    price,
+                    score: 0.8
+                };
+            }
+        }
+
+        return null;
+    }
+
+    static findPartMapping(partName, categoryData) {
         let bestMatch = null;
-        let bestScore = 0;
+        let bestMatchLength = 0;
 
-        console.log(`🔍 Buscando "${normalizedSearch}" em ${category}/${subcategory}`);
+        // Busca por todos os mapeamentos possíveis
+        for (const [key, mappedName] of Object.entries(MAPPINGS.partMapping)) {
+            // Verifica se a chave do mapeamento está contida no partName
+            // E se a peça mapeada existe na categoria
+            if (partName.includes(key) && categoryData[mappedName] !== undefined) {
+                // Prioriza matches mais longos (mais específicos)
+                if (key.length > bestMatchLength) {
+                    bestMatchLength = key.length;
+                    bestMatch = mappedName;
+                    console.log(`✅ MAPEAMENTO CANDIDATO: "${key}" -> "${mappedName}" (comprimento: ${key.length})`);
+                }
+            }
+        }
 
-        // Se a busca contém "obb+", priorizar versões com "+"
-        if (normalizedSearch.includes('obb+') || normalizedSearch.includes('obb +')) {
-            console.log(`🎯 DETECTADO OBB+: "${normalizedSearch}"`);
+        if (bestMatch) {
+            console.log(`✅ MAPEAMENTO FINAL: "${bestMatch}" (melhor match: comprimento ${bestMatchLength})`);
+            return bestMatch;
+        }
 
-            for (const [availablePartName, price] of Object.entries(categoryData)) {
-                const normalizedAvailable = Utils.normalizeText(availablePartName);
+        return null;
+    }
 
-                if (normalizedAvailable.includes('obb+') || normalizedAvailable.includes('obb +')) {
-                    const score = this.calculateExactOBBMatch(normalizedSearch, normalizedAvailable);
-                    if (score > bestScore) {
-                        bestScore = score;
-                        bestMatch = {
+    static applyOCRCorrections(text) {
+        let corrected = text.toLowerCase();
+        console.log(`🔧 Aplicando correções OCR para: "${corrected}"`);
+
+        // Aplicar correções do mapeamento - APENAS CORREÇÕES ESPECÍFICAS
+        for (const [error, correction] of Object.entries(MAPPINGS.ocrCorrections)) {
+            if (corrected.includes(error)) {
+                corrected = corrected.replace(new RegExp(error, 'g'), correction);
+                console.log(`🔧 Correção OCR: "${error}" -> "${correction}"`);
+            }
+        }
+
+        console.log(`🔧 Resultado após correções: "${corrected}"`);
+        return corrected;
+    }
+
+    static findExactMatchWithSubcategoryCheck(normalizedSearch) {
+        const classData = AppState.partsData[AppState.currentClass];
+        if (!classData) return null;
+
+        for (const [category, subcategories] of Object.entries(classData)) {
+            for (const [subcategory, parts] of Object.entries(subcategories)) {
+                for (const [partName, price] of Object.entries(parts)) {
+                    const normalizedPart = Utils.normalizeText(partName);
+
+                    if (normalizedSearch === normalizedPart ||
+                        normalizedPart.includes(normalizedSearch) ||
+                        normalizedSearch.includes(normalizedPart)) {
+                        console.log(`✅ MATCH EXATO: "${partName}" em ${category}/${subcategory}`);
+                        return {
                             category,
                             subcategory,
-                            name: availablePartName,
+                            name: partName,
                             price,
-                            score
+                            score: 1.0
                         };
                     }
                 }
             }
-
-            if (bestMatch && bestScore >= 0.8) {
-                console.log(`✅ OBB+ ESPECÍFICO ENCONTRADO: "${bestMatch.name}"`);
-                return bestMatch;
-            }
         }
-
-        // Busca normal por contains
-        const entries = Object.entries(categoryData).sort((a, b) => b[0].length - a[0].length);
-
-        for (const [availablePartName, price] of entries) {
-            const normalizedAvailable = Utils.normalizeText(availablePartName);
-
-            // Match exato tem prioridade máxima
-            if (normalizedAvailable === normalizedSearch) {
-                console.log(`🎯 MATCH EXATO ENCONTRADO: "${availablePartName}"`);
-                return {
-                    category,
-                    subcategory,
-                    name: availablePartName,
-                    price,
-                    score: 1.0
-                };
-            }
-
-            if (normalizedAvailable.includes(normalizedSearch)) {
-                const score = this.calculateContainsScore(normalizedSearch, normalizedAvailable);
-                // Aumentar o threshold para evitar matches parciais incorretos
-                if (score > bestScore && score >= 0.8) {
-                    bestScore = score;
-                    bestMatch = {
-                        category,
-                        subcategory,
-                        name: availablePartName,
-                        price,
-                        score
-                    };
-                }
-            }
-
-            if (normalizedSearch.includes(normalizedAvailable)) {
-                const score = this.calculateContainsScore(normalizedAvailable, normalizedSearch);
-                if (score > bestScore && score >= 0.8) {
-                    bestScore = score;
-                    bestMatch = {
-                        category,
-                        subcategory,
-                        name: availablePartName,
-                        price,
-                        score
-                    };
-                }
-            }
-        }
-
-        return bestScore >= 0.8 ? bestMatch : null;
-    }
-
-    static calculateExactOBBMatch(searchText, availableText) {
-        // Se ambos contêm "obb+", é um match forte
-        if (searchText.includes('obb+') && availableText.includes('obb+')) {
-            return 0.9;
-        }
-
-        // Se a busca é específica para "+" mas a peça disponível não tem, penalizar
-        if (searchText.includes('obb+') && !availableText.includes('obb+')) {
-            return 0.3;
-        }
-
-        // Match normal
-        return this.calculateContainsScore(searchText, availableText);
-    }
-
-    static calculateHeaderSimilarity(searchText, availableText) {
-        const searchVersion = searchText.match(/s(\d+)/) || searchText.match(/(\d+)/);
-        const availableVersion = availableText.match(/s(\d+)/) || availableText.match(/(\d+)/);
-
-        let score = 0;
-
-        if (searchText.includes('header') && availableText.includes('header')) {
-            score += 0.3;
-        }
-
-        if (searchVersion && availableVersion && searchVersion[1] === availableVersion[1]) {
-            score += 0.7;
-        } else if (searchVersion && availableVersion) {
-            score -= 0.3;
-        }
-
-        return Math.max(0, Math.min(1, score));
-    }
-
-    static findSimilarityMatch(partName, categoryData, category, subcategory) {
-        const normalizedSearch = Utils.normalizeText(partName);
-        let bestMatch = null;
-        let bestScore = 0;
-
-        for (const [availablePartName, price] of Object.entries(categoryData)) {
-            const normalizedAvailable = Utils.normalizeText(availablePartName);
-            const score = this.calculateAdvancedSimilarity(normalizedSearch, normalizedAvailable);
-
-            if (score > bestScore && score >= 0.6) {
-                bestScore = score;
-                bestMatch = {
-                    category,
-                    subcategory,
-                    name: availablePartName,
-                    price,
-                    score
-                };
-            }
-        }
-
-        return bestMatch;
-    }
-
-    static calculateAdvancedSimilarity(text1, text2) {
-        if (text1 === text2) return 1.0;
-
-        const words1 = text1.split(' ').filter(w => w.length > 1);
-        const words2 = text2.split(' ').filter(w => w.length > 1);
-
-        if (!words1.length || !words2.length) return 0;
-
-        let commonWords = 0;
-        let totalWords = Math.max(words1.length, words2.length);
-
-        for (const word1 of words1) {
-            for (const word2 of words2) {
-                if (word1 === word2) {
-                    commonWords += 1.0;
-                    break;
-                } else if (word1.includes(word2) || word2.includes(word1)) {
-                    const lengthRatio = Math.min(word1.length, word2.length) / Math.max(word1.length, word2.length);
-                    commonWords += 0.7 * lengthRatio;
-                    break;
-                } else if (Utils.areWordsSimilar(word1, word2)) {
-                    commonWords += 0.5;
-                    break;
-                }
-            }
-        }
-
-        return commonWords / totalWords;
+        return null;
     }
 
     static smartCategorySearch(searchText) {
@@ -1389,146 +1706,6 @@ class SearchEngine {
         return null;
     }
 
-    static isTextRelatedToSubcategory(text, subcategory) {
-        const normalizedSubcat = Utils.normalizeText(subcategory);
-        const subcatWords = normalizedSubcat.split(' ');
-
-        for (const word of subcatWords) {
-            if (word.length > 2 && text.includes(word)) {
-                return true;
-            }
-        }
-
-        for (const [key, mapping] of Object.entries(MAPPINGS.categoryMapping)) {
-            if (mapping.subcategory === subcategory && text.includes(key)) {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    static applyOCRCorrections(text) {
-        let corrected = text.toLowerCase();
-
-        // Aplicar correções do mapeamento
-        for (const [error, correction] of Object.entries(MAPPINGS.ocrCorrections)) {
-            if (corrected.includes(error)) {
-                corrected = corrected.replace(new RegExp(error, 'g'), correction);
-                console.log(`🔧 Correção OCR: "${error}" -> "${correction}"`);
-            }
-        }
-
-        // Correções específicas para bronzinas
-        corrected = corrected.replace(/mohle/gi, 'mahle');
-        corrected = corrected.replace(/mahie/gi, 'mahle');
-        corrected = corrected.replace(/bronzinasas/gi, 'bronzinas');
-        corrected = corrected.replace(/bronzinaas/gi, 'bronzinas');
-        corrected = corrected.replace(/bronzinos/gi, 'bronzinas');
-        corrected = corrected.replace(/bronzinaos/gi, 'bronzinas');
-        corrected = corrected.replace(/bronzin/gi, 'bronzinas');
-
-        // Outras correções gerais
-        corrected = corrected.replace(/tokushing/gi, 'takashing');
-        corrected = corrected.replace(/proflacing/gi, 'proracing');
-        corrected = corrected.replace(/gorret/gi, 'garret');
-        corrected = corrected.replace(/gorret1\.63/gi, 'garret .63');
-        corrected = corrected.replace(/spa mcsi/gi, 'spa mcs1');
-        corrected = corrected.replace(/268°/gi, '268');
-        corrected = corrected.replace(/chip mns 6t2/gi, 'chip mns gt2');
-        corrected = corrected.replace(/tap erformance/gi, 'taperformance');
-        corrected = corrected.replace(/bleios/gi, 'bielas');
-        corrected = corrected.replace(/gurrotas/gi, 'garrafas');
-        corrected = corrected.replace(/pistöes/gi, 'pistões');
-        corrected = corrected.replace(/pistoes/gi, 'pistões');
-        corrected = corrected.replace(/0em/gi, 'oem');
-        corrected = corrected.replace(/0 em/gi, 'oem');
-        corrected = corrected.replace(/0-em/gi, 'oem');
-        corrected = corrected.replace(/obb\s*\+/g, 'obb+');
-        corrected = corrected.replace(/obbplus/g, 'obb+');
-        corrected = corrected.replace(/obb plus/g, 'obb+');
-
-        return corrected;
-    }
-
-    static findExactMatchWithSubcategoryCheck(normalizedSearch) {
-        const classData = AppState.partsData[AppState.currentClass];
-        if (!classData) return null;
-
-        for (const [category, subcategories] of Object.entries(classData)) {
-            for (const [subcategory, parts] of Object.entries(subcategories)) {
-                for (const [partName, price] of Object.entries(parts)) {
-                    const normalizedPart = Utils.normalizeText(partName);
-
-                    if (normalizedSearch === normalizedPart ||
-                        normalizedPart.includes(normalizedSearch) ||
-                        normalizedSearch.includes(normalizedPart)) {
-                        console.log(`✅ MATCH EXATO: "${partName}" em ${category}/${subcategory}`);
-                        return {
-                            category,
-                            subcategory,
-                            name: partName,
-                            price,
-                            score: 1.0
-                        };
-                    }
-                }
-            }
-        }
-        return null;
-    }
-
-    static findBestPartInSubcategory(category, subcategory, searchText) {
-        const categoryData = AppState.partsData[AppState.currentClass]?.[category]?.[subcategory];
-        if (!categoryData) return null;
-
-        let bestMatch = null;
-        let bestScore = 0;
-
-        for (const [partName, price] of Object.entries(categoryData)) {
-            const normalizedPart = Utils.normalizeText(partName);
-            const score = this.calculateDetailedSimilarity(searchText, normalizedPart);
-
-            if (score > bestScore && score >= 0.5) {
-                bestScore = score;
-                bestMatch = {
-                    category: category,
-                    subcategory: subcategory,
-                    name: partName,
-                    price: price,
-                    score: score
-                };
-            }
-        }
-
-        return bestMatch;
-    }
-
-    static calculateDetailedSimilarity(text1, text2) {
-        if (text1 === text2) return 1.0;
-
-        if (text1.includes(text2) || text2.includes(text1)) {
-            return 0.8;
-        }
-
-        const words1 = text1.split(' ').filter(w => w.length > 1);
-        const words2 = text2.split(' ').filter(w => w.length > 1);
-
-        if (!words1.length || !words2.length) return 0;
-
-        let commonWords = 0;
-        for (const word1 of words1) {
-            for (const word2 of words2) {
-                if (word1.includes(word2) || word2.includes(word1) || Utils.areWordsSimilar(word1, word2)) {
-                    commonWords++;
-                    break;
-                }
-            }
-        }
-
-        return commonWords / Math.max(words1.length, words2.length);
-    }
-
     static calculateContainsScore(search, available) {
         if (search === available) return 1.0;
         if (available.includes(search)) return 0.9;
@@ -1549,6 +1726,33 @@ class SearchEngine {
         }
 
         return commonWords / Math.max(searchWords.length, availableWords.length);
+    }
+
+    static calculateMatchScore(text1, text2) {
+        if (text1 === text2) return 1.0;
+
+        const words1 = text1.split(' ').filter(w => w.length > 1);
+        const words2 = text2.split(' ').filter(w => w.length > 1);
+
+        if (!words1.length || !words2.length) return 0;
+
+        let commonWords = 0;
+        for (const word1 of words1) {
+            for (const word2 of words2) {
+                if (word1 === word2) {
+                    commonWords += 1.0;
+                    break;
+                } else if (word1.includes(word2) || word2.includes(word1)) {
+                    commonWords += 0.7;
+                    break;
+                } else if (Utils.areWordsSimilar(word1, word2)) {
+                    commonWords += 0.5;
+                    break;
+                }
+            }
+        }
+
+        return commonWords / Math.max(words1.length, words2.length);
     }
 }
 
@@ -1608,12 +1812,10 @@ class UIManager {
         }
 
         if (inflationInput) {
-            // REMOVER: inflationInput.addEventListener('input', ...)
-            // ADICIONAR:
             inflationInput.addEventListener('keydown', (e) => {
                 if (e.key === 'Enter') {
                     this.handleInflationInputFinal();
-                    inflationInput.blur(); // Opcional: sair do campo após Enter
+                    inflationInput.blur();
                 }
             });
             inflationInput.addEventListener('blur', () => this.handleInflationInputFinal());
@@ -1709,14 +1911,6 @@ class UIManager {
         this.updateInflationFields();
     }
 
-    static handleInflationInput() {
-        let value = Cache.elements.inflationInput.value.replace(/[^\d.]/g, '');
-        const parts = value.split('.');
-        if (parts.length > 2) value = parts[0] + '.' + parts.slice(1).join('');
-        AppState.inflation = parseFloat(value) || CONFIG.MIN_INFLATION;
-        this.updateInflationFields();
-    }
-
     static updateInflationFields() {
         AppState.inflation = Math.max(CONFIG.MIN_INFLATION, Math.min(CONFIG.MAX_INFLATION, AppState.inflation));
 
@@ -1729,10 +1923,6 @@ class UIManager {
 
         this.loadCategoryParts();
         this.updateSummary();
-    }
-
-    static validateInflation() {
-        this.updateInflationFields();
     }
 
     static loadCategoryParts() {
@@ -2665,116 +2855,201 @@ class ImageProcessor {
     }
 }
 
-class PartValidator {
-    static validatePartExistence(category, subcategory, partName) {
-        const parts = AppState.partsData[AppState.currentClass]?.[category]?.[subcategory];
-        if (!parts) {
-            console.log(`❌ Categoria/Subcategoria não encontrada: ${category}/${subcategory}`);
-            return false;
-        }
+class SessionManager {
+    static init() {
+        this.sessionStartTime = Date.now();
+        this.lastRefreshTime = null;
+        this.checkInterval = null;
+        this.refreshThreshold = 1 * 60 * 60 * 1000; // 1 hora em milissegundos
+        this.checkIntervalTime = 1 * 60 * 60 * 1000; // Verificar a cada 1 hora
 
-        const exists = partName in parts;
-        console.log(`🔍 Validação: ${category}/${subcategory}/${partName} -> ${exists ? 'EXISTE' : 'NÃO EXISTE'}`);
-        return exists;
+        this.loadSessionState();
+        this.startPeriodicCheck();
+        console.log("✅ Gerenciador de sessão inicializado (verificação a cada 1h)");
     }
 
-    static getAllAvailableParts() {
-        const allParts = {};
+    static loadSessionState() {
+        // Carregar estado anterior do sessionStorage
+        const savedState = sessionStorage.getItem('sessionManagerState');
+        if (savedState) {
+            const state = JSON.parse(savedState);
+            this.sessionStartTime = state.sessionStartTime || Date.now();
+            this.lastRefreshTime = state.lastRefreshTime || null;
+            console.log("📊 Estado da sessão carregado:", {
+                sessionStartTime: new Date(this.sessionStartTime),
+                lastRefreshTime: this.lastRefreshTime ? new Date(this.lastRefreshTime) : null
+            });
+        } else {
+            // Primeira vez - salvar estado inicial
+            this.saveSessionState();
+        }
+    }
 
-        for (const [className, categories] of Object.entries(AppState.partsData)) {
-            allParts[className] = {};
+    static saveSessionState() {
+        const state = {
+            sessionStartTime: this.sessionStartTime,
+            lastRefreshTime: this.lastRefreshTime
+        };
+        sessionStorage.setItem('sessionManagerState', JSON.stringify(state));
+    }
 
-            for (const [category, subcategories] of Object.entries(categories)) {
-                allParts[className][category] = {};
+    static startPeriodicCheck() {
+        // Verificar imediatamente ao iniciar
+        this.checkSessionDuration();
 
-                for (const [subcategory, parts] of Object.entries(subcategories)) {
-                    allParts[className][category][subcategory] = Object.keys(parts);
-                }
+        // Configurar verificação periódica a cada 1 hora
+        this.checkInterval = setInterval(() => {
+            this.checkSessionDuration();
+        }, this.checkIntervalTime);
+
+        console.log(`⏰ Verificação configurada para cada ${this.checkIntervalTime / 60000} minutos`);
+    }
+
+    static checkSessionDuration() {
+        const currentTime = Date.now();
+        const sessionDuration = currentTime - this.sessionStartTime;
+        const hoursOpen = sessionDuration / (60 * 60 * 1000);
+
+        console.log(`🔍 Verificando sessão: ${hoursOpen.toFixed(2)} horas aberta`);
+
+        // Verificar se a sessão está aberta há mais de 1 hora
+        if (sessionDuration >= this.refreshThreshold) {
+            // Verificar se já atualizamos recentemente (dentro da última hora)
+            const timeSinceLastRefresh = this.lastRefreshTime ?
+                currentTime - this.lastRefreshTime :
+                Infinity;
+
+            if (timeSinceLastRefresh >= this.checkIntervalTime) {
+                console.log("🕒 Sessão aberta há mais de 1 hora - iniciando atualização...");
+                this.performRefresh();
+            } else {
+                console.log("⏸️ Atualização já realizada recentemente, aguardando próximo ciclo...");
             }
+        } else {
+            const remainingTime = this.refreshThreshold - sessionDuration;
+            console.log(`⏳ Sessão ainda dentro do limite. Atualização em ${Math.ceil(remainingTime / 60000)} minutos`);
         }
-
-        return allParts;
     }
 
-    static findSimilarParts(partName, threshold = 0.7) {
-        const similar = [];
-        const classData = AppState.partsData[AppState.currentClass];
+    static performRefresh() {
+        console.log("🔄 Iniciando atualização da página...");
 
-        if (!classData) return similar;
+        // Atualizar o timestamp da última atualização
+        this.lastRefreshTime = Date.now();
+        this.saveSessionState();
 
-        for (const [category, subcategories] of Object.entries(classData)) {
-            for (const [subcategory, parts] of Object.entries(subcategories)) {
-                for (const availablePart of Object.keys(parts)) {
-                    const similarity = SearchEngine.calculateAdvancedSimilarity(
-                        Utils.normalizeText(partName),
-                        Utils.normalizeText(availablePart)
-                    );
+        // Mostrar aviso ao usuário
+        this.showRefreshWarning();
 
-                    if (similarity >= threshold) {
-                        similar.push({
-                            category,
-                            subcategory,
-                            name: availablePart,
-                            price: parts[availablePart],
-                            similarity
-                        });
-                    }
+        // Recarregar após breve delay
+        setTimeout(() => {
+            window.location.reload();
+        }, 3000);
+    }
+
+    static showRefreshWarning() {
+        const currentTime = new Date().toLocaleTimeString();
+        const sessionDuration = Date.now() - this.sessionStartTime;
+        const hours = Math.floor(sessionDuration / (60 * 60 * 1000));
+        const minutes = Math.floor((sessionDuration % (60 * 60 * 1000)) / 60000);
+
+        const warningOverlay = document.createElement('div');
+        warningOverlay.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            backdrop-filter: blur(5px);
+        `;
+
+        warningOverlay.innerHTML = `
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2.5rem; border-radius: 15px; max-width: 450px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                <div style="font-size: 4rem; margin-bottom: 1.5rem;">⏰</div>
+                <h2 style="margin: 0 0 1rem 0; color: #ecf0f1; font-size: 1.5rem;">Atualização Automática</h2>
+                <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem;">
+                    <p style="margin: 0 0 0.5rem 0; color: #bdc3c7; font-size: 0.9rem;">
+                        <strong>Tempo de sessão:</strong> ${hours}h ${minutes}m
+                    </p>
+                    <p style="margin: 0; color: #bdc3c7; font-size: 0.9rem;">
+                        <strong>Hora atual:</strong> ${currentTime}
+                    </p>
+                </div>
+                <p style="margin: 0 0 1.5rem 0; color: #ecf0f1; line-height: 1.5; font-size: 0.95rem;">
+                    A página está aberta há mais de 1 hora e será atualizada para otimizar o desempenho.
+                </p>
+                <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px;">
+                    <div class="spinner" style="width: 24px; height: 24px; border: 3px solid #3498db; border-top: 3px solid transparent; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+                    <div>
+                        <div style="font-weight: bold; color: #3498db;">Atualizando em 3 segundos...</div>
+                        <div style="font-size: 0.8rem; color: #bdc3c7;">Esta ação ocorre automaticamente a cada 1 hora</div>
+                    </div>
+                </div>
+            </div>
+            <style>
+                @keyframes spin {
+                    0% { transform: rotate(0deg); }
+                    100% { transform: rotate(360deg); }
                 }
+            </style>
+        `;
+
+        document.body.appendChild(warningOverlay);
+
+        // Remover após recarregar
+        setTimeout(() => {
+            if (document.body.contains(warningOverlay)) {
+                document.body.removeChild(warningOverlay);
             }
-        }
-
-        return similar.sort((a, b) => b.similarity - a.similarity);
-    }
-}
-
-class EnhancedSearchEngine extends SearchEngine {
-    static findPartWithCategory(searchText) {
-        // ... implementação melhorada que usa o PartValidator
+        }, 3500);
     }
 
-    static buildDynamicMappings() {
-        // Construir mapeamentos dinâmicos baseados nas peças reais
-        const dynamicMappings = {};
-        const allParts = PartValidator.getAllAvailableParts();
-
-        // Gerar mapeamentos automáticos para todas as peças
-        for (const [className, categories] of Object.entries(allParts)) {
-            for (const [category, subcategories] of Object.entries(categories)) {
-                for (const [subcategory, parts] of Object.entries(subcategories)) {
-                    parts.forEach(partName => {
-                        const normalized = Utils.normalizeText(partName);
-
-                        // Criar variações comuns
-                        const variations = this.generateVariations(partName);
-                        variations.forEach(variation => {
-                            dynamicMappings[variation] = partName;
-                        });
-                    });
-                }
-            }
-        }
-
-        return dynamicMappings;
+    // Método para reiniciar o contador (útil para testes)
+    static resetSession() {
+        this.sessionStartTime = Date.now();
+        this.lastRefreshTime = null;
+        this.saveSessionState();
+        console.log("🔄 Sessão reiniciada - contador zerado");
     }
 
-    static generateVariations(partName) {
-        const variations = [];
-        const normalized = Utils.normalizeText(partName);
+    // Método para forçar verificação manual
+    static forceCheck() {
+        console.log("🔍 Forçando verificação manual...");
+        this.checkSessionDuration();
+    }
 
-        variations.push(normalized);
+    // Método para obter status atual
+    static getStatus() {
+        const currentTime = Date.now();
+        const sessionDuration = currentTime - this.sessionStartTime;
+        const timeUntilRefresh = Math.max(0, this.refreshThreshold - sessionDuration);
 
-        // Remover marcas comuns
-        variations.push(normalized.replace(/(proracing|hks|garret|takashing)\s*/gi, '').trim());
+        return {
+            sessionStartTime: new Date(this.sessionStartTime),
+            sessionDuration: sessionDuration,
+            sessionDurationFormatted: `${Math.floor(sessionDuration / 3600000)}h ${Math.floor((sessionDuration % 3600000) / 60000)}m`,
+            timeUntilRefresh: timeUntilRefresh,
+            timeUntilRefreshFormatted: `${Math.floor(timeUntilRefresh / 60000)}m ${Math.floor((timeUntilRefresh % 60000) / 1000)}s`,
+            lastRefreshTime: this.lastRefreshTime ? new Date(this.lastRefreshTime) : null,
+            refreshThreshold: this.refreshThreshold
+        };
+    }
 
-        // Adicionar abreviações
-        if (normalized.includes('header')) {
-            variations.push(normalized.replace('header', 'hd'));
+    // Limpeza ao destruir
+    static cleanup() {
+        if (this.checkInterval) {
+            clearInterval(this.checkInterval);
+            this.checkInterval = null;
         }
-        if (normalized.includes('bronzina')) {
-            variations.push(normalized.replace('bronzina', 'brz'));
-        }
-
-        return [...new Set(variations.filter(v => v.length > 2))];
     }
 }
 

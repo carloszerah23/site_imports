@@ -4,105 +4,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alberto Tunning - Customização de Carros</title>
+    <title>ProImports - Customização de Carros</title>
+
+    <!-- Dependências externas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="hidden">
-    <header>
-        <img src="src/title.png" alt="Alberto Tunning" class="title-img">
-        <div class="inflation-container">
-            <span class="inflation-label">Inflação:</span>
-            <div class="inflation-input-container">
-                <input type="number" id="inflation-input" class="inflation-input" min="1" max="3" step="0.0001"
-                    value="1.0000">
-            </div>
-            <input type="range" id="inflation-slider" class="inflation-slider" min="1" max="3" step="0.0001"
-                value="1.0000">
+    <!-- ===== TOGGLE MENU MOBILE ===== -->
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- ===== SIDEBAR ===== -->
+    <div class="sidebar" id="sidebar">
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="src/title.png" alt="ProImports" class="logo">
         </div>
 
-        <!-- Botões de controle de sessão -->
-        <button id="logout-btn" class="header-btn">Sair</button>
-        <button id="admin-btn" class="header-btn" style="display:none;">Painel Admin</button>
-    </header>
-
-    <div class="container">
-        <div class="class-selector">
-            <label for="class-select">Selecione a Classe:</label>
-            <select id="class-select">
-                <option value="Classe A">Classe A</option>
-                <option value="Classe B">Classe B</option>
-                <option value="Classe C">Classe C</option>
-            </select>
-        </div>
-
+        <!-- Categorias de Peças -->
         <div class="categories">
-            <button class="category-btn active" data-category="Cabeçote">Cabeçote</button>
-            <button class="category-btn" data-category="ECU">ECU</button>
-            <button class="category-btn" data-category="Motor">Motor</button>
-            <button class="category-btn" data-category="Óxido Nitroso">Óxido Nitroso</button>
-            <button class="category-btn" data-category="Redução de Peso">Redução de Peso</button>
-            <button class="category-btn" data-category="SuperCharger">SuperCharger</button>
-            <button class="category-btn" data-category="Turbo">Turbo</button>
-            <button class="category-btn" data-category="Transmissão">Transmissão</button>
+            <button class="category-btn active" data-category="Cabeçote">
+                <i class="fas fa-cogs"></i>
+                Cabeçote
+            </button>
+            <button class="category-btn" data-category="ECU">
+                <i class="fas fa-microchip"></i>
+                ECU
+            </button>
+            <button class="category-btn" data-category="Motor">
+                <i class="fas fa-car"></i>
+                Motor
+            </button>
+            <button class="category-btn" data-category="Óxido Nitroso">
+                <i class="fas fa-fire"></i>
+                Óxido Nitroso
+            </button>
+            <button class="category-btn" data-category="Redução de Peso">
+                <i class="fas fa-weight-hanging"></i>
+                Redução de Peso
+            </button>
+            <button class="category-btn" data-category="SuperCharger">
+                <i class="fas fa-tachometer-alt"></i>
+                SuperCharger
+            </button>
+            <button class="category-btn" data-category="Turbo">
+                <i class="fas fa-fan"></i>
+                Turbo
+            </button>
+            <button class="category-btn" data-category="Transmissão">
+                <i class="fas fa-cog"></i>
+                Transmissão
+            </button>
         </div>
 
-        <div class="parts-container">
-            <h2 id="current-category">Cabeçote</h2>
-            <div class="parts-list" id="parts-list">
-                <div class="loading">Carregando peças...</div>
-            </div>
-        </div>
+        <!-- ===== RESUMO FINANCEIRO ===== -->
+        <div class="totals-sidebar">
+            <h3>Resumo Financeiro</h3>
+            <div class="totals-group">
+                <!-- Total das Peças Selecionadas -->
+                <div class="total-item">
+                    <span class="total-label">Total Tunning:</span>
+                    <span id="total-price-sidebar" class="total-value">Lp$ 0</span>
+                </div>
 
-        <div class="summary">
-            <h2>Resumo da Customização</h2>
-            <div id="summary-items"></div>
-            <div class="summary-item total">
-                <span>Total:</span>
-                <span id="total-price">Lp$ 0.00</span>
-            </div>
+                <!-- Inputs de Custo -->
+                <div class="total-input-group">
+                    <label for="car-price-sidebar">Custo do Veículo:</label>
+                    <input type="text" id="car-price-sidebar" class="total-input" value="Lp$ ">
+                </div>
 
-            <div class="summary-item">
-                <label for="car-price">Preço do Carro:</label>
-                <input type="text" id="car-price" class="currency-input" value="Lp$ ">
-            </div>
-            <div class="summary-item">
-                <label for="payment-price">Preço do Pagamento:</label>
-                <input type="text" id="payment-price" class="currency-input" value="Lp$ ">
-            </div>
-            <div class="summary-item total" style="margin-top:1rem;">
-                <span>Lucro:</span>
-                <span id="profit">Lp$ 0</span>
+                <div class="total-input-group">
+                    <label for="payment-price-sidebar">Pagamento:</label>
+                    <input type="text" id="payment-price-sidebar" class="total-input" value="Lp$ ">
+                </div>
+
+                <!-- Display do Lucro -->
+                <div class="profit-total">
+                    <span class="profit-label">Lucro:</span>
+                    <span id="profit-sidebar" class="profit-value">Lp$ 0</span>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <div class="main-content" id="main-content">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <!-- Título -->
+                <div class="proimports-title">ProImports</div>
+
+                <!-- Controles -->
+                <div class="controls-container">
+                    <!-- Seletor de Classe -->
+                    <div class="class-selector">
+                        <label for="class-select">Classe:</label>
+                        <select id="class-select">
+                            <option value="Classe A">Classe A</option>
+                            <option value="Classe B">Classe B</option>
+                            <option value="Classe C">Classe C</option>
+                        </select>
+                    </div>
+
+                    <!-- Controle de Inflação -->
+                    <div class="inflation-container">
+                        <span class="inflation-label">Inflação:</span>
+                        <input type="number" id="inflation-input" class="inflation-input" min="1" max="3" step="0.0001"
+                            value="1.0000">
+                        <input type="range" id="inflation-slider" class="inflation-slider" min="1" max="3" step="0.0001"
+                            value="1.0000">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botões do Header -->
+            <div class="header-buttons">
+                <button id="admin-btn" class="header-btn" style="display:none;">
+                    <i class="fas fa-cog"></i>
+                    Admin
+                </button>
+                <button id="logout-btn" class="header-btn secondary">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Sair
+                </button>
+            </div>
+        </div>
+
+        <!-- ===== LISTA DE PEÇAS ===== -->
+        <div class="parts-container">
+            <div class="parts-header">
+                <h2 id="current-category">Cabeçote</h2>
+            </div>
+            <div class="parts-grid" id="parts-list">
+                <div class="loading">Carregando peças...</div>
+            </div>
+        </div>
+
+        <!-- ===== RESUMO DE PEÇAS SELECIONADAS ===== -->
+        <div class="summary">
+            <div class="summary-header">
+                <h2>Peças Selecionadas</h2>
+                <div class="summary-header-right">
+                    <button id="clear-selection-btn" class="clear-selection-btn" disabled>
+                        <i class="fas fa-trash"></i>
+                        Limpar Seleção
+                    </button>
+                    <button id="expand-summary-btn" class="expand-summary-btn">
+                        <i class="fas fa-chevron-up"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="summary-items" id="summary-items"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
     <script src="script.js"></script>
 
+    <!-- Script de Inicialização -->
     <script>
-        // Verificar login
+        // ===== CONTROLE DO MENU MOBILE =====
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.toggle('active');
+        });
+
+        // Fechar sidebar ao clicar fora (mobile)
+        document.getElementById('main-content').addEventListener('click', function () {
+            if (window.innerWidth <= 1024) {
+                document.getElementById('sidebar').classList.remove('active');
+            }
+        });
+
+        // ===== VERIFICAÇÃO DE AUTENTICAÇÃO =====
         fetch('/me')
             .then(res => res.json())
             .then(user => {
-                // Mostrar botão admin apenas para administradores
+                document.body.classList.remove('hidden');
                 if (user.role === 'admin') {
-                    document.getElementById('admin-btn').style.display = 'block';
+                    document.getElementById('admin-btn').style.display = 'flex';
                 }
             })
             .catch(() => {
-                // Se não estiver logado, redireciona para login
                 window.location.href = '/login.html';
             });
 
-        // Logout
+        // ===== LOGOUT =====
         document.getElementById('logout-btn').addEventListener('click', () => {
             fetch('/logout').then(() => window.location.href = '/login.html');
         });
 
-        // Abrir painel admin
+        // ===== PAINEL ADMIN =====
         document.getElementById('admin-btn').addEventListener('click', () => {
             window.location.href = '/admin.html';
         });
+
+        // ===== PROTEGER CONTRA INSPECTION =====
+        // Impedir abrir DevTools com F12 e menu de contexto
+        document.addEventListener('keydown', function (e) {
+            // Bloquear F12
+            if (e.key === 'F12') {
+                e.preventDefault();
+                return false;
+            }
+
+            // Bloquear Ctrl+Shift+I, Ctrl+Shift+C, Ctrl+Shift+J, Ctrl+U
+            if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'C' || e.key === 'J')) {
+                e.preventDefault();
+                return false;
+            }
+
+            // Bloquear Ctrl+U (view source)
+            if (e.ctrlKey && e.key === 'u') {
+                e.preventDefault();
+                return false;
+            }
+        });
+
+        // Bloquear menu de contexto (botão direito)
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Bloquear seleção de texto
+        document.addEventListener('selectstart', function (e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Bloquear arrastar elementos
+        document.addEventListener('dragstart', function (e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Proteção adicional contra DevTools
+        (function () {
+            'use strict';
+
+            // Detectar quando o DevTools é aberto
+            let devToolsOpened = false;
+
+            function checkDevTools() {
+                const widthThreshold = window.outerWidth - window.innerWidth > 160;
+                const heightThreshold = window.outerHeight - window.innerHeight > 160;
+
+                if ((widthThreshold || heightThreshold) && !devToolsOpened) {
+                    devToolsOpened = true;
+                    // Redirecionar ou tomar ação quando DevTools é detectado
+                    document.body.innerHTML = '<div style="display:flex;justify-content:center;align-items:center;height:100vh;background:#121212;color:white;font-size:24px;">Acesso não autorizado</div>';
+                    window.location.href = '/login.html';
+                }
+            }
+
+            // Verificar periodicamente
+            setInterval(checkDevTools, 1000);
+
+            // Proteção contra debuggers
+            function antiDebug() {
+                const start = new Date().getTime();
+                debugger;
+                const end = new Date().getTime();
+                if (end - start > 100) {
+                    window.location.href = '/login.html';
+                }
+            }
+
+            setInterval(antiDebug, 1000);
+        })();
+
+        // CSS para desabilitar seleção de texto
+        const noSelectCSS = `
+    * {
+        -webkit-user-select: none !important;
+        -moz-user-select: none !important;
+        -ms-user-select: none !important;
+        user-select: none !important;
+        -webkit-touch-callout: none !important;
+        -webkit-tap-highlight-color: transparent !important;
+    }
+    
+    input, textarea {
+        -webkit-user-select: text !important;
+        -moz-user-select: text !important;
+        -ms-user-select: text !important;
+        user-select: text !important;
+    }
+`;
+
+        // Aplicar o CSS
+        const style = document.createElement('style');
+        style.textContent = noSelectCSS;
+        document.head.appendChild(style);
     </script>
 </body>
 

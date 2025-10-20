@@ -84,14 +84,13 @@ async function syncUsersToGithub() {
     }
 }
 
-// LOGIN
+// LOGIN (CORRIGIDO - sem verificação de senha)
 app.post('/login', (req, res) => {
-    const { username, password, device_id } = req.body;
+    const { username, device_id } = req.body;
     let users = readUsers();
     const user = users.find(u => u.username === username);
 
     if (!user) return res.json({ success: false, message: 'Usuário não encontrado' });
-    if (user.password !== password) return res.json({ success: false, message: 'Senha incorreta' });
     if (user.blocked) return res.json({ success: false, message: 'Usuário bloqueado' });
     if (new Date(user.expiry_date) < new Date()) return res.json({ success: false, message: 'Acesso expirado' });
     if (user.device_id && user.device_id !== device_id) return res.json({ success: false, message: 'Device não autorizado' });
@@ -123,29 +122,29 @@ app.get('/admin/users', checkAuth, checkAdmin, (req, res) => {
     res.json(users);
 });
 
-// ADMIN: criar usuário (CORRIGIDO)
+// ADMIN: criar usuário (CORRIGIDO - data com horas)
 app.post('/admin/users', checkAuth, checkAdmin, (req, res) => {
     let users = readUsers();
-    const { username, password, days, isAdmin } = req.body;
+    const { username, days, isAdmin } = req.body;
 
-    if (!username || !password) {
-        return res.status(400).json({ success: false, message: 'Username e senha são obrigatórios' });
+    if (!username) {
+        return res.status(400).json({ success: false, message: 'Username é obrigatório' });
     }
 
     if (users.find(u => u.username === username)) {
         return res.status(400).json({ success: false, message: 'Usuário já existe' });
     }
 
-    // Calcular data de expiração
+    // Calcular data de expiração com horas (24 horas por dia)
     const expiryDate = new Date();
-    expiryDate.setDate(expiryDate.getDate() + (days || 1));
+    expiryDate.setHours(expiryDate.getHours() + (days || 1) * 24);
 
     const newUser = {
         username,
-        password,
+        password: '', // Senha vazia pois não é mais necessária
         role: isAdmin ? 'admin' : 'user',
         blocked: false,
-        expiry_date: expiryDate.toISOString().split('T')[0],
+        expiry_date: expiryDate.toISOString(), // Mantém data completa com horas
         device_id: ''
     };
 
@@ -154,7 +153,7 @@ app.post('/admin/users', checkAuth, checkAdmin, (req, res) => {
     res.json({ success: true, user: newUser });
 });
 
-// ADMIN: eliminar usuário - MELHORADA
+// ADMIN: eliminar usuário
 app.post('/admin/users/:username/delete', checkAuth, checkAdmin, (req, res) => {
     try {
         let users = readUsers();
@@ -175,11 +174,6 @@ app.post('/admin/users/:username/delete', checkAuth, checkAdmin, (req, res) => {
             return res.status(400).json({ success: false, message: 'Não pode eliminar a si mesmo' });
         }
 
-        // Não permitir deletar outros admins
-        // if (users[userIndex].role === 'admin') {
-        //     return res.status(400).json({ success: false, message: 'Não pode eliminar outros administradores' });
-        // }
-
         users.splice(userIndex, 1);
         writeUsers(users);
         res.json({ success: true, message: 'Usuário eliminado com sucesso' });
@@ -189,7 +183,7 @@ app.post('/admin/users/:username/delete', checkAuth, checkAdmin, (req, res) => {
     }
 });
 
-// ADMIN: atualizar usuário (bloquear, desbloquear, dias, device_id) - NOVO
+// ADMIN: atualizar usuário (CORRIGIDO - adiciona/remove horas)
 app.post('/admin/users/:username', checkAuth, checkAdmin, (req, res) => {
     let users = readUsers();
     const { username } = req.params;
@@ -206,20 +200,78 @@ app.post('/admin/users/:username', checkAuth, checkAdmin, (req, res) => {
 
     if (addDays) {
         const expiry = new Date(user.expiry_date);
-        expiry.setDate(expiry.getDate() + parseInt(addDays));
-        user.expiry_date = expiry.toISOString().split('T')[0];
+        expiry.setHours(expiry.getHours() + parseInt(addDays) * 24); // Adiciona horas
+        user.expiry_date = expiry.toISOString();
     }
 
     if (removeDays) {
         const expiry = new Date(user.expiry_date);
-        expiry.setDate(expiry.getDate() - parseInt(removeDays));
-        user.expiry_date = expiry.toISOString().split('T')[0];
+        expiry.setHours(expiry.getHours() - parseInt(removeDays) * 24); // Remove horas
+        user.expiry_date = expiry.toISOString();
     }
 
     if (resetDevice) user.device_id = '';
 
     writeUsers(users);
     res.json({ success: true, user });
+});
+
+// NOVA ROTA: Atualizar dias considerando hora atual
+app.post('/admin/users/:username/days', checkAuth, checkAdmin, (req, res) => {
+    try {
+        let users = readUsers();
+        const { username } = req.params;
+        const { days, operation, updateFromNow } = req.body;
+        
+        // Buscar usuário
+        const userIndex = users.findIndex(u => u.username === username);
+        if (userIndex === -1) {
+            return res.status(404).json({ message: 'Usuário não encontrado' });
+        }
+
+        const user = users[userIndex];
+        let newExpiryDate;
+
+        if (updateFromNow) {
+            // Calcular a partir da hora atual
+            const now = new Date();
+            if (operation === 'add') {
+                newExpiryDate = new Date(now.getTime() + (days * 24 * 60 * 60 * 1000));
+            } else if (operation === 'remove') {
+                // Se está removendo dias, verifica se a data atual já passou
+                const currentExpiry = new Date(user.expiry_date);
+                if (currentExpiry < now) {
+                    // Se já expirou, começa da hora atual
+                    newExpiryDate = new Date(now.getTime() - (days * 24 * 60 * 60 * 1000));
+                } else {
+                    // Se ainda não expirou, remove da data de expiração atual
+                    newExpiryDate = new Date(currentExpiry.getTime() - (days * 24 * 60 * 60 * 1000));
+                }
+            }
+        } else {
+            // Lógica anterior (para compatibilidade)
+            const currentExpiry = new Date(user.expiry_date);
+            if (operation === 'add') {
+                newExpiryDate = new Date(currentExpiry.getTime() + (days * 24 * 60 * 60 * 1000));
+            } else if (operation === 'remove') {
+                newExpiryDate = new Date(currentExpiry.getTime() - (days * 24 * 60 * 60 * 1000));
+            }
+        }
+
+        // Atualizar no array de usuários
+        user.expiry_date = newExpiryDate.toISOString();
+        writeUsers(users);
+
+        res.json({ 
+            success: true, 
+            newExpiryDate: newExpiryDate.toISOString(),
+            message: `${operation === 'add' ? 'Adicionados' : 'Removidos'} ${days} dias com sucesso`
+        });
+
+    } catch (error) {
+        console.error('Erro ao atualizar dias:', error);
+        res.status(500).json({ message: 'Erro interno do servidor' });
+    }
 });
 
 app.listen(PORT, () => console.log(`Servidor rodando em http://localhost:${PORT}`));

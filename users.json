@@ -62,5 +62,13 @@
     "blocked": false,
     "expiry_date": "2025-10-21",
     "device_id": "b605122c-5e2b-4027-9f5c-9dd48ea2d236"
+  },
+  {
+    "username": "L3zoonn",
+    "password": "demon",
+    "role": "user",
+    "blocked": false,
+    "expiry_date": "2025-10-21",
+    "device_id": ""
   }
 ]

@@ -12,7 +12,7 @@
     "password": "mts0501",
     "role": "user",
     "blocked": false,
-    "expiry_date": "2026-01-01",
+    "expiry_date": "2026-01-01T00:00:00.000Z",
     "device_id": "e1f41cba-d61f-454c-aeb8-607f3b77590b"
   },
   {
@@ -20,7 +20,7 @@
     "password": "Imports",
     "role": "user",
     "blocked": false,
-    "expiry_date": "2025-10-21",
+    "expiry_date": "2025-10-21T00:00:00.000Z",
     "device_id": "16351175-7fb9-488a-a186-0addff85cd01"
   },
   {
@@ -28,7 +28,7 @@
     "password": "Hellcat21",
     "role": "user",
     "blocked": false,
-    "expiry_date": "2025-10-19",
+    "expiry_date": "2025-10-19T00:00:00.000Z",
     "device_id": "3c06a67c-bb81-4ac5-80ec-2d49ed381c85"
   },
   {
@@ -36,7 +36,7 @@
     "password": "uf1move19",
     "role": "user",
     "blocked": false,
-    "expiry_date": "2025-10-22",
+    "expiry_date": "2025-10-22T00:00:00.000Z",
     "device_id": "ee27d2b3-d6da-43d6-8c97-a5cf53a97bba"
   },
   {
@@ -44,7 +44,7 @@
     "password": "123456",
     "role": "user",
     "blocked": false,
-    "expiry_date": "2025-10-23",
+    "expiry_date": "2025-10-23T00:00:00.000Z",
     "device_id": "5a266533-3b58-4923-b294-92ebbe877c11"
   },
   {
@@ -52,7 +52,7 @@
     "password": "bestyy333",
     "role": "user",
     "blocked": false,
-    "expiry_date": "2025-10-21",
+    "expiry_date": "2025-10-21T00:00:00.000Z",
     "device_id": "b605122c-5e2b-4027-9f5c-9dd48ea2d236"
   },
   {
@@ -60,7 +60,7 @@
     "password": "demon",
     "role": "user",
     "blocked": false,
-    "expiry_date": "2025-10-21",
+    "expiry_date": "2025-10-21T00:00:00.000Z",
     "device_id": "2f3b532a-0d62-4e5d-8551-0cbf9da1494a"
   }
 ]

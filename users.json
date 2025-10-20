@@ -8,12 +8,12 @@
     "device_id": "76686d1b-ad43-4d5b-8ec4-afc45db96114"
   },
   {
-    "username": "a_macedo29",
-    "password": "andre",
+    "username": "matteus.miraanda",
+    "password": "mts0501",
     "role": "user",
     "blocked": false,
     "expiry_date": "2026-01-01",
-    "device_id": "ae2098aa-0d04-4bb8-b45f-6cc15eaabfda"
+    "device_id": "e1f41cba-d61f-454c-aeb8-607f3b77590b"
   },
   {
     "username": "Rosa",
@@ -22,14 +22,6 @@
     "blocked": false,
     "expiry_date": "2025-10-21",
     "device_id": "16351175-7fb9-488a-a186-0addff85cd01"
-  },
-  {
-    "username": "matteus.miraanda",
-    "password": "mts0501",
-    "role": "user",
-    "blocked": false,
-    "expiry_date": "2026-01-01",
-    "device_id": "e1f41cba-d61f-454c-aeb8-607f3b77590b"
   },
   {
     "username": "SantosR",

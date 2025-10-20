@@ -12,70 +12,121 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: var(--background-color);
+            background-color: var(--primary-color);
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 2rem;
         }
 
         .login-box {
             background: var(--card-color);
-            padding: 2rem;
-            border-radius: 12px;
+            padding: 3rem;
+            border-radius: 16px;
             box-shadow: var(--shadow-medium);
-            width: 600px;
-            height: 500px;
-            text-align: center;
-        }
-        
-        input {
             width: 100%;
-            padding: 0.6rem;
-            margin: 0.5rem 0;
-            border-radius: 6px;
+            max-width: 450px;
+            text-align: center;
             border: 1px solid var(--border-color);
         }
 
-        button {
-            width: 100%;
-            padding: 0.6rem;
-            border: none;
-            background: var(--secondary-color);
-            color: #fff;
-            border-radius: 6px;
-            cursor: pointer;
+        .login-logo {
+            max-width: 250px;
+            margin: 0 auto 2rem;
+            display: block;
         }
 
-        button:hover {
+        .login-title {
+            color: var(--accent-color);
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 1rem;
+            border: none;
             background: var(--accent-color);
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .login-btn:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
         }
 
         .error {
-            color: red;
-            margin-top: 0.5rem;
+            color: var(--danger-color);
+            margin-top: 1rem;
             font-size: 0.9rem;
+            min-height: 1.2rem;
         }
     </style>
 </head>
 
 <body>
-    <div class="login-box">
-        <img src="./src/title.png" alt="Title" style="width: 100%; margin-bottom: 1rem;">
-        <h2>Login</h2>
-        <input type="text" id="username" placeholder="Usuário">
-        <input type="password" id="password" placeholder="Senha">
-        <button id="login-btn">Entrar</button>
-        <div class="error" id="error-msg"></div>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="./src/title.png" alt="Alberto Tunning" class="login-logo">
+            <h2 class="login-title">Login</h2>
+            <div class="input-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" placeholder="Digite seu usuário">
+            </div>
+            <button id="login-btn" class="login-btn">Entrar</button>
+            <div class="error" id="error-msg"></div>
+        </div>
     </div>
 
     <script>
         document.getElementById('login-btn').addEventListener('click', async () => {
             const username = document.getElementById('username').value.trim();
-            const password = document.getElementById('password').value.trim();
             const device_id = localStorage.getItem('device_id') || crypto.randomUUID();
             localStorage.setItem('device_id', device_id);
 
             const res = await fetch('/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ username, password, device_id })
+                body: JSON.stringify({ username, device_id })
             });
             const data = await res.json();
             if (data.success) {
@@ -84,6 +135,112 @@
                 document.getElementById('error-msg').textContent = data.message;
             }
         });
+
+        // Allow login with Enter key
+        document.getElementById('username').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                document.getElementById('login-btn').click();
+            }
+        });
+
+        // ===== PROTEGER CONTRA INSPECTION =====
+        // Impedir abrir DevTools com F12 e menu de contexto
+        document.addEventListener('keydown', function (e) {
+            // Bloquear F12
+            if (e.key === 'F12') {
+                e.preventDefault();
+                return false;
+            }
+
+            // Bloquear Ctrl+Shift+I, Ctrl+Shift+C, Ctrl+Shift+J, Ctrl+U
+            if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'C' || e.key === 'J')) {
+                e.preventDefault();
+                return false;
+            }
+
+            // Bloquear Ctrl+U (view source)
+            if (e.ctrlKey && e.key === 'u') {
+                e.preventDefault();
+                return false;
+            }
+        });
+
+        // Bloquear menu de contexto (botão direito)
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Bloquear seleção de texto
+        document.addEventListener('selectstart', function (e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Bloquear arrastar elementos
+        document.addEventListener('dragstart', function (e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Proteção adicional contra DevTools
+        (function () {
+            'use strict';
+
+            // Detectar quando o DevTools é aberto
+            let devToolsOpened = false;
+
+            function checkDevTools() {
+                const widthThreshold = window.outerWidth - window.innerWidth > 160;
+                const heightThreshold = window.outerHeight - window.innerHeight > 160;
+
+                if ((widthThreshold || heightThreshold) && !devToolsOpened) {
+                    devToolsOpened = true;
+                    // Redirecionar ou tomar ação quando DevTools é detectado
+                    document.body.innerHTML = '<div style="display:flex;justify-content:center;align-items:center;height:100vh;background:#121212;color:white;font-size:24px;">Acesso não autorizado</div>';
+                    window.location.href = '/login.html';
+                }
+            }
+
+            // Verificar periodicamente
+            setInterval(checkDevTools, 1000);
+
+            // Proteção contra debuggers
+            function antiDebug() {
+                const start = new Date().getTime();
+                debugger;
+                const end = new Date().getTime();
+                if (end - start > 100) {
+                    window.location.href = '/login.html';
+                }
+            }
+
+            setInterval(antiDebug, 1000);
+        })();
+
+        // CSS para desabilitar seleção de texto
+        const noSelectCSS = `
+    * {
+        -webkit-user-select: none !important;
+        -moz-user-select: none !important;
+        -ms-user-select: none !important;
+        user-select: none !important;
+        -webkit-touch-callout: none !important;
+        -webkit-tap-highlight-color: transparent !important;
+    }
+    
+    input, textarea {
+        -webkit-user-select: text !important;
+        -moz-user-select: text !important;
+        -ms-user-select: text !important;
+        user-select: text !important;
+    }
+`;
+
+        // Aplicar o CSS
+        const style = document.createElement('style');
+        style.textContent = noSelectCSS;
+        document.head.appendChild(style);
     </script>
 </body>
 

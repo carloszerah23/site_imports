@@ -46,13 +46,5 @@
     "blocked": false,
     "expiry_date": "2025-10-27T22:07:04.007Z",
     "device_id": "5a266533-3b58-4923-b294-92ebbe877c11"
-  },
-  {
-    "username": "bestyy",
-    "password": "",
-    "role": "user",
-    "blocked": false,
-    "expiry_date": "2025-10-21T00:00:00.000Z",
-    "device_id": "b605122c-5e2b-4027-9f5c-9dd48ea2d236"
   }
 ]

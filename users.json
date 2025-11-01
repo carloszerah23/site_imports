@@ -8,14 +8,6 @@
     "device_id": "76686d1b-ad43-4d5b-8ec4-afc45db96114"
   },
   {
-    "username": "admins",
-    "password": "",
-    "role": "admin",
-    "blocked": false,
-    "expiry_date": "2025-11-02T09:30:10.647Z",
-    "device_id": "76686d1b-ad43-4d5b-8ec4-afc45db96114"
-  },
-  {
     "username": "matteus.miraanda",
     "password": "",
     "role": "user",

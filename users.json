@@ -4,8 +4,16 @@
     "password": "",
     "role": "admin",
     "blocked": false,
-    "expiry_date": "5071-02-07",
+    "expiry_date": "2026-12-31T03:23:59.999Z",
     "device_id": "ff8f3d04-2153-4ebd-8bda-b3f7c24e6cdd"
+  },
+  {
+    "username": "admins",
+    "password": "",
+    "role": "admin",
+    "blocked": false,
+    "expiry_date": "2026-12-31T03:23:59.999Z",
+    "device_id": "76686d1b-ad43-4d5b-8ec4-afc45db96114"
   },
   {
     "username": "matteus.miraanda",
@@ -46,13 +54,5 @@
     "blocked": false,
     "expiry_date": "2025-11-01T21:23:21.011Z",
     "device_id": "5a266533-3b58-4923-b294-92ebbe877c11"
-  },
-  {
-    "username": "zsergb",
-    "password": "",
-    "role": "admin",
-    "blocked": false,
-    "expiry_date": "2025-11-01T03:00:29.867Z",
-    "device_id": "76686d1b-ad43-4d5b-8ec4-afc45db96114"
   }
 ]

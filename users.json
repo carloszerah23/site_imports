@@ -35,7 +35,7 @@
     "username": "juliette",
     "password": "",
     "role": "user",
-    "blocked": false,
+    "blocked": true,
     "expiry_date": "2025-10-22T00:00:00.000Z",
     "device_id": "ee27d2b3-d6da-43d6-8c97-a5cf53a97bba"
   },
@@ -43,7 +43,7 @@
     "username": "GabrielBlz121",
     "password": "",
     "role": "user",
-    "blocked": false,
+    "blocked": true,
     "expiry_date": "2025-11-01T21:23:21.011Z",
     "device_id": "5a266533-3b58-4923-b294-92ebbe877c11"
   }

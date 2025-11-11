@@ -16,14 +16,6 @@
     "device_id": "e1f41cba-d61f-454c-aeb8-607f3b77590b"
   },
   {
-    "username": "Rosa",
-    "password": "",
-    "role": "user",
-    "blocked": true,
-    "expiry_date": "2025-11-04T01:00:26.511Z",
-    "device_id": "16351175-7fb9-488a-a186-0addff85cd01"
-  },
-  {
     "username": "texano",
     "password": "",
     "role": "user",

@@ -30,5 +30,13 @@
     "blocked": false,
     "expiry_date": "2026-02-03T20:41:43.296Z",
     "device_id": ""
+  },
+  {
+    "username": "acedriver",
+    "password": "",
+    "role": "user",
+    "blocked": false,
+    "expiry_date": "2026-02-03T20:42:27.783Z",
+    "device_id": ""
   }
 ]

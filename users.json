@@ -22,5 +22,13 @@
     "blocked": false,
     "expiry_date": "2025-11-21T16:32:55.469Z",
     "device_id": "173a2164-2424-4e10-aa4d-2441c18a7e83"
+  },
+  {
+    "username": "nicolasoRosa12",
+    "password": "",
+    "role": "user",
+    "blocked": false,
+    "expiry_date": "2026-02-03T20:41:43.296Z",
+    "device_id": ""
   }
 ]

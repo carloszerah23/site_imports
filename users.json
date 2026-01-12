@@ -38,5 +38,13 @@
     "blocked": false,
     "expiry_date": "2026-02-07T21:32:30.368Z",
     "device_id": "6a3e037f-d8e0-4301-97bd-d62d4b52b59d"
+  },
+  {
+    "username": "juliette",
+    "password": "",
+    "role": "user",
+    "blocked": false,
+    "expiry_date": "2026-02-11T22:42:43.746Z",
+    "device_id": ""
   }
 ]

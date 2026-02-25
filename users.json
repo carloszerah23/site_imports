@@ -46,5 +46,13 @@
     "blocked": false,
     "expiry_date": "2026-02-11T22:42:43.746Z",
     "device_id": ""
+  },
+  {
+    "username": "rafaelpaz",
+    "password": "",
+    "role": "user",
+    "blocked": false,
+    "expiry_date": "2026-03-27T20:47:18.677Z",
+    "device_id": ""
   }
 ]

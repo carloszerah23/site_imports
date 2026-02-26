@@ -54,5 +54,13 @@
     "blocked": false,
     "expiry_date": "2026-03-27T20:47:18.677Z",
     "device_id": "b0e4f2ca-4fec-495c-b92a-51c1cf6c5bb0"
+  },
+  {
+    "username": "rafaelpazcel",
+    "password": "",
+    "role": "user",
+    "blocked": false,
+    "expiry_date": "2026-03-28T00:43:38.021Z",
+    "device_id": ""
   }
 ]
